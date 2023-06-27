@@ -77,10 +77,13 @@ domain, for a certain task.
 
 How we select the right pattern? Trying to summarize, usually if we try to model a problem, we have two components in our Content ODPs, we have first the domain (where this application really will work) and, on the other hand, the requirements. The same domain can have many requirements and the same requirement can be found in different domains. So domain and requirements are things that are somehow to be representet for your content design pattern. A typical way of capturing requirements is by mean of **competency questions**, that are the key to your design patterns we are looking for. Content ODPs are collected and described in catalogues and comply to a common **presentation template**.
 
-We try to provide an example.
+We try to provide an example. -- TO FIX: CITATION [HPI](Semantic Web Technologies, Dr. Harald Sack, Hasso Plattner Institute, University of Postdam) --
 We want to model a fact like: *"Basil Rathbone played Sherlock Holmes in the 1939 movie 'The Hound of the Baskervilles'."*
 So we want to model the fact that somebody is taking over a temporary role.
 We need to analyze the sentence that contains the knowledge that need to be represented. We have to match what's is in the sentece with some kind of competence question about a person that plays a character.
+
+![ODPs example](./documentation/img/ODPs-example.png)
+
 In the "Problem Space" we have all the available competency questions, we need to map our basic sentence to a competency questions that is about a person playing a character.
 If we find one in our "Problem Space" usually we have mapping betweeen the competency questions and the Ontology Design Patterns that are in the "Solution Space". We select for example an ODPs that is described with "represent objects and roles they play" and if it fits to our purpose we can take over this ontology template for our ontology and then represent this fact exactly with the according Ontology Design Pattern.
 
