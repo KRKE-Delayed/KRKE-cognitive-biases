@@ -39,15 +39,54 @@ This includes:
 
 ## 📚 Methodology
 
-Our final goal is modeling the biases presented above and create an onology for semantic web technologies using a specific iterative method for pattern-based onoltogy design, called **eXtreme Design.**
-With the name eXtreme Design (XD), we identify an approach, a family of methods, and associated tools, based on the application, exploitation, and definition of ontology design patterns (ODPs) for solving ontology development issues. XD is an incremental, iterative method for pattern-based
+### Overview
+Our final goal is modeling the biases presented above and create an onology for semantic web technologies using a specific iterative method for pattern-based onoltogy design, called **eXtreme Design (XD).**
+
+With the name eXtreme Design (XD), we identify an approach, a family of methods, and associated tools, based on the application, exploitation, and definition of **Ontology Design Patterns (ODPs)** for solving ontology development issues. XD is an incremental, iterative method for pattern-based
 ontology development.
 
 ![XD Design Approach](./documentation/img/XD-design-approach.png)
 
-XD adopts the notion of ontology project, a development project characterized
-by two main sets: the "problem space", which is composed of the actual modeling issues, here referred to as the local problems, that have to be addressed during the project and the "solution space", which is made up of reusable modeling solutions.
+XD adopts the notion of ontology project, a development project characterized by two main sets: the "problem space", which is composed of the actual modeling issues, here referred to as the local problems, that have to be addressed during the project and the "solution space", which is made up of reusable modeling solutions.
 ODPs are associated with Generic Use Cases (GUC) and compose the ontology project’s solution space, which is used as the main knowledge source for addressing ontology design issues e.g. reengineering, evaluation, construction, etc., the ontology project’s problem space provides descriptions of the actual issues called “Local Use Cases” (LUC).
+
+### Ontology Design Patterns
+Before exploring the main principles and workflow of XD, it is worthy to spend some words on the methodology on which it is build upon: **Ontology Design Patterns** (Gangemi 2005) -- TO  FIX: CITATION [Gangemi 2005](Gangemi, A. (2005). Ontology design patterns for semantic web content. In The Semantic Web–ISWC 2005: 4th International Semantic Web Conference, ISWC 2005, Galway, Ireland, November 6-10, 2005. Proceedings 4 (pp. 262-276). Springer Berlin Heidelberg.) --.
+
+Adapting a design idea originally from architecture, introduced by Christopher Alexander, ODPs is based on the idea of recurring modeling problems and providing a set of adaptable standard solutions. A "pattern" is a solution to a problem in a given context. Originally described in "A Pattern Language" -- TO FIX: CITATION --, Alexander states that: "The elements of this language are entities called patterns. Each pattern describes a problem that occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing the same way twice."
+Ontology Design Patterns provide small reusable (abstract) ontology templates with explicit documentation, stored in a searchable repository ordered by **competence questions.**
+We distinguish:
+**- Content Patterns.** Domain dependent, language independent.
+**- Logical Patterns.** Domain independent, related to representation language.
+**- Presentation Patterns.** Ontology from user perspective, as e.g. naming conventions.
+**- Transformation Patterns** How to transform an ontology in another representation language.
+
+The two basic design principles building blocks are **Logical ODPs** and **Content ODPs (CPs).** The former solve design problems indipendently of a particular conceptualization or domain, while the latter, are patterns for solving design problems for the domain classes and properties that populate an ontology; they address content problems. They are connected since Content ODPs are instantiations of Logical ODPs (or compositions of Logical ODPs).
+
+In order to describe CPs, each one of them is associated with a *catalogue entry* including the following set of information fields.
+*Name* provides a name for the pattern; *Intent* descrives the *Generic Use Case* addressed by the pattern; *Competency questions* contains examples of competency questions that the knowledge base associared with the CP needs to address; *Also Known as* provides other names (if any) with which the pattern id known; *Scenarios* provides examples of requirements, expressed in natural language, chich can be modeled by using the pattern; *Diagram* depicts a UML class diagram representing the patterrn; *Elements* describes the elements (classes and relations) included in the pattern, and their role within the pattern; *Consequences* provides a description of the benefits and/or possible trade-offs when using the patterns; *Known uses* gives examples of realistic ontologies where the pattern is used, *Extracted from/Reengineered from* provides the reference ontology/conceptual schema (if any), from which  the pattern has been  extracted/reused; *Related patterns* indicates other patterns  (if any) that are either a *specialization, generalization, composition,* or *component* of the pattern being described.
+
+CPs are reusable solutions to recurrent modelling problems, these problems have two components: a domain and a use case (or task). A same domain can have many use cases, and a same use case can be found in different domains.
+Ontologies are usually considered models for a domain, but their use case is usually unknown. As reusable solutions, CPs must explicitly encode both a domain and a use case. Since use cases are extremely diversified, a catalogue of CPs requires the notion of a “Generic Use Case” (GUC), i.e. a generalization of use cases that can be provided as examples for an issue of domain modelling.
+A GUC is the expression of a recurrent scenario in different domain ontology projects.
+The intuition underlying GUC hierarchies is based on a methodological
+observation: ontologies must be built out of domain tasks that can be captured
+by means of *competency questions*. A competency question is a typical
+query that an expert might want to submit to a knowledge base of its target
+domain, for a certain task.
+
+How we select the right pattern? Trying to summarize, usually if we try to model a problem, we have two components in our Content ODPs, we have first the domain (where this application really will work) and, on the other hand, the requirements. The same domain can have many requirements and the same requirement can be found in different domains. So domain and requirements are things that are somehow to be representet for your content design pattern. A typical way of capturing requirements is by mean of **competency questions**, that are the key to your design patterns we are looking for. Content ODPs are collected and described in catalogues and comply to a common **presentation template**.
+
+We try to provide an example.
+We want to model a fact like: *"Basil Rathbone played Sherlock Holmes in the 1939 movie 'The Hound of the Baskervilles'."*
+So we want to model the fact that somebody is taking over a temporary role.
+We need to analyze the sentence that contains the knowledge that need to be represented. We have to match what's is in the sentece with some kind of competence question about a person that plays a character.
+In the "Problem Space" we have all the available competency questions, we need to map our basic sentence to a competency questions that is about a person playing a character.
+If we find one in our "Problem Space" usually we have mapping betweeen the competency questions and the Ontology Design Patterns that are in the "Solution Space". We select for example an ODPs that is described with "represent objects and roles they play" and if it fits to our purpose we can take over this ontology template for our ontology and then represent this fact exactly with the according Ontology Design Pattern.
+
+We need a large repository where we can look for ODPs, the one we will use in our project is [Ontology Design Patterns](http://ontologydesignpatterns.org/)
+
+### **eXtreme Design principles and tasks**
 
 XD principles are inspired by those of the agile software methodology called eXtreme Programming (XP). The main idea of agile software development is to be able to incorporate changes easily, in any stage of the development. [Presutti V., Daga E., Gangemi A., Blomqvist E. - eXtreme Design with Content Ontology Design Patterns - Semantic Technology Laboratory, ISTC_CNR] -- TO FIX: CITATION -- The method make intesive use of Content Ontology Design Patterns (CPs) and its principles are based on modular design and collaboration. Main XD principles can be summarized as follow:
 
@@ -67,7 +106,8 @@ CPs encode conceptual, rather than logical design patterns. They propose pattern
 
 **- Pair design.** The team of designers is organized in pairs. At least one pair is in charge of integrating ontology modules.
 
-### eXtreme Design iterative workflow:
+### **eXtreme Design iterative workflow:**
+
 We will now describe the workflow of XD with CPs, organized in 12 steps (The XD iterative workflow).
 
 ![The XD iterative workflow](./documentation/img/XD-iterative-workflow.png) 
@@ -122,6 +162,7 @@ and alignment axioms, all properly documented in the wiki.
 
 **Task 12. Release new version of the ontology.** Once all unit tests have been passed, a new version of the ontology can be released.
 
+A tutorial that puts together XD and Pattern-based Ontology Design is provided at the following [link](http://ontologydesignpatterns.org/wiki/Training:EXtreme_Design_%28XD%29:_Pattern-based_Ontology_Design)
 
 ### **CLOWN Modeling framework**
 
@@ -144,13 +185,13 @@ This component focuses on integrating newly created ontology modules and alignin
 
 ## 🧗‍♂️ Workflow
 
-1. Start by familiarizing with the context and conducting a literature review to understand the domain you are working with.
+1. Start by familiarizing with the context and conducting a literature review to understand the domain we are working with.
 
 2. Leverage large language models to assist in ontology development, such as generating suggestions or extracting relevant information from textual sources.
 
 3. Identify and utilize existing ontology design patterns (ODPs) that align with your modeling requirements. These patterns provide guidance and promote consistency.
 
-4. Identify specific words or terms that can serve as triggers for frame semantics, allowing you to map them to relevant frames within your ontology.
+4. Identify specific words or terms that can serve as triggers for frame semantics, allowing us to map them to relevant frames within your ontology.
 
 5. Integrate newly created ontology modules into the overall structure and ensure alignment and compatibility with existing modules or ontologies.
 
