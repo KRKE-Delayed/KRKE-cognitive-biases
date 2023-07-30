@@ -22,9 +22,9 @@ Powerful natural language processing models like ChatGPT-3.5 have the ability to
 
 **Give me a definition of "Status quo bias"**
 
-Status quo bias refers to the tendency of individuals to prefer the current or existing state of affairs over potential changes or alternatives. It is a `cognitive bias` that influences `decision-making`, often leading to a `resistance or reluctance to make changes` even when they may be beneficial.
+Status quo bias refers to the tendency of individuals to prefer the current or existing state of affairs over potential `changes` or alternatives. It is a `cognitive bias` that influences `decision-making`, often leading to a `resistance or reluctance to make changes` even when they may be beneficial.
 
-People with status quo bias tend to perceive the current situation as more comfortable, familiar, and less risky than potential alternatives. They may exhibit a preference for maintaining the current state, even when objectively better options are available. This bias can arise due to various factors, including fear of uncertainty, aversion to potential losses, and a desire to avoid the effort or disruption associated with change.
+People with status quo bias tend to perceive the current situation as more comfortable, `familiar`, and less risky than potential alternatives. They may exhibit a preference for maintaining the current state, even when objectively better options are available. This bias can arise due to various factors, including fear of `uncertainty`, aversion to potential losses, and a desire to avoid the effort or disruption associated with change.
 
 Status quo bias can impact various areas of life, including personal choices, organizational decision-making, public policy, and even societal norms. It can hinder progress, innovation, and adaptation to new circumstances. Recognizing and understanding status quo bias is important in order to make informed decisions and consider alternative possibilities that might lead to positive change.
 
@@ -75,17 +75,17 @@ Following the XD procedure, we now need to analyze CQs in terms of classes and p
 * CQ1: What are the characteristics of entities that challenge existing norms in a specific context?
 * CQ2: How can we represent the concept of "traditional" norms and their influence on entities' decisions and actions?
 * CQ3: What actions or initiatives are taken by entities to challenge and change existing norms?
-* CQ4: What are the potential consequences of perpetuating biases
+* CQ4: What are the potential consequences of perpetuating biases, and how can we represent them?
 
 ***Let's now ask about modeling this bias for an ontology***
 
 **If you should make an ontology of the "Status quo bias", what classes and properties would you create?**
 
 *Classes:*
-1. CongnitiveBias: Represents various types of biases, including the status quo bias. This class serves as a superclass for specific types of biases, such as GenderBias, ConfirmationBias, or AvailabilityBias.
+1. CognitiveBias: Represents various types of biases, including the status quo bias. This class serves as a superclass for specific types of biases, such as GenderBias, ConfirmationBias, or AvailabilityBias.
 2. StatusQuoBias: The main class representing the status quo bias itself.
 3. DecisionMaker: Represents individuals or entities who make decisions influenced by biases, including the status quo bias. Subclasses of DecisionMaker can be used to represent different types of decision-makers, such as Individuals, Organizations, or Governments.
-4. Norm: Represents individuals or entities who make decisions influenced by biases, including the status quo bias. Subclasses of DecisionMaker can be used to represent different types of decision-makers, such as Individuals, Organizations, or Governments.
+4. Norm: Represents societal norms, including traditional norms, that influence entities' decisions and actions. Subclasses can be created to represent different types of norms, such as GenderNorm, CulturalNorm, or LegalNorm.
 5. Alternative: Represents the potential options or alternatives that are being considered in a decision-making process.
 6. Change: Represents the concept of making a change or deviating from the current state of affairs.
 7. Factor: Represents the factors that contribute to the perpetuation of biases. Subclasses can represent various types of factors, such as SocialFactors, CognitiveFactors, or EnvironmentalFactors.
@@ -807,6 +807,99 @@ Result with Fred:
 
 Second way is using the QUOKKA tool "Concepts Extractor" we search for Lexical Unit (words) that we highlighted during our exploration of the bias and we search for already existing frames from Framester.
 
+ex. searching: norm, tradition, alternative, change, new, familiar, decision maker
+
+{
+  "data": [
+    {
+      "# DBpedia Entities": [], 
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Accomplishment", 
+        "https://w3id.org/framester/data/framestercore/AmountingTo", 
+        `"https://w3id.org/framester/data/framestercore/Cogitation"`, 
+        "https://w3id.org/framester/data/framestercore/PerformersAndRoles", 
+        `"https://w3id.org/framester/data/framestercore/SuccessOrFailure"`, 
+        "https://w3id.org/framester/data/framestercore/Quantity", 
+        "https://w3id.org/framester/data/framestercore/SuccessfulAction", 
+        "https://w3id.org/framester/data/framestercore/Containing", 
+        `"https://w3id.org/framester/data/framestercore/Custom"`, 
+        "https://w3id.org/framester/data/framestercore/Inclusion", 
+        `"https://w3id.org/framester/data/framestercore/Possibilities"`, 
+        `"https://w3id.org/framester/data/framestercore/Process"`, 
+        "https://w3id.org/framester/data/framestercore/ActivityResume", 
+        "https://w3id.org/framester/data/framestercore/Artifact", 
+        `"https://w3id.org/framester/data/framestercore/Awareness"`, 
+        "https://w3id.org/framester/data/framestercore/BeingInEffect", 
+        "https://w3id.org/framester/data/framestercore/Building", 
+        `"https://w3id.org/framester/data/framestercore/Causation"`, 
+        "https://w3id.org/framester/data/framestercore/CauseChange", 
+        "https://w3id.org/framester/data/framestercore/CauseToStart", 
+        "https://w3id.org/framester/data/framestercore/Clothing", 
+        "https://w3id.org/framester/data/framestercore/ChangeTool", 
+        `"https://w3id.org/framester/data/framestercore/Cogitation"`, 
+        "https://w3id.org/framester/data/framestercore/ComingUpWith", 
+        "https://w3id.org/framester/data/framestercore/CommerceScenario", 
+        "https://w3id.org/framester/data/framestercore/Containing", 
+        "https://w3id.org/framester/data/framestercore/Creating", 
+        "https://w3id.org/framester/data/framestercore/Deserving", 
+        `"https://w3id.org/framester/data/framestercore/Differentiation"`, 
+        "https://w3id.org/framester/data/framestercore/Documents", 
+        "https://w3id.org/framester/data/framestercore/Dressing", 
+        "https://w3id.org/framester/data/framestercore/Exchange", 
+        "https://w3id.org/framester/data/framestercore/Existence", 
+        "https://w3id.org/framester/data/framestercore/Inclusion", 
+        "https://w3id.org/framester/data/framestercore/IntentionallyCreate", 
+        "https://w3id.org/framester/data/framestercore/Motion", 
+        "https://w3id.org/framester/data/framestercore/Money", 
+        `"https://w3id.org/framester/data/framestercore/ObjectiveInfluence"`, 
+        `"https://w3id.org/framester/data/framestercore/People"`, 
+        "https://w3id.org/framester/data/framestercore/Quantity", 
+        "https://w3id.org/framester/data/framestercore/Rejuvenation", 
+        "https://w3id.org/framester/data/framestercore/Replacing", 
+        "https://w3id.org/framester/data/framestercore/Similarity", 
+        `"https://w3id.org/framester/data/framestercore/StateContinue"`, 
+        "https://w3id.org/framester/data/framestercore/Text", 
+        "https://w3id.org/framester/data/framestercore/Travel", 
+        "https://w3id.org/framester/data/framestercore/Type", 
+        `"https://w3id.org/framester/data/framestercore/UndergoChange"`, 
+        "https://w3id.org/framester/data/framestercore/Age", 
+        "https://w3id.org/framester/data/framestercore/TemporalCollocation", 
+        "https://w3id.org/framester/data/framestercore/Expertise", 
+        `"https://w3id.org/framester/data/framestercore/Familiarity"`, 
+        "https://w3id.org/framester/data/framestercore/Increment", 
+        "https://w3id.org/framester/data/framestercore/Employing", 
+        `"https://w3id.org/framester/data/framestercore/IntentionallyAct"`, 
+        "https://w3id.org/framester/data/framestercore/People", 
+        "https://w3id.org/framester/data/framestercore/PersonalRelationship", 
+        `"https://w3id.org/framester/data/framestercore/Typicality"`, 
+        "https://w3id.org/framester/data/framestercore/Collaboration", 
+        "https://w3id.org/framester/data/framestercore/PeopleByVocation", 
+        `"https://w3id.org/framester/data/framestercore/SocialConnection"`, 
+        "https://w3id.org/framester/data/framestercore/Expertise", 
+        `"https://w3id.org/framester/data/framestercore/Familiarity"`, 
+        "https://w3id.org/framester/data/framestercore/SubordinatesAndSuperiors"
+      ], 
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/norm", 
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/tradition", 
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/alternative", 
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/change", 
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/new", 
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/familiar", 
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/decisionMaker"
+      ], 
+      "#\u00a0causes": [], 
+      "#\u00a0derivedFrom": [], 
+      "#\u00a0formsOf": [], 
+      "#\u00a0hasSubEvent": [], 
+      "#\u00a0usedFor": []
+    }
+  ]
+}
+
+We need to think at our biases like complex situations that can be composed by more simpler ones.
+
+We start from QUOKKA analyzing the frames that are evoque from the lexical units we found while describing the bias. We can now compare the results with the definition of the bias given by ChatGPT. Which frames we should need to describe our bias? We need to distinguish what is necessary and what can be (intersection and oand or) - boolean reasoning. Define biases as classes of situations firstly - at the exstentional level - this means that typically they are compose by other situation already existing in the wolrd, so we need existing frames. This can be done top-down or starting from text, like we do with FRED and QUOKKA.
 
 
 ### 4. Words as frame semantic triggers

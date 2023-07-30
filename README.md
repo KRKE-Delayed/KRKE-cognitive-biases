@@ -68,12 +68,7 @@ In order to describe CPs, each one of them is associated with a *catalogue entry
 
 CPs are reusable solutions to recurrent modelling problems, these problems have two components: a domain and a use case (or task). A same domain can have many use cases, and a same use case can be found in different domains.
 Ontologies are usually considered models for a domain, but their use case is usually unknown. As reusable solutions, CPs must explicitly encode both a domain and a use case. Since use cases are extremely diversified, a catalogue of CPs requires the notion of a “Generic Use Case” (GUC), i.e. a generalization of use cases that can be provided as examples for an issue of domain modelling.
-A GUC is the expression of a recurrent scenario in different domain ontology projects.
-The intuition underlying GUC hierarchies is based on a methodological
-observation: ontologies must be built out of domain tasks that can be captured
-by means of *competency questions*. A competency question is a typical
-query that an expert might want to submit to a knowledge base of its target
-domain, for a certain task.
+A GUC is the expression of a recurrent scenario in different domain ontology projects. The intuition underlying GUC hierarchies is based on a methodological observation: ontologies must be built out of domain tasks that can be captured by means of *competency questions*. A competency question is a typical query that an expert might want to submit to a knowledge base of its target domain, for a certain task.
 
 How we select the right pattern? Trying to summarize, usually if we try to model a problem, we have two components in our Content ODPs, we have first the domain (where this application really will work) and, on the other hand, the requirements. The same domain can have many requirements and the same requirement can be found in different domains. So domain and requirements are things that are somehow to be representet for your content design pattern. A typical way of capturing requirements is by mean of **competency questions**, that are the key to your design patterns we are looking for. Content ODPs are collected and described in catalogues and comply to a common **presentation template**.
 
@@ -84,10 +79,10 @@ We need to analyze the sentence that contains the knowledge that need to be repr
 
 ![ODPs example](./documentation/img/ODPs-example.png)
 
-In the "Problem Space" we have all the available competency questions, we need to map our basic sentence to a competency questions that is about a person playing a character.
+In the "Problem Space" we have all the available competency questions, we need to map our basic sentence to a competency question that is about a person playing a character.
 If we find one in our "Problem Space" usually we have mapping betweeen the competency questions and the Ontology Design Patterns that are in the "Solution Space". We select for example an ODPs that is described with "represent objects and roles they play" and if it fits to our purpose we can take over this ontology template for our ontology and then represent this fact exactly with the according Ontology Design Pattern.
 
-We need a large repository where we can look for ODPs, the one we will use in our project is [Ontology Design Patterns](http://ontologydesignpatterns.org/)
+We need a large repository where we can look for ODPs, the one we will use in our project is [Ontology Design Patterns](http://ontologydesignpatterns.org/).
 
 ### **eXtreme Design principles and tasks**
 
@@ -97,7 +92,7 @@ XD principles are inspired by those of the agile software methodology called eXt
 
 **- Costumer stories, Competency Questions (CQs), and contextual statements.** The ontology requirements and its tasks are described in terms of small stories by the costumer representative. Designers work on those small stories and, together with the costumer, transform them in the form of CQs and contextual statements. Contestual statements are accompanyning assertions that explicit knowledge that is typically implicit in CQs. A CQ is a typical query that an expert might want to submit to a knowledge base of its target domain, for a certain task. It is a specific requirement on an ontology or a part of an ontology (e.g. an ontology design pattern). Given certain inputs, the ontology in conjunction with a reasoner can answer the competency question. CQs and contextual statements will be used through the whole development, and their definition is a key phase as the designers have the challenge to help the costumer in making explicit as much implicit knowledge as possible.
 
-**- CP reuse and modular design.** If there is a CP's Generic Use Case (GUC) that matches our Local Use Case (LUC) it has to be reused. For ou project we will use the design patterns collected in the [Ontology Design Patterns web site.](http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29)
+**- CP reuse and modular design.** If there is a CP's Generic Use Case (GUC) that matches our Local Use Case (LUC) it has to be reused. For our project we will use the design patterns collected in the [Ontology Design Patterns web site.](http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29)
 Under the assumption that there exist classes of problems that can be solved by applying common solutions (as it has been experienced in software engineering), the aim is to support reusability on the design side specifically. CPs are a very beneficial kind of pattern for ontology design, because they provide solutions to domain-oriented problems, and are directly reusable.
 CPs encode conceptual, rather than logical design patterns. They propose patterns for solving design problems for the domain classes and properties that populate an ontology, addressing content problems. They have an explicit non-logical vocabulary for a specific domain of interest (i.e. they are content-dependent). CPs provide solutions to domain modelling problems and affect only the specific region of the ontology dealing with such domain modelling problems. They are typically reused by applying specialization, extension, and composition to them. In principle, CPs do not depend on any specific language, however in order to reuse them as building blocks, they have to be implemented in some way. [1](Gangemi A., Presutti V. Ontology Design Patterns, in Staab S. et al. (eds.): Handbook of Ontologies (2nd edition), Springer, 2009.)
 
@@ -207,6 +202,9 @@ For reach our goal we will use the following technologies:
 * ChatGPT:
 https://chat.openai.com
 
+* OWL 2:
+https://www.w3.org/TR/owl2-syntax/#Ontologies
+
 * Ontology Design Pattern:
 http://ontologydesignpatterns.org
 
@@ -219,8 +217,8 @@ http://etna.istc.cnr.it/quokka/frames
 * FRED: 
 http://wit.istc.cnr.it/stlab-tools/fred/demo/
 
-* Framester endpoint:
-http://etna.istc.cnr.it/framester2/sparql
+* Framester:
+https://framester.github.io/
 
 * FrameNet:
 https://framenet.icsi.berkeley.edu/
@@ -230,6 +228,21 @@ https://protege.stanford.edu
 
 
 # Glossary
+
+## Axiom
+An axiom, postulate, or assumption is a statement that is taken to be true, to serve as a premise or starting point for further reasoning and arguments. The word comes from the Ancient Greek word ἀξίωμα (axíōma), meaning 'that which is thought worthy or fit' or 'that which commends itself as evident'.
+
+The precise definition varies across fields of study. In classic philosophy, an axiom is a statement that is so evident or well-established, that it is accepted without controversy or question.In modern logic, an axiom is a premise or starting point for reasoning.
+
+In mathematics, an axiom may be a "logical axiom" or a "non-logical axiom". Logical axioms are taken to be true within the system of logic they define and are often shown in symbolic form (e.g., (A and B) implies A), while non-logical axioms (e.g., a + b = b + a) are substantive assertions about the elements of the domain of a specific mathematical theory, such as arithmetic.
+
+Non-logical axioms may also be called "postulates" or "assumptions". In most cases, a non-logical axiom is simply a formal logical expression used in deduction to build a mathematical theory, and might or might not be self-evident in nature (e.g., the parallel postulate in Euclidean geometry). To axiomatize a system of knowledge is to show that its claims can be derived from a small, well-understood set of sentences (the axioms), and there are typically many ways to axiomatize a given mathematical domain.
+
+Any axiom is a statement that serves as a starting point from which other statements are logically derived. Whether it is meaningful (and, if so, what it means) for an axiom to be "true" is a subject of debate in the philosophy of mathematics.
+
+In onotology design axioms are assertions (including rules) in a logical form that together comprise the overall theory that the ontology describes in its domain of application. This definition differs from that of "axioms" in generative grammar and formal logic. In these disciplines, axioms include only statements asserted as a priori knowledge. As used here, "axioms" also include the theory derived from axiomatic statements.
+
+In an OWL 2 ontology a set of axioms — statements that say what is true in the domain - is the main component. OWL 2 provides an extensive set of axioms, all of which extend the Axiom class in the structural specification. Axioms in OWL 2 can be declarations, axioms about classes, axioms about object or data properties, datatype definitions, keys, assertions (sometimes also called facts), and axioms about annotations.
 
 ## Frame Semantics
 Frame semantics is a theory of linguistic meaning developed by Charles J. Fillmore that extends his earlier case grammar. It relates linguistic semantics to encyclopedic knowledge. The basic idea is that one cannot understand the meaning of a single word without access to all the essential knowledge that relates to that word. For example, one would not be able to understand the word "sell" without knowing anything about the situation of commercial transfer, which also involves, among other things, a seller, a buyer, goods, money, the relation between the money and the goods, the relations between the seller and the goods and the money, the relation between the buyer and the goods and the money and so on. Thus, a word activates, or evokes, a frame of semantic knowledge relating to the specific concept to which it refers (or highlights, in frame semantic terminology).
@@ -245,3 +258,11 @@ Lexical units (LU) are lemmas, with their part of speech, that evoke a specific 
 Example:
 
 Lexical units that evoke the `Complaining` frame (or more specific perspectivized versions of it, to be precise), include the verbs "complain", "grouse", "lament", and others.
+
+## Ontology Design Pattern (ODP)
+An OP is a modeling solution to solve a recurrent ontology design problem. It is a template that represents a schema for specific design solutions. An ODP consists of a set of “prototypical” ontology entities that constitute the “abstract form” of a pattern, and of a set of metadata about its use cases, motivations, provenance, the pros and cons of its application, the links to other patterns, etc. Design solutions based on ODPs encode ontology entities that apply, specialize, or instantiate the prototypical entities defined by the schema.
+
+## Content Ontology Design Pattern (CP)
+CPs are distinguished networked ontologies and have their own namespace. They cover a speciﬁc set of competency questions (requirements), which represent the problem they provide a solution for. Furthermore, CPs show certain characteristics, i.e. they are: computational, small, autonomous, hierarchical, cognitively relevant, linguistically relevant, and best practices.
+
+They show the following characteristics: CPs encode conceptual, rather than logical design patterns. In other words, while Logical OPs solve design problems independently of a particular conceptualization, CPs propose patterns for solving design problems for the domain classes and properties that populate an ontology, therefore addressing content problems. CPs are instantiations of Logical OPs (or of compositions of Logical OPs), featuring a non-empty signature. Hence, they have an explicit non-logical vocabulary for a specific domain of interest (i.e. they are content-dependent). CPs provide solutions to domain modeling problems and affect only the specific region of the ontology dealing with such domain modeling problems. They are typically reused by applying specialization, extension, and composition to them. In principle, CPs do not depend on any specific language, however in order to reuse them as building blocks, they have to be implemented in some way. In the portal *ontologydesignpatterns.org* we mainly deal with CPs in a Semantic Web context, hence we currently support OWL as a reference formalism for representation.
