@@ -4,129 +4,117 @@ In this documentation, we will outline all the phases that we will go through du
 
 # To avoid mistakes, we aim to preserve autonomy and group status and avoid irreversible decisions
 
-## Status quo bias
+## Group attribution error
 
 ### 1. Context and Literature State of the Art
 To understand the context and to ensure that our ontology will be aligned with current understading and research in the field we provide a Wikipedia definition of the bias and a link to research papers about the topic.
 
 **Wikipedia:**
-Status quo bias is an emotional bias; a preference for the maintenance of one's current or previous state of affairs, or a preference to not undertake any action to change this current or previous state. The current baseline (or status quo) is taken as a reference point, and any change from that baseline is perceived as a loss or gain. Corresponding to different alternatives, this current baseline or default option is perceived and evaluated by individuals as a positive. [Wikipedia Link](https://en.wikipedia.org/wiki/Status_quo_bias)
+The group attribution error refers to people's tendency to believe either
+
+  1. the characteristics of an individual group member are reflective of the group as a whole, or
+  2. a group's decision outcome must reflect the preferences of individual group members, even when external information is available suggesting otherwise. [Wikipedia Link](https://en.wikipedia.org/wiki/Group_attribution_error)
 
 **Reasearch paper:**
-[Samuelson, W., Zeckhauser, R., 1988. Status quo bias in decision making. J. Risk Uncertain. 1, 7–59.](https://scholar.harvard.edu/files/rzeckhauser/files/status_quo_bias_in_decision_making.pdf)
+[Allison, Scott T; Messick, David M (1985). "The group attribution error". Journal of Experimental Social Psychology. 21 (6): 563–579.](https://www.sciencedirect.com/science/article/abs/pii/0022103185900253?via%3Dihub)
 
 ### 2. Large Language Models (LLMs)
 Powerful natural language processing models like ChatGPT-3.5 have the ability to generate human-like text. LLMs can assist in ontology development by providing suggestions, genereting ontological elements and aiding in the extraction of relevant information from textual sources.
 
 ***Let's ask ChatGPT for a generic definition, just to get an idea of the domain.***
 
-**Give me a definition of "Status quo bias"**
+**Give me a definition of "Group attribution error"**
 
-Status quo bias refers to the tendency of individuals to prefer the current or existing state of affairs over potential changes or alternatives. It is a `cognitive bias` that influences `decision-making`, often leading to a `resistance or reluctance to make changes` even when they may be beneficial.
+Group attribution error, also known as group-serving bias or collective attribution error, refers to a `cognitive bias` in which individuals tend to attribute positive outcomes and successes of their group to internal factors such as talent, intelligence, or teamwork, while attributing negative outcomes or failures to external factors beyond their control. This bias often leads members of a group `to perceive` their collective as more favorable and competent `compared to other groups`.
 
-People with status quo bias tend to perceive the current situation as more comfortable, familiar, and less risky than potential alternatives. They may exhibit a preference for maintaining the current state, even when objectively better options are available. This bias can arise due to various factors, including fear of uncertainty, aversion to potential losses, and a desire to avoid the effort or disruption associated with change.
+The concept of group attribution error is closely related to the fundamental attribution error, which occurs at the individual level. The fundamental attribution error refers to the tendency to overemphasize dispositional (internal) factors and underestimate situational (external) factors when explaining the behavior of others.
 
-Status quo bias can impact various areas of life, including personal choices, organizational decision-making, public policy, and even societal norms. It can hinder progress, innovation, and adaptation to new circumstances. Recognizing and understanding status quo bias is important in order to make informed decisions and consider alternative possibilities that might lead to positive change.
+In the context of group attribution error, people tend to `overemphasize the positive qualities of their own group members` and downplay their shortcomings, while simultaneously `magnifying the negative qualities of other groups` and attributing their failures to inherent flaws. This bias can lead to intergroup conflicts, stereotypes, and prejudice, as well as hinder objective analysis and decision-making.
+
+Recognizing and understanding group attribution error can be essential in promoting `empathy, reducing prejudice, and fostering better intergroup relations`. It requires individuals to be more aware of their biases and to approach intergroup interactions with a more balanced and open-minded perspective.
 
 ***Let's ask to give us some examples of possible scenarios to better understand the context***
 
-**Give me 10 example scenarios od "Status quo bias"**
+**Give me 10 example scenarios of "Group attribution error"**
 
-Certainly! Here are ten example scenarios that illustrate the presence of status quo bias:
+Certainly! Here are ten example scenarios of group attribution error:
 
-1. Company `Decision-Making`: A company has been following outdated practices for years, but employees `resist` implementing `new` technologies or processes because they `prefer` the `familiar` way of doing things.
+1. Workplace Stereotyping: An employee assumes that all members of a certain department in their company are lazy and unproductive based on a few negative `experiences` with a couple of individuals from that department.
 
-2. Political Elections: Voters tend to favor incumbent candidates over `new` contenders, even if the incumbent's performance has been unsatisfactory, due to a perceived sense of `stability` and `fear` of the `unknown`.
+2. Ethnic Generalization: A person believes that all individuals from a particular `ethnicity` are inherently good at math and science, assuming that intelligence is uniformly distributed within that group.
 
-3. Investment Strategies: Investors stick to `traditional` investment options and are reluctant to explore `new`, potentially more profitable opportunities, as they `prefer` the stability and `familiarity` of their current investments.
+3. Sports Fan Rivalry: Fans of one sports team often `stereotype` the fans of a rival team, assuming they are all aggressive and unruly, `disregarding` the fact that both groups include diverse `individuals`.
 
-4. Organizational Change: Employees `resist` changes in organizational structure or policies, fearing the disruption and `uncertainty` that may come with the proposed changes, despite potential benefits.
+4. Political Group Bias: A person from one political party `perceives` members of the opposing party as all being close-minded and ignorant, while they believe that everyone within their own party is open-minded and well-informed.
 
-5. Personal Relationships: Individuals stay in unhealthy or unfulfilling relationships due to a `fear` of being alone or the `uncertainty` of starting anew, even if leaving might lead to better long-term outcomes.
+5. Religious Stereotyping: An individual assumes that all followers of a certain religion are conservative and intolerant, disregarding the diverse beliefs and practices within that religious group.
 
-6. Technology Adoption: People may hesitate to adopt `new` technologies, such as switching from `traditional` banking to online banking, because they feel more comfortable with their current methods, despite potential advantages.
+6. Nationality Prejudice: People may stereotype individuals from a particular country as being rude or arrogant based on a `negative` encounter with a few individuals, `ignoring` the fact that cultural attitudes can vary widely within a nation.
 
-7. Environmental Conservation: Despite evidence of the negative impact of certain behaviors on the environment, individuals may be resistant to change their habits or reduce consumption due to the `comfort` and `convenience` of the status quo.
+7. Academic Major Bias: A student from one academic major may believe that students from another major are all nerdy and socially awkward, failing to recognize the `variety` of `personalities` within each major.
 
-8. Healthcare Decision-Making: Patients may reject alternative treatment options or innovative therapies due to a `preference` for `traditional` or `familiar` medical approaches, even if the `new` options offer better outcomes.
+8. Age Group Generalization: Older adults might assume that all teenagers are lazy and uninterested in important issues, while teenagers may stereotype older adults as being out of touch and technologically illiterate.
 
-9. Educational Systems: Resistance to educational reforms, such as implementing `new` teaching methods or curriculum changes, can stem from the `preference` for maintaining established practices, even if they are outdated.
+9. Economic Class Perception: Individuals from different economic `classes` may stereotype each other, with some assuming that wealthy people are all snobbish and out of touch, while others assume that people from lower-income backgrounds are all lazy and unmotivated.
 
-10. Social Norms: Society may `resist` changes in social norms, such as gender roles or cultural `traditions`, due to a `preference` for preserving existing customs, even if those norms perpetuate inequality or outdated beliefs.
+10. Cultural Misunderstanding: A tourist visiting a `foreign` country may mistakenly believe that all locals share the same customs and `values`, leading to `misunderstandings` and potential `offense` due to cultural `differences`.
 
-These scenarios highlight how status quo bias can influence decision-making across various domains, hindering progress and potential improvements in favor of maintaining the current state of affairs.
+These scenarios illustrate how group attribution error can occur across various contexts and can lead to harmful assumptions and prejudices about different social groups. Overcoming this bias requires awareness, empathy, and a willingness to recognize and appreciate the diversity and individuality present in all groups.
+
 
 ***Let's ask for some user story and competency questions***
 
-**Consider the scenario "Social Norms" and give me a small user story from it**
+**Consider the scenario "Cultural Misunderstanding" and give me a small user story from it**
 
-User Story: Challenging Gender Stereotypes
+User Story: Bridging Cultural Misunderstanding
 
-As a socially conscious individual, I want to challenge gender `stereotypes` and promote equality in my community. I aim to break free from `traditional` social norms and make a positive impact by advocating for inclusivity and diversity.
+As an international student, I arrived in a foreign country to pursue my higher education. Being from a Middle Eastern background, I carried with me the customs and traditions that were deeply ingrained in my `upbringing`. However, I quickly realized that my new environment was quite different from what I was accustomed to.
 
-By initiating conversations, supporting initiatives, educating myself, and encouraging open-mindedness, I will actively `challenge the existing` gender norms. I will engage with media critically, support marginalized voices, and actively participate in discussions promoting gender equality. I will reflect on my own behavior, avoiding perpetuating stereotypes, and fostering an environment of respect and understanding.
+While attending a class, a fellow student approached me to start a conversation and he seemed hesitant and distant. I attributed this behavior to the assumption that he might have `stereotypical beliefs` about people from my region. However, instead of letting this `misunderstanding` persist, I decided to take the initiative `to bridge the gap` sharing some information about my home country, its rich cultural heritage, and the warm hospitality we offer to guests.
 
-Ultimately, I seek to contribute to a more inclusive society by challenging and dismantling gender `stereotypes`, fostering equal opportunities, and promoting individual expression beyond societal expectations.
+As the conversation progressed, we realized that cultural misunderstandings can easily lead to misconceptions. We realized that our `preconceived notions were unfounded`, and we were actually quite similar in many ways.
+
+This demonstrates how cultural understanding and `empathy` can break down `barriers` and foster meaningful connections among people from different backgrounds, learning the importance of addressing cultural misunderstandings proactively, embracing her identity while also recognizing the uniqueness of others.
+
+To overcoming group attribution error is possible through `genuine communication` and `open-mindedness`, ultimately creating a more `inclusive and harmonious environment`.
 
 *We can now derive CQs from the user story*
 
 Following the XD procedure, we now need to analyze CQs in terms of classes and properties restrictions in order to be able to answer our questions. The goal is to use the CQs to divide a complex situation into already existing frames.
 
-* CQ1: What are the characteristics of entities that challenge existing norms in a specific context?
-* CQ2: How can we represent the concept of "traditional" norms and their influence on entities' decisions and actions?
-* CQ3: What actions or initiatives are taken by entities to challenge and change existing norms?
-* CQ4: What are the potential consequences of perpetuating biases
+* CQ1: What are the awareness and prospects that allow to change preconceived notions in a social environment?
+* CQ2: How stereotypical beliefs affect relational ties?
+* CQ3: What beliefs create barriers between people from different group or contexts ?
 
 ***Let's now ask about modeling this bias for an ontology***
 
-**If you should make an ontology of the "Status quo bias", what classes and properties would you create?**
+**If you should make an ontology of the "Group attribution error", what classes and properties would you create?**
 
 *Classes:*
 1. CongnitiveBias: Represents various types of biases, including the status quo bias. This class serves as a superclass for specific types of biases, such as GenderBias, ConfirmationBias, or AvailabilityBias.
-2. StatusQuoBias: The main class representing the status quo bias itself.
-3. DecisionMaker: Represents individuals or entities who make decisions influenced by biases, including the status quo bias. Subclasses of DecisionMaker can be used to represent different types of decision-makers, such as Individuals, Organizations, or Governments.
-4. Norm: Represents individuals or entities who make decisions influenced by biases, including the status quo bias. Subclasses of DecisionMaker can be used to represent different types of decision-makers, such as Individuals, Organizations, or Governments.
-5. Alternative: Represents the potential options or alternatives that are being considered in a decision-making process.
-6. Change: Represents the concept of making a change or deviating from the current state of affairs.
-7. Factor: Represents the factors that contribute to the perpetuation of biases. Subclasses can represent various types of factors, such as SocialFactors, CognitiveFactors, or EnvironmentalFactors.
-8. Consequence: Represents the potential outcomes or consequences of perpetuating biases. Subclasses can represent different types of consequences, such as SocialConsequence, EconomicConsequence, or PsychologicalConsequence.
+2. GroupAttributionErrorBias: Represents the specific type of bias known as the GroupAttributionErrorBias
+3. Group: Represents a social, cultural, demographic, or any other type of group.
+4. Context: Describes the specific situations, contexts, or scenarios in which the GroupAttributionErrorBias is observed or relevant.
+5. SocialGroup: Represents a group of individuals who share common social or cultural characteristics.
+6. Behavior: Describes the actions, responses, or decision-making influenced by the GroupAttributionErrorBias.
+7. Impact: Represents the effects or consequences of the GroupAttributionErrorBias on individuals, groups, or situations.
+8. MitigationStrategy: Describes the strategies or approaches suggested to mitigate the negative effects of the GroupAttributionErrorBias.
+9. RecognitionStrategy: Represents the methods or approaches used by individuals to recognize and identify the GroupAttributionErrorBias.
+10. Stereotype: Represents a generalization or belief about a group that may or may not be accurate.
+11. Prejudice: Represents a biased attitude or judgment towards a group or its members.
 
 *Properties:*
-1. hasStatusQuoBias: Indicates that a DecisionMaker is influenced by the status quo bias.
-2. prefersStatusQuo: Indicates the preference of a DecisionMaker for the current state of affairs.
-3. considersAlternative: Relates a DecisionMaker to an Alternative being considered.
-4. influencedByNorm: Relates a DecisionMaker to a Norm that influences their decisions and actions.
-5. evaluatesConsequences: Represents the evaluation of the consequences or potential outcomes associated with an Alternative.
-6. contributesToBias: Relates a Factor to a specific type of Bias it contributes to, such as ConfirmationBias or AvailabilityBias.
-7. leadsToConsequence: Relates a Bias to a Consequence it may lead to, such as SocialConsequence or EconomicConsequence.
+1. hasTrait: Relates a person to a specific trait, capturing individual attributes.
+2. belongsToGroup: Relates a person to a group, defining ingroup-outgroup distinctions.
+3. influencesBehavior: Represents the impact of the bias on behavior, decision-making, or perceptions.
+4. hasImpact: Represents the impact of the bias observed or experienced by the Observer.
+5. relatesToInGroup: Indicates the connection of the bias to the In-Group of the Observer.
+6. occursInContext: Indicates the specific context or situation in which the GroupAttributionErrorBias was observed or relevant.
+7. holdsStereotype: Relates a group to a stereotype, specifying beliefs attributed to the group.
+8. exhibitsPrejudice: Relates a person to a prejudice, representing biased attitudes towards a group.
 
 **Let's ask for some example of usage of the ontology**
 
-*Example 1: Decision-Making in a Workplace*
-
-Entities: John (Individual), XYZ Corporation (Organization)
-Class: DecisionMaker
-Property: hasStatusQuoBias true (for John)
-
-Description: John works at XYZ Corporation and is responsible for making decisions regarding project assignments. He tends to favor the current team structure, often opting for the status quo, even if alternative team compositions could lead to better outcomes. The ontology can represent John as a DecisionMaker with the status quo bias (hasStatusQuoBias true). It can also capture the alternatives considered for team compositions (Alternative class) and how John evaluates the potential outcomes (evaluatesConsequences) when making these decisions.
-
-*Example 2: Challenging Gender Stereotypes Initiative*
-
-Entities: Sarah (Individual), Diverse Voices NGO (Organization)
-Classes: DecisionMaker, Alternative, Change
-Properties: considersAlternative, takesAction
-
-Description: Sarah is an advocate for gender equality and works with the Diverse Voices NGO. She launches an initiative to challenge gender stereotypes in media portrayals. The ontology can represent Sarah as a DecisionMaker and the initiative as an Alternative she is considering (considersAlternative). Additionally, it can capture the action Sarah takes by leading the initiative (takesAction) to promote positive change (Change class) in media representation, aiming to reduce the perpetuation of gender biases (CognitiveBias class).
-
-*Example 3: Cultural Norms and Gender Biases*
-
-Entities: USA (Country), Masculinity Norm (Norm)
-Classes: Norm, Bias
-Properties: influencesDecisionMaker, contributesToBias
-
-Description: In the USA, there exists a strong cultural norm of masculinity, which influences decision-makers, including those in the entertainment industry. This norm perpetuates gender biases in character portrayals and storylines. The ontology can represent the Norm class, with instances such as "Masculinity Norm," influencing decision-makers in the entertainment industry (influencesDecisionMaker). It can also capture how this norm contributes to the perpetuation of gender biases (contributesToBias), such as gender stereotypes and the status quo bias in character development.
-
-These examples demonstrate how the classes and properties of the ontology can be used to represent specific instances and relationships related to biases, decision-making, norms, actions, and consequences in various scenarios. By utilizing the ontology, you can effectively capture, organize, and reason about the data and knowledge within the domain of cognitive biases, enabling more insightful analysis and understanding of how biases influence decision-making and societal outcomes.
 
 ### 3. Ontology Design Patterns
 
