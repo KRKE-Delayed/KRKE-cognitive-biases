@@ -25,13 +25,13 @@ Powerful natural language processing models like ChatGPT-3.5 have the ability to
 
 **Give me a definition of "Group attribution error"**
 
-Group attribution error, also known as group-serving bias or collective attribution error, refers to a `cognitive bias` in which individuals tend to attribute positive outcomes and successes of their group to internal factors such as talent, intelligence, or teamwork, while attributing negative outcomes or failures to external factors beyond their control. This bias often leads members of a group `to perceive` their collective as more favorable and competent `compared to other groups`.
+Group attribution error, also known as group-serving bias or collective attribution error, refers to a `cognitive bias` in which individuals tend to attribute positive outcomes and successes of their group to internal factors such as talent, intelligence, or teamwork, while attributing negative outcomes or failures to external factors beyond their control. This bias often leads members of a group `to perceive` their collective as more favorable and competent `compared` to other groups.
 
 The concept of group attribution error is closely related to the fundamental attribution error, which occurs at the individual level. The fundamental attribution error refers to the tendency to overemphasize dispositional (internal) factors and underestimate situational (external) factors when explaining the behavior of others.
 
-In the context of group attribution error, people tend to `overemphasize the positive qualities of their own group members` and downplay their shortcomings, while simultaneously `magnifying the negative qualities of other groups` and attributing their failures to inherent flaws. This bias can lead to intergroup conflicts, stereotypes, and prejudice, as well as hinder objective analysis and decision-making.
+In the context of group attribution error, people tend to `overemphasize` the positive qualities of their own group members and downplay their shortcomings, while simultaneously magnifying the negative qualities of other groups and attributing their failures to inherent flaws. This bias can lead to `intergroup` conflicts, `stereotypes`, and `prejudice`, as well as hinder objective analysis and `decision-making`.
 
-Recognizing and understanding group attribution error can be essential in promoting `empathy, reducing prejudice, and fostering better intergroup relations`. It requires individuals to be more aware of their biases and to approach intergroup interactions with a more balanced and open-minded perspective.
+Recognizing and understanding group attribution error can be essential in promoting `empathy`, reducing prejudice, and fostering better intergroup relations. It requires individuals to be more aware of their biases and to approach intergroup interactions with a more balanced and open-minded perspective.
 
 ***Let's ask to give us some examples of possible scenarios to better understand the context***
 
@@ -71,11 +71,11 @@ As an international student, I arrived in a foreign country to pursue my higher 
 
 While attending a class, a fellow student approached me to start a conversation and he seemed hesitant and distant. I attributed this behavior to the assumption that he might have `stereotypical beliefs` about people from my region. However, instead of letting this `misunderstanding` persist, I decided to take the initiative `to bridge the gap` sharing some information about my home country, its rich cultural heritage, and the warm hospitality we offer to guests.
 
-As the conversation progressed, we realized that cultural misunderstandings can easily lead to misconceptions. We realized that our `preconceived notions were unfounded`, and we were actually quite similar in many ways.
+As the conversation progressed, we realized that cultural misunderstandings can easily lead to misconceptions. We realized that our `preconceived notions` were unfounded, and we were actually quite similar in many ways.
 
 This demonstrates how cultural understanding and `empathy` can break down `barriers` and foster meaningful connections among people from different backgrounds, learning the importance of addressing cultural misunderstandings proactively, embracing her identity while also recognizing the uniqueness of others.
 
-To overcoming group attribution error is possible through `genuine communication` and `open-mindedness`, ultimately creating a more `inclusive and harmonious environment`.
+To overcoming group attribution error is possible through genuine `communication` and `open-mindedness`, ultimately creating a more `inclusive` and harmonious environment.
 
 *We can now derive CQs from the user story*
 
