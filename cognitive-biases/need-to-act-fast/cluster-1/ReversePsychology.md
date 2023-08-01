@@ -24,7 +24,7 @@ Reverse psychology is a technique involving the assertion of a belief or behavio
 
 **Give me 10 example scenarios of "Reverse psychology"**
 
-1. **Parenting Technique: Bedtime Routine**: A parent wants their child to go to bed on time but faces resistance and refusal. `instead` of insisting on bedtime, the parent tells the child, "I bet you can't stay up past 9:00 PM." The reverse psychology triggers the child's desire to `prove` they can, resulting in the child willingly going to bed at the intended time.
+1. **Parenting Technique, Bedtime Routine**: A parent wants their child to go to bed on time but faces resistance and refusal. `instead` of insisting on bedtime, the parent tells the child, "I bet you can't stay up past 9:00 PM." The reverse psychology triggers the child's desire to `prove` they can, resulting in the child willingly going to bed at the intended time.
 
 2. **Healthy Eating Encouragement**: A nutritionist wants to encourage a client to choose healthier food options. `instead` of `directly` recommending healthier choices, the nutritionist says, "You probably won't like these delicious salads and fruits." The reverse psychology prompts the client to try the healthier options, eager to `prove` the nutritionist wrong.
 
