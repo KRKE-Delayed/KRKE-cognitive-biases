@@ -30,7 +30,7 @@ Status quo bias can impact various areas of life, including personal choices, or
 
 ***Let's ask to give us some examples of possible scenarios to better understand the context***
 
-**Give me 10 example scenarios od "Status quo bias"**
+**Give me 10 example scenarios of "Status quo bias"**
 
 Certainly! Here are ten example scenarios that illustrate the presence of status quo bias:
 
