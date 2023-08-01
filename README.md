@@ -266,3 +266,14 @@ An OP is a modeling solution to solve a recurrent ontology design problem. It is
 CPs are distinguished networked ontologies and have their own namespace. They cover a speciﬁc set of competency questions (requirements), which represent the problem they provide a solution for. Furthermore, CPs show certain characteristics, i.e. they are: computational, small, autonomous, hierarchical, cognitively relevant, linguistically relevant, and best practices.
 
 They show the following characteristics: CPs encode conceptual, rather than logical design patterns. In other words, while Logical OPs solve design problems independently of a particular conceptualization, CPs propose patterns for solving design problems for the domain classes and properties that populate an ontology, therefore addressing content problems. CPs are instantiations of Logical OPs (or of compositions of Logical OPs), featuring a non-empty signature. Hence, they have an explicit non-logical vocabulary for a specific domain of interest (i.e. they are content-dependent). CPs provide solutions to domain modeling problems and affect only the specific region of the ontology dealing with such domain modeling problems. They are typically reused by applying specialization, extension, and composition to them. In principle, CPs do not depend on any specific language, however in order to reuse them as building blocks, they have to be implemented in some way. In the portal *ontologydesignpatterns.org* we mainly deal with CPs in a Semantic Web context, hence we currently support OWL as a reference formalism for representation.
+
+-- TO FIX --
+Used CPs:
+
+CQs: What is before that? What's Next?
+http://ontologydesignpatterns.org/wiki/Submissions:Sequence
+Reusable OWL Building Block: http://ontologydesignpatterns.org/cp/owl/sequence.owl
+
+CQs: What are the consequences of this action?
+http://ontologydesignpatterns.org/wiki/Submissions:Action
+Reusable OWL Building Block: http://www.ontology.se/odp/content/owl/Action.owl
