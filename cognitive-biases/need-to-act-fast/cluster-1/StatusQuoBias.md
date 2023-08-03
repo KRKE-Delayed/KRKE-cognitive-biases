@@ -18,7 +18,7 @@ Status quo bias is an emotional bias; a preference for the maintenance of one's 
 
 **Give me a definition of "Status quo bias"**
 
-"Status quo bias" refers to the tendency of individuals to prefer the current or existing state of affairs over potential `changes` or alternatives. It is a `cognitive bias` that influences `decision-making`, often leading to a `resistance or reluctance to make changes` even when they may be beneficial.
+"Status quo bias" refers to the tendency of individuals to prefer the `current` or existing state of affairs over potential `changes` or alternatives. It is a `cognitive bias` that influences `decision-making`, often leading to a `resistance` or reluctance to make changes even when they may be beneficial.
 
 People with status quo bias tend to perceive the current situation as more comfortable, `familiar`, and less risky than potential alternatives. They may exhibit a preference for maintaining the current state, even when objectively better options are available. This bias can arise due to various factors, including fear of `uncertainty`, aversion to potential losses, and a desire to avoid the effort or disruption associated with change.
 
@@ -131,3 +131,816 @@ Properties: influencesDecisionMaker, contributesToBias
 Description: In the USA, there exists a strong cultural norm of masculinity, which influences decision-makers, including those in the entertainment industry. This norm perpetuates gender biases in character portrayals and storylines. The ontology can represent the Norm class, with instances such as "Masculinity Norm," influencing decision-makers in the entertainment industry (influencesDecisionMaker). It can also capture how this norm contributes to the perpetuation of gender biases (contributesToBias), such as gender stereotypes and the status quo bias in character development.
 
 These examples demonstrate how the classes and properties of the ontology can be used to represent specific instances and relationships related to biases, decision-making, norms, actions, and consequences in various scenarios. By utilizing the ontology, you can effectively capture, organize, and reason about the data and knowledge within the domain of cognitive biases, enabling more insightful analysis and understanding of how biases influence decision-making and societal outcomes.
+
+## 3. Lexical Units (LUs) to evoque frames from Framster
+
+For this bias we tried with these LUs:
+tradition
+costum
+preserve
+norm
+current
+
+The resulting frames are:
+        "https://w3id.org/framester/data/framestercore/Containing", 
+        "https://w3id.org/framester/data/framestercore/Custom", 
+        "https://w3id.org/framester/data/framestercore/Inclusion", 
+        "https://w3id.org/framester/data/framestercore/ActivityOngoing", 
+        "https://w3id.org/framester/data/framestercore/ActivityPrepare", 
+        "https://w3id.org/framester/data/framestercore/ActivityStop", 
+        "https://w3id.org/framester/data/framestercore/CauseToContinue", 
+        "https://w3id.org/framester/data/framestercore/CauseToStart", 
+        "https://w3id.org/framester/data/framestercore/ComingUpWith", 
+        "https://w3id.org/framester/data/framestercore/Compliance", 
+        "https://w3id.org/framester/data/framestercore/CookingCreation", 
+        "https://w3id.org/framester/data/framestercore/Creating", 
+        "https://w3id.org/framester/data/framestercore/Defend", 
+        "https://w3id.org/framester/data/framestercore/Employing", 
+        "https://w3id.org/framester/data/framestercore/Food", 
+        "https://w3id.org/framester/data/framestercore/Motion", 
+        "https://w3id.org/framester/data/framestercore/People", 
+        "https://w3id.org/framester/data/framestercore/PoliticalLocales", 
+        "https://w3id.org/framester/data/framestercore/Possession", 
+        "https://w3id.org/framester/data/framestercore/ProcessContinue", 
+        "https://w3id.org/framester/data/framestercore/ProcessStop", 
+        "https://w3id.org/framester/data/framestercore/Protecting", 
+        "https://w3id.org/framester/data/framestercore/SelfMotion", 
+        "https://w3id.org/framester/data/framestercore/TakingSides", 
+        "https://w3id.org/framester/data/framestercore/Travel", 
+        "https://w3id.org/framester/data/framestercore/Building", 
+        "https://w3id.org/framester/data/framestercore/IntentionallyCreate", 
+        "https://w3id.org/framester/data/framestercore/Preserving", 
+        "https://w3id.org/framester/data/framestercore/StateOfEntity", 
+        "https://w3id.org/framester/data/framestercore/Accomplishment", 
+        "https://w3id.org/framester/data/framestercore/AmountingTo", 
+        "https://w3id.org/framester/data/framestercore/Cogitation", 
+        "https://w3id.org/framester/data/framestercore/PerformersAndRoles", 
+        "https://w3id.org/framester/data/framestercore/SuccessOrFailure", 
+        "https://w3id.org/framester/data/framestercore/Quantity", 
+        "https://w3id.org/framester/data/framestercore/SuccessfulAction", 
+        "https://w3id.org/framester/data/framestercore/Arranging", 
+        "https://w3id.org/framester/data/framestercore/Event", 
+        "https://w3id.org/framester/data/framestercore/TemporalCollocation", 
+        "https://w3id.org/framester/data/framestercore/Quantity", 
+        "https://w3id.org/framester/data/framestercore/Sequence", 
+        "https://w3id.org/framester/data/framestercore/Electricity"
+
+While putting a scenario in FRED we obtain:
+
+Society may resist changes in social norms, such as gender roles or cultural traditions, due to a preference for preserving existing customs, even if those norms perpetuate inequality or outdated beliefs.
+
+
+Output format: 
+Turtle
+ 
+Result
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_142_146_even>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "even"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Even> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "142"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "146"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#RB> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#custom_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ExistingCustom> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Existing> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Norm>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_37_42_norms>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "norms"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#norm_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#norm_2> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Norm> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "37"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "42"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_49_51_as>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "as"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#As> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "49"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "51"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#perpetuate_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Perpetuate> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#norm_2> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#inequality_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#belief_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#entails>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#resist_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#union>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#outdate_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Existing>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/TimeVector> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-existing-adjectivesatellite-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_157_159_or>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "or"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Union> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "157"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "159"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#CC> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_77_87_traditions>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "traditions"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tradition_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tradition> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "77"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "87"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Perpetuate>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/ActivityOngoing> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-perpetuate-verb-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Inequality>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_attribute> , <https://w3id.org/framester/data/framestercore/Similarity> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-inequality-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_65_67_or>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "or"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Union> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "65"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "67"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#CC> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_173_183_inequality>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "inequality"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#inequality_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Inequality> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "173"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "183"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_98_108_preference>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "preference"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#preference_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Preference> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "98"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "108"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_59_64_roles>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "roles"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#role_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Role> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "59"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "64"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#resist_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Resist> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Society> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#change_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Even> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dueTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#preference_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_133_140_customs>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "customs"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#custom_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Custom> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "133"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "140"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Preference>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_feeling> , <https://w3id.org/framester/data/framestercore/Inclination> , <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-preference-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#outdate_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Outdate> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#belief_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#norm_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Norm> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#those> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#norm_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SocialNorm> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Social> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_124_132_existing>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "existing"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Existing> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "124"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "132"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tradition_1>
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#preference_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Preference> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Custom>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Society>
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#possibleType>
+                <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_147_149_if>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "if"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Entails> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "147"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "149"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_89_92_due>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "due"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Due> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "89"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "92"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_162_172_perpetuate>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "perpetuate"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#perpetuate_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Perpetuate> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "162"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "172"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBP> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_12_18_resist>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "resist"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#resist_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Resist> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "12"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "18"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VB> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_52_58_gender>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "gender"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#gender_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Gender> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "52"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "58"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NN> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#change_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Change> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#as>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#role_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#in>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#norm_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Preserve>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Preserving> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Possession> , <https://w3id.org/framester/data/framestercore/IntentionallyCreate> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Preserve_85000000> .
+
+<http://www.w3.org/2006/03/wn/wn30/instances/synset-inequality-noun-1>
+        <http://www.w3.org/2006/03/wn/wn30/schema/gloss>
+                "lack of equality; \"the growing inequality between rich and poor\""@en-us .
+
+<http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_196_203_beliefs>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "beliefs"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#belief_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Belief> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "196"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "203"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#in>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_113_123_preserving>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "preserving"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#preserve_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Preserve> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "113"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "123"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBG> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#entails>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_19_26_changes>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "changes"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#change_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Change> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "19"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "26"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNS> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_187_195_outdated>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "outdated"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#outdate_1> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Outdate> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "187"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "195"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#VBN> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Outdate>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disjunct> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cultural> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tradition> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#role_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#preserve_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Preserve> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#preference_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#custom_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Social>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/SocialInteractionEvaluation> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-social-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_93_95_to>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "to"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#To> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "93"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "95"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#TO> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Role>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#union>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_27_29_in>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "in"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#In> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "27"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "29"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#IN> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_68_76_cultural>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "cultural"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cultural> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "68"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "76"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#role_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#GenderRole> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#CulturalTradition> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cultural> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_0_7_Society>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Society"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Society> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "7"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#NNP> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dueTo>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#belief_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Belief> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Gender>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_communication> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-gender-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse>
+        a       <http://www.essepuntato.it/2008/12/earmark#StringDocuverse> ;
+        <http://www.essepuntato.it/2008/12/earmark#hasContent>
+                "Society may resist changes in social norms, such as gender roles or cultural traditions, due to a preference for preserving existing customs, even if those norms perpetuate inequality or outdated beliefs."^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#gender_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Gender> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#role_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#such> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_30_36_social>
+        a       <http://www.essepuntato.it/2008/12/earmark#PointerRange> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "social"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Social> ;
+        <http://www.essepuntato.it/2008/12/earmark#begins>
+                "30"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#ends>
+                "36"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.essepuntato.it/2008/12/earmark#refersTo>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#docuverse> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#JJ> .
+
+<http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Resist>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#v> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-defy-verb-2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/pos.owl#pennpos>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tradition>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#as>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#offset_150_161_those+norms>
+        <http://www.ontologydesignpatterns.org/ont/cnlp/coref.owl#coref>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#norm_2> .
+
+<http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#possibleType>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Even>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-even-adjective-1> .
+
+<http://www.essepuntato.it/2008/12/earmark#refersTo>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.essepuntato.it/2008/12/earmark#ends>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.essepuntato.it/2008/12/earmark#hasContent>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.w3.org/2002/07/owl#equivalentClass>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disjunct> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Role> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#role_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#union>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_2> .
+
+<http://www.essepuntato.it/2008/12/earmark#begins>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#inequality_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Inequality> .
+
+<http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#CulturalTradition>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tradition> .
+
+<http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/cnlp/coref.owl#coref>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#GenderRole>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Role> .
+
+<http://ontologydesignpatterns.org/cp/owl/semiotics.owl#hasInterpretant>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.w3.org/2006/03/wn/wn30/instances/synset-gender-noun-1>
+        <http://www.w3.org/2006/03/wn/wn30/schema/gloss>
+                "a grammatical category in inflected languages governing the agreement between nouns and pronouns and adjectives; in some languages it is quite arbitrary but in Indo-European languages it is usually based on sex or animateness"@en-us .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cultural>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-cultural-adjectivesatellite-2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SocialNorm>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Norm> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Change>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ExistingCustom>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Custom> .
+
+<http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Belief>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#n> .
+
+<http://www.w3.org/2000/01/rdf-schema#subClassOf>
+        a       <http://www.w3.org/2002/07/owl#ObjectProperty> .
+
+<http://www.w3.org/2006/03/wn/wn30/instances/synset-preference-noun-1>
+        <http://www.w3.org/2006/03/wn/wn30/schema/gloss>
+                "a strong liking; \"my own preference is for good literature\"; \"the Irish have a penchant for blarney\""@en-us .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Due>
+        <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#boxerpos>
+                <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#a> .
+
+By doing these two steps we see that for example the frame "Preserving" is evoqued in both cases. And checking with our definition we see that also "Preserving" and "Custom" can be useful.
+
