@@ -1,5 +1,7 @@
 # Reverse Psychology
 
+*## CLUSTER: To avoid mistakes, we aim to preserve autonomy and group status and avoid irreversible decisions*
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -66,6 +68,7 @@ Seeing their newfound enthusiasm, I `encourage` them to experiment fearlessly, b
 * CQ2: What are some effective strategies to counteract the influence of external cues and maintain rational decision-making?
 * CQ3: In what ways do contextual cues impact an individual's perception of value and attractiveness among available choices?
 * CQ4: How does the presence of additional options influence decision-making and alter individuals' preferences among the original choices?
+
 ---
 
 ***2.4 - Let's now ask about modeling this bias for an ontology***

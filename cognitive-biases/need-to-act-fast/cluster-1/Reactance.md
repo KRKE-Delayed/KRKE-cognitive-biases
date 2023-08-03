@@ -28,25 +28,25 @@ Reactance is a psychological phenomenon that occurs when individuals feel their 
 
 **Give me 10 example scenarios of "Reverse psychology"**
 
-1. **Teenage Rebellion:** A teenager's parents impose strict rules and curfews on them, leading the teen to feel their freedom is being restricted. In response to this perceived control, the teenager may engage in rebellious behavior, staying out later than allowed or engaging in activities explicitly prohibited by their parents.
+1. **Teenage Rebellion:** A teenager's parents impose strict rules and curfews on them, leading the teen to feel their freedom is being `restricted`. In response to this perceived `control`, the teenager may engage in `rebellious` behavior, staying out later than allowed or engaging in activities explicitly prohibited by their parents.
 
-2. **Workplace Micromanagement** An employee feels micromanaged by their supervisor, who closely monitors every task and decision. This level of supervision triggers feelings of reactance in the employee, causing them to resist the excessive control by seeking more autonomy or even considering job opportunities elsewhere.
+2. **Workplace Micromanagement** An employee feels micromanaged by their supervisor, who closely monitors every task and decision. This level of supervision triggers feelings of reactance in the employee, causing them to `resist` the excessive `control` by seeking more `autonomy` or even considering job opportunities elsewhere.
 
-3. **Parental Instructions:** A child is given precise instructions on how to play with a new toy, leaving no room for personal exploration or creativity. The child may resist following the instructions and instead opt for alternative ways of playing to assert their independence.
+3. **Parental Instructions:** A child is given precise instructions on how to play with a new toy, leaving no room for personal exploration or creativity. The child may `resist` following the instructions and instead opt for `alternative` ways of playing to assert their `independence`.
 
-4. **Advertising Overload:** A consumer encounters a constant bombardment of advertisements on social media and other platforms. The overwhelming presence of ads may trigger reactance, leading the consumer to ignore or actively avoid the advertised products.
+4. **Advertising Overload:** A consumer encounters a constant bombardment of advertisements on social media and other platforms. The `overwhelming` presence of ads may trigger reactance, leading the consumer to ignore or actively `avoid` the advertised products.
 
-5. **Banning Certain Content:** A school or organization bans access to certain websites or content deemed inappropriate. Instead of complying, individuals may feel motivated to find alternative ways to access the restricted content, driven by a desire to regain control over their choices.
+5. **Banning Certain Content:** A school or organization bans access to certain websites or content deemed inappropriate. Instead of complying, individuals may feel motivated to find `alternative` ways to access the `restricted` content, driven by a desire to regain `control` over their choices.
 
-6. **Relationship Pressure:** Friends or family members put pressure on someone to enter into a romantic relationship or marry, but the individual feels uncomfortable with the idea. The pressure may lead to reactance, causing the person to assert their right to make their own decisions about relationships.
+6. **Relationship Pressure:** Friends or family members put `pressure` on someone to enter into a romantic relationship or marry, but the individual feels uncomfortable with the idea. The `pressure` may lead to reactance, causing the person to assert their right to make their own decisions about relationships.
 
-7. **Government Mandates:** The government enforces new regulations or mandates that some citizens view as infringing upon their individual rights. In response, there may be protests or resistance to assert personal freedoms and autonomy.
+7. **Government Mandates:** The government enforces new regulations or mandates that some citizens view as infringing upon their individual rights. In response, there may be protests or `resistance` to assert personal freedoms and `autonomy`.
 
-8. **Health Recommendations:** A person is given specific health recommendations by their doctor, but they feel their autonomy is being challenged. As a result, they may be less motivated to follow the advice, even if it is beneficial for their well-being.
+8. **Health Recommendations:** A person is given specific health recommendations by their doctor, but they feel their `autonomy` is being challenged. As a result, they may be less motivated to follow the advice, even if it is beneficial for their well-being.
 
-9. **Social Expectations:** A person is expected to conform to certain social norms or expectations, such as dress code or behavior, but they feel restricted by these norms. They may respond by purposely deviating from the norms to assert their independence.
+9. **Social Expectations:** A person is expected to conform to certain social norms or expectations, such as dress code or behavior, but they feel `restricted` by these norms. They may respond by purposely deviating from the norms to assert their `independence`.
 
-10. **Academic Pressure:** Students face intense academic pressure from their parents or teachers to excel in certain subjects. This pressure may trigger reactance, causing students to resist or underperform in those subjects as a way of reclaiming control over their own academic choices.
+10. **Academic Pressure:** Students face intense academic `pressure` from their parents or teachers to excel in certain subjects. This `pressure` may trigger reactance, causing students to `resist` or underperform in those subjects as a way of reclaiming `control` over their own academic choices.
 
 ---
 
@@ -56,15 +56,15 @@ Reactance is a psychological phenomenon that occurs when individuals feel their 
 
 **User Story: Resisting Advertising Overload**
 
-As a social media user, I find myself bombarded with a constant stream of advertisements and sponsored content while scrolling through my feed. Recently, I've become increasingly frustrated with the overwhelming advertising overload that interrupts my online experience.
+As a social media user, I find myself bombarded with a constant stream of advertisements and sponsored content while scrolling through my feed. Recently, I've become increasingly frustrated with the `overwhelming` advertising `overload` that interrupts my online experience.
 
-One day, as I browse my favorite social media platform, I come across yet another intrusive ad that disrupts the flow of content I enjoy. Feeling a sense of reactance, I decide to take action against this advertising overload.
+One day, as I browse my favorite social media platform, I come across yet another intrusive ad that disrupts the flow of content I enjoy. Feeling a sense of reactance, I decide to take action against this advertising `overload`.
 
 Motivated to regain control over my online experience, I actively search for ad-blocker tools and extensions. By installing these tools, I successfully eliminate the intrusive advertisements from my feed. As a result, my online browsing becomes more enjoyable, and I feel empowered to make decisions about the content I want to engage with.
 
-Embracing my newfound autonomy, I also share my experience with friends and online communities, encouraging them to explore ad-blocking options as well. This collective reaction to advertising overload generates conversations about online user rights and the importance of preserving a seamless and personalized digital experience.
+Embracing my newfound `autonomy`, I also share my experience with friends and online communities, encouraging them to explore ad-blocking options as well. This collective reaction to advertising `overload` generates conversations about online user rights and the importance of preserving a seamless and personalized digital experience.
 
-With a sense of empowerment, I navigate my online space with more agency, actively resisting the influence of advertising overload and choosing the content that truly matters to me.
+With a sense of empowerment, I navigate my online space with more agency, actively `resisting` the influence of advertising `overload` and choosing the content that truly matters to me.
 
 ***We can now derive CQs from the user story***
 
@@ -76,7 +76,7 @@ With a sense of empowerment, I navigate my online space with more agency, active
 
 ***2.4 - Let's now ask about modeling this bias for an ontology***
 
-**If you should make an ontology of the "Decoy effect", what classes and properties would you create?**
+**If you should make an ontology of the "Reactance", what classes and properties would you create?**
 
 **Classes:**
 
