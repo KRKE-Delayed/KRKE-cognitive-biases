@@ -1,5 +1,7 @@
 # System Justification
 
+*## CLUSTER: To avoid mistakes, we aim to preserve autonomy and group status and avoid irreversible decisions*
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -18,9 +20,9 @@ According to system justification theory, people desire not only to hold favorab
 
 **Give me a definition of "System justification"**
 
-System justification bias is a cognitive bias that leads individuals to defend and rationalize the status quo or existing social, economic, and political systems, even if they may be unjust or unfair. It involves the tendency to justify and support the prevailing order, often by accepting and internalizing ideologies that promote inequality or disadvantage certain groups.
+System justification bias is a cognitive bias that leads individuals to `defend` and `rationalize` the `status quo` or existing social, economic, and political systems, even if they may be `unjust` or unfair. It involves the tendency to `justify` and support the prevailing order, often by accepting and internalizing ideologies that promote `inequality` or disadvantage certain groups.
 
-Individuals exhibiting system justification bias may downplay or dismiss evidence of systemic flaws, inequality, or discrimination, believing that the current system is legitimate and should be maintained. This bias can play a role in shaping attitudes, behaviors, and decision-making, contributing to the perpetuation of existing social structures and inequalities.
+Individuals exhibiting system justification bias may downplay or dismiss evidence of systemic flaws, `inequality`, or `discrimination`, believing that the current system is legitimate and should be maintained. This bias can play a role in shaping attitudes, behaviors, and decision-making, contributing to the perpetuation of existing social structures and inequalities.
 
 ---
 
@@ -28,25 +30,25 @@ Individuals exhibiting system justification bias may downplay or dismiss evidenc
 
 **Give me 10 example scenarios of "System justification"**
 
-1. **Gender Wage Gap:** Despite evidence of a gender wage gap in a company, some employees may justify the pay disparity by attributing it to perceived differences in skills or experience between genders, rather than acknowledging potential biases in the hiring and promotion processes.
+1. **Gender Wage Gap:** Despite evidence of a gender wage gap in a company, some employees may `justify` the pay disparity by attributing it to perceived differences in skills or experience between genders, rather than acknowledging potential biases in the hiring and promotion processes.
 
-2. **Racial Discrimination:** In a society with a history of racial discrimination, individuals may justify the existing racial disparities by believing that certain racial groups are naturally inferior or that historical events are not relevant to the present situation.
+2. **Racial Discrimination:** In a society with a history of racial discrimination, individuals may `justify` the existing racial disparities by believing that certain racial groups are naturally inferior or that historical events are not relevant to the present situation.
 
-3. **Income Inequality:** Some individuals may rationalize income inequality as a result of personal choices and merit, ignoring the influence of systemic barriers and lack of equal opportunities for economic advancement.
+3. **Income Inequality:** Some individuals may rationalize income `inequality` as a result of personal choices and merit, ignoring the influence of systemic barriers and lack of `equal` opportunities for economic advancement.
 
-4. **Political Party Loyalty:** Individuals may staunchly support and defend the policies of their preferred political party, even in the face of evidence showing negative consequences, due to their loyalty and identification with the party.
+4. **Political Party Loyalty:** Individuals may staunchly `support` and defend the policies of their preferred political party, even in the face of evidence showing negative consequences, due to their loyalty and identification with the party.
 
-5. **Corporate Accountability:** Despite evidence of unethical practices by a company, some stakeholders may justify the company's actions, believing that it is essential for the company's success and the overall economy.
+5. **Corporate Accountability:** Despite evidence of unethical practices by a company, some stakeholders may `justify` the company's actions, believing that it is essential for the company's success and the overall economy.
 
 6. **Criminal Justice System:** People may defend the actions of the criminal justice system, even when confronted with evidence of racial biases in arrests, sentencing, and incarceration rates, to maintain faith in the system's fairness and legitimacy.
 
-7. **Social Class Mobility:** Individuals from privileged backgrounds may attribute their success to personal merit and hard work, while downplaying the impact of social advantages and privileges they have received.
+7. **Social Class Mobility:** Individuals from privileged backgrounds may attribute their success to personal merit and hard work, while `downplaying` the impact of social advantages and privileges they have received.
 
-8. **Educational Opportunities:** In a society with unequal access to quality education, individuals may justify the disparities in educational opportunities by suggesting that certain groups are less capable or motivated to succeed academically.
+8. **Educational Opportunities:** In a society with unequal access to quality education, individuals may `justify` the disparities in educational opportunities by suggesting that certain groups are less capable or motivated to succeed academically.
 
-9. **Healthcare Disparities:** Despite evidence of healthcare disparities affecting marginalized communities, some individuals may justify the unequal access to healthcare by attributing it to individual responsibility and lifestyle choices.
+9. **Healthcare Disparities:** Despite evidence of healthcare disparities affecting marginalized communities, some individuals may `justify` the `unequal` access to healthcare by attributing it to individual responsibility and lifestyle choices.
 
-10. **Environmental Policies:** People may support environmentally harmful policies and practices to maintain economic growth and job opportunities, downplaying the long-term consequences of such decisions on the environment and future generations.
+10. **Environmental Policies:** People may `support` environmentally harmful policies and practices to maintain economic growth and job opportunities, `downplaying` the long-term consequences of such decisions on the environment and future generations.
 
 These scenarios demonstrate how system justification bias can manifest in various contexts and contribute to the perpetuation of existing social structures and inequalities by rationalizing and defending the status quo.
 
@@ -54,25 +56,23 @@ These scenarios demonstrate how system justification bias can manifest in variou
 
 ***2.3 - Let's ask for some user story and competency questions***
 
-**Consider the scenario "Advertising Overload" and give me a small user story from it**
-
-**User Story: Resisting Advertising Overload**
+**Consider the scenario "Gender Wage Gap" and give me a small user story from it**
 
 **User Story: Addressing the Gender Wage Gap**
 
 As a young professional working in a reputable company, I become aware of the gender wage gap issue through conversations with colleagues and media reports. I notice that female employees, despite having similar qualifications and experience as their male counterparts, are being paid less for equivalent positions.
 
-Motivated to address this inequality, I decide to gather data and evidence to understand the extent of the gender wage gap within the company. I conduct a thorough analysis of salaries, considering factors such as job roles, years of experience, and performance metrics.
+Motivated to address this `inequality`, I decide to gather data and evidence to understand the extent of the gender wage gap within the company. I conduct a thorough analysis of salaries, considering factors such as job roles, years of experience, and performance metrics.
 
-Upon discovering the substantial wage disparities, I feel compelled to advocate for change. I approach the human resources department with my findings, presenting a comprehensive report that highlights the wage discrepancies based on gender. I emphasize the importance of creating a fair and equitable pay structure for all employees, regardless of gender.
+Upon discovering the substantial wage `disparities`, I feel compelled to advocate for change. I approach the human resources department with my findings, presenting a comprehensive report that highlights the wage discrepancies based on gender. I emphasize the importance of creating a `fair` and equitable pay structure for all employees, regardless of gender.
 
-At first, some colleagues respond defensively, citing various reasons for the disparities. However, I persist in my efforts and collaborate with like-minded coworkers who share the same passion for workplace equality. Together, we form an internal diversity and inclusion committee, aiming to bring attention to the gender wage gap issue and advocate for meaningful changes.
+At first, some colleagues respond defensively, citing various reasons for the `disparities`. However, I persist in my efforts and collaborate with like-minded coworkers who share the same passion for workplace `equality`. Together, we form an internal diversity and inclusion committee, aiming to bring attention to the gender wage gap issue and advocate for meaningful changes.
 
-Through our collective efforts and persistence, the company begins to acknowledge the existence of the gender wage gap and takes active steps to address it. They implement measures such as salary reviews, transparent pay scales, and diversity training to ensure fair compensation practices.
+Through our collective efforts and persistence, the company begins to acknowledge the existence of the gender wage gap and takes active steps to address it. They implement measures such as salary reviews, transparent pay scales, and diversity training to ensure `fair` compensation practices.
 
 Over time, the company achieves significant progress in narrowing the gender wage gap. Female employees feel more valued and empowered, leading to improved morale and overall job satisfaction. The success of our initiative inspires other organizations to also review their pay structures and make necessary adjustments to create a more equitable workplace for everyone.
 
-As a result of our dedication and commitment, we contribute to reducing the gender wage gap not only within our company but also in the broader business community. Our actions demonstrate the importance of challenging and dismantling system justification bias, promoting equality, and fostering a workplace that values diversity and fairness.
+As a result of our dedication and commitment, we contribute to reducing the gender wage gap not only within our company but also in the broader business community. Our actions demonstrate the importance of challenging and dismantling system justification bias, promoting `equality`, and fostering a workplace that values diversity and fairness.
 
 ***We can now derive CQs from the user story***
 

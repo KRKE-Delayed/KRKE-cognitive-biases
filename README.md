@@ -6,60 +6,63 @@ A visualization of the cognitive bias cheat sheet has been provided by [John Man
 
 ![Cognitive Biases Codex](./documentation/img/cognitive-biases-codex-2016.png) 
 
-The biases are grouped into 20 unique mental strategies that we use for specific reasons.
-These 20 clusters of biases are gruoped by the general mental problem they attempt to address, which are: "What should we remember?"; "Too much information"; "Not enough meaning"; "Need to act fast".
+The biases are grouped into 20 unique mental strategies that we use for specific reasons. These 20 clusters of biases are grouped by the general mental problems they attempt to address, which are: "What should we remember?"; "Too much information"; "Not enough meaning"; "Need to act fast."
 
-In particular, we will focus on two cluster of biases respectly from the two mental problems "Need to act fast" and "Not enough meaning". They are:
+In particular, we will focus on two clusters of biases, respectively from the two mental problems "Need to act fast" and "Not enough meaning."
 
-1. **To avoid mistakes, we aim to preserve autonomy and group status and avoid irreversible decisions**
+They are:
 
-This includes:
-- Status quo bias
-- Social comparison bias
-- Decoy effect
-- Reverse psychology
-- Reactance
-- System justification
-
-2. **We fill in characteristics from stereotypes, generalities, and prior histories**
+**1. To avoid mistakes, we aim to preserve autonomy and group status and avoid irreversible decisions**
 
 This includes:
-- Group attribution error
-- Ultimate atribution error
-- Stereotyping
-- Essentialism 
-- Functional fixedness
-- Moral credential effect
-- Just-world hypothesis
-- Argument from fallacy
-- Authority bias
-- Automation bias
-- Bandwagon effect
-- Placebo effect
+**- Status quo bias**
+**- Social comparison bias**
+**- Decoy effect**
+**- Reverse psychology**
+**- Reactance**
+**- System justification**
+
+**2. We fill in characteristics from stereotypes, generalities, and prior histories**
+
+This includes:
+**- Group attribution error**
+**- Ultimate atribution error**
+**- Stereotyping**
+**- Essentialism** 
+**- Functional fixedness**
+**- Moral credential effect**
+**- Just-world hypothesis**
+**- Argument from fallacy**
+**- Authority bias**
+**- Automation bias**
+**- Bandwagon effect**
+**- Placebo effect**
 
 ## 📚 Methodology
 
 ### Overview
-Our final goal is modeling the biases presented above and create an onology for semantic web technologies using a specific iterative method for pattern-based onoltogy design, called **eXtreme Design (XD).**
 
-As stated in the paper "eXtreme Design with Content Ontology Design
-Patterns" by Valentina Presutti, Enrico Daga, Aldo Gangemi and Eva Blomqvist: "With the name eXtreme Design (XD), we identify an approach, a family of methods, and associated tools, based on the application, exploitation, and definition of **Ontology Design Patterns (ODPs)** for solving ontology development issues." In few words, XD is an incremental, iterative method for pattern-based ontology design.
+Our final goal is to model the biases presented above and create an ontology for semantic web technologies using a specific iterative method for pattern-based ontology design, called **eXtreme Design (XD).**
+
+As stated in the paper "eXtreme Design with Content Ontology Design Patterns" by Valentina Presutti, Enrico Daga, Aldo Gangemi, and Eva Blomqvist: "With the name eXtreme Design (XD), we identify an approach, a family of methods, and associated tools, based on the application, exploitation, and definition of **Ontology Design Patterns (ODPs)** for solving ontology development issues." In a few words, XD is an incremental, iterative method for pattern-based ontology design.
 
 ![XD Design Approach](./documentation/img/XD-design-approach.png)
 
-XD adopts the notion of ontology project, a development project characterized by two main sets: the *problem space*, which is composed of the actual modeling issues, here referred to as the *local problems*, that have to be addressed during the project and the *solution space*, which is made up of reusable modeling solutions.
-ODPs are associated with Generic Use Cases (GUC) and compose the ontology project’s solution space, which is used as the main knowledge source for addressing ontology design issues e.g. reengineering, evaluation, construction, etc., the ontology project’s problem space provides descriptions of the actual issues called “Local Use Cases” (LUC).
+XD adopts the notion of an ontology project, a development project characterized by two main sets: the *problem space*, which is composed of the actual modeling issues, here referred to as the *local problems*, that have to be addressed during the project, and the *solution space*, which is made up of reusable modeling solutions.
+
+ODPs are associated with Generic Use Cases (GUC) and compose the ontology project’s solution space. This space serves as the main knowledge source for addressing ontology design issues, such as reengineering, evaluation, construction, etc. On the other hand, the ontology project’s problem space provides descriptions of the actual issues called “Local Use Cases” (LUC).
 
 ### Ontology Design Patterns
-Before exploring the main principles and workflow of XD, it is worthy to spend some words on the methodology on which it is build upon: **Ontology Design Patterns** (Gangemi 2005) -- TO  FIX: CITATION [Gangemi 2005](Gangemi, A. (2005). Ontology design patterns for semantic web content. In The Semantic Web–ISWC 2005: 4th International Semantic Web Conference, ISWC 2005, Galway, Ireland, November 6-10, 2005. Proceedings 4 (pp. 262-276). Springer Berlin Heidelberg.) --.
 
-Adapting a design idea originally from architecture, introduced by Christopher Alexander, ODPs is based on the idea of recurring modeling problems and providing a set of adaptable standard solutions. A "pattern" is a solution to a problem in a given context. Originally described in "A Pattern Language" -- TO FIX: CITATION --, Alexander states that: "The elements of this language are entities called patterns. Each pattern describes a problem that occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing the same way twice."
-Ontology Design Patterns provide small reusable (abstract) ontology templates with explicit documentation, stored in a searchable repository ordered by **competency questions.**
-We distinguish:
-**- Content Patterns.** Domain dependent, language independent.
-**- Logical Patterns.** Domain independent, related to representation language.
-**- Presentation Patterns.** Ontology from user perspective, as e.g. naming conventions.
-**- Transformation Patterns** How to transform an ontology in another representation language.
+Before exploring the main principles and workflow of XD, it is worthy to spend some words on the methodology on which it is built upon: **Ontology Design Patterns** (Gangemi 2005)[1].
+
+Adapting a design idea originally from architecture, introduced by Christopher Alexander, ODPs are based on the idea of recurring modeling problems and providing a set of adaptable standard solutions. A "pattern" is a solution to a problem in a given context. Originally described in "A Pattern Language," Alexander states that: "The elements of this language are entities called patterns. Each pattern describes a problem that occurs over and over again in our environment and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing the same way twice."
+
+Ontology Design Patterns provide small, reusable (abstract) ontology templates with explicit documentation, stored in a searchable repository ordered by **Competency Questions (CQs).** We distinguish between:
+**- Content Patterns:** Domain-dependent, language-independent.
+**- Logical Patterns:** Domain-independent, related to representation language.
+**- Presentation Patterns:** Ontology from the user perspective, such as naming conventions.
+**- Transformation Patterns:** How to transform an ontology into another representation language.
 
 The two basic design principles building blocks are **Logical ODPs** and **Content ODPs (CPs).** The former solve design problems indipendently of a particular conceptualization or domain, while the latter, are patterns for solving design problems for the domain classes and properties that populate an ontology; they address content problems. They are connected since Content ODPs are instantiations of Logical ODPs (or compositions of Logical ODPs).
 
@@ -72,7 +75,7 @@ A GUC is the expression of a recurrent scenario in different domain ontology pro
 
 How we select the right pattern? Trying to summarize, usually if we try to model a problem, we have two components in our Content ODPs, we have first the domain (where this application really will work) and, on the other hand, the requirements. The same domain can have many requirements and the same requirement can be found in different domains. So domain and requirements are things that are somehow to be representet for your content design pattern. A typical way of capturing requirements is by mean of **competency questions**, that are the key to your design patterns we are looking for. Content ODPs are collected and described in catalogues and comply to a common **presentation template**.
 
-We try to provide an example. -- TO FIX: CITATION [HPI](Semantic Web Technologies, Dr. Harald Sack, Hasso Plattner Institute, University of Postdam) --
+We try to provide an example.[2]
 We want to model a fact like: *"Basil Rathbone played Sherlock Holmes in the 1939 movie 'The Hound of the Baskervilles'."*
 So we want to model the fact that somebody is taking over a temporary role.
 We need to analyze the sentence that contains the knowledge that need to be represented. We have to match what's is in the sentece with some kind of competency question about a person that plays a character.
@@ -86,7 +89,7 @@ We need a large repository where we can look for ODPs, the one we will use in ou
 
 ### **eXtreme Design principles and tasks**
 
-XD principles are inspired by those of the agile software methodology called eXtreme Programming (XP). The main idea of agile software development is to be able to incorporate changes easily, in any stage of the development. [Presutti V., Daga E., Gangemi A., Blomqvist E. - eXtreme Design with Content Ontology Design Patterns - Semantic Technology Laboratory, ISTC_CNR] -- TO FIX: CITATION -- The method make intesive use of Content Ontology Design Patterns (CPs) and its principles are based on modular design and collaboration. Main XD principles can be summarized as follow:
+XD principles are inspired by those of the agile software methodology called eXtreme Programming (XP). The main idea of agile software development is to be able to incorporate changes easily, in any stage of the development.[3] The method make intesive use of Content Ontology Design Patterns (CPs) and its principles are based on modular design and collaboration. Main XD principles can be summarized as follow:
 
 **- Costumer involvement and feedback.** A key point is to formulate complete and correct assumptions on the domain we want to model. Domain experts should be involved from the start in order to favoring the explicit expression of knowledge that is usually implicit in requirement documents, including competency questions.
 
@@ -94,7 +97,7 @@ XD principles are inspired by those of the agile software methodology called eXt
 
 **- CP reuse and modular design.** If there is a CP's Generic Use Case (GUC) that matches our Local Use Case (LUC) it has to be reused. For our project we will use the design patterns collected in the [Ontology Design Patterns web site.](http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29)
 Under the assumption that there exist classes of problems that can be solved by applying common solutions (as it has been experienced in software engineering), the aim is to support reusability on the design side specifically. CPs are a very beneficial kind of pattern for ontology design, because they provide solutions to domain-oriented problems, and are directly reusable.
-CPs encode conceptual, rather than logical design patterns. They propose patterns for solving design problems for the domain classes and properties that populate an ontology, addressing content problems. They have an explicit non-logical vocabulary for a specific domain of interest (i.e. they are content-dependent). CPs provide solutions to domain modelling problems and affect only the specific region of the ontology dealing with such domain modelling problems. They are typically reused by applying specialization, extension, and composition to them. In principle, CPs do not depend on any specific language, however in order to reuse them as building blocks, they have to be implemented in some way. [1](Gangemi A., Presutti V. Ontology Design Patterns, in Staab S. et al. (eds.): Handbook of Ontologies (2nd edition), Springer, 2009.)
+CPs encode conceptual, rather than logical design patterns. They propose patterns for solving design problems for the domain classes and properties that populate an ontology, addressing content problems. They have an explicit non-logical vocabulary for a specific domain of interest (i.e. they are content-dependent). CPs provide solutions to domain modelling problems and affect only the specific region of the ontology dealing with such domain modelling problems. They are typically reused by applying specialization, extension, and composition to them. In principle, CPs do not depend on any specific language, however in order to reuse them as building blocks, they have to be implemented in some way.[4]
 
 **- Collaboration and Integration.** Since the ontology is developed in a modular way, integration is a key aspect of XD. Collaboration and constant sharing of knowledge is needed in a XD setting, in fact similar or even the same CQs and sentences can be defined for different stories. When this happens, it is important e.g. that the same CP is reused.
 
@@ -141,10 +144,15 @@ The goal of this task is to select which of those patterns should be used for so
 
 **Task 8. Reuse and integrate selected CPs.**
 The term “reuse” here refers to the application of typical operation that can be applied to CPs i.e. import, specialization, and composition. The result of this task is an UML diagram.
+
 This task can be divided in sub-tasks:
+
 **Task 8.1.** Select a CP that has not been integrated yet.
+
 **Task 8.2.** Specialization: Identify CP's entities to be specialized and create subclass and subproperty axioms.
+
 **Task 8.3.** Composition: Identify CP's entities and axioms to be aligned with the module under development and align them.
+
 Iterate over the sub-tasks until all CPs have benn integrated.
 
 **Task 9. Test and fix.**
@@ -267,6 +275,29 @@ CPs are distinguished networked ontologies and have their own namespace. They co
 
 They show the following characteristics: CPs encode conceptual, rather than logical design patterns. In other words, while Logical OPs solve design problems independently of a particular conceptualization, CPs propose patterns for solving design problems for the domain classes and properties that populate an ontology, therefore addressing content problems. CPs are instantiations of Logical OPs (or of compositions of Logical OPs), featuring a non-empty signature. Hence, they have an explicit non-logical vocabulary for a specific domain of interest (i.e. they are content-dependent). CPs provide solutions to domain modeling problems and affect only the specific region of the ontology dealing with such domain modeling problems. They are typically reused by applying specialization, extension, and composition to them. In principle, CPs do not depend on any specific language, however in order to reuse them as building blocks, they have to be implemented in some way. In the portal *ontologydesignpatterns.org* we mainly deal with CPs in a Semantic Web context, hence we currently support OWL as a reference formalism for representation.
 
+## Open World Reasoning
+In Open World Assumption the existence of further individuals is possible, if they are not explicitly excluded. The biggest single hurdle to understanding OWL and Description Logics is the use of Open World Reasoning. Almost certainly, all systems that newcomers to OWL will have encountered previously use closed world reasoning with “negation as failure” – i.e. if something cannot be found, it is assumed to be absent, e.g. databases, logic programming, constraint languages in frame systems, etc. By contrast, OWL uses open world reasoning with negation as unsatisfiability - i.e. something is false only if it can be proved to contradict other information in the ontology.
+
+### References
+
+[1] Gangemi, A. - Ontology design patterns for semantic web content. In The Semantic Web–ISWC 2005: 4th International Semantic Web Conference, ISWC 2005, Galway, Ireland, November 6-10, 2005. Proceedings 4 (pp. 262-276). Springer Berlin Heidelberg.
+
+[2] OpenHPI Tutorials - Knowledge Engineering with Semantic Web Technologies, Dr. Harald Sack, Hasso Plattner Institute, University of Postdam [YouTube](https://www.youtube.com/playlist?list=PLoOmvuyo5UAcBXlhTti7kzetSsi1PpJGR).
+
+[3] Presutti, V., Daga, E., Gangemi, A., & Blomqvist, E. (2009, October). eXtreme design with content ontology design patterns. In Proc. Workshop on Ontology Patterns (pp. 83-97).
+
+[4] Gangemi A., Presutti V. Ontology Design Patterns, in Staab S. et al. (eds.): Handbook of Ontologies (2nd edition), Springer, 2009.
+
+
+
+
+
+
+
+
+
+
+
 -- TO FIX --
 Used CPs:
 
@@ -277,3 +308,25 @@ Reusable OWL Building Block: http://ontologydesignpatterns.org/cp/owl/sequence.o
 CQs: What are the consequences of this action?
 http://ontologydesignpatterns.org/wiki/Submissions:Action
 Reusable OWL Building Block: http://www.ontology.se/odp/content/owl/Action.owl
+
+To practically import or link your classes to frames from FrameNet in Protégé, you can follow these steps:
+
+Obtain FrameNet Data: First, you need to obtain the FrameNet data, which is typically available in RDF format. FrameNet provides downloadable RDF files that contain information about frames, frame elements, lexical units, and their relationships.
+
+Import FrameNet Ontology: In Protégé, go to the "File" menu and select "Import OWL Ontology." Choose the RDF file that contains the FrameNet data you want to use.
+
+Inspect Imported Classes: Once the FrameNet data is imported, you will see the classes representing frames and other related entities in the "Classes" tab on the left-hand side of Protégé.
+
+Create Your Bias Classes: In your ontology, create classes to represent the biases you are modeling. For example, create a class called "StatusQuoBias" to represent the status quo bias.
+
+Define Object Properties: Create object properties in your ontology to represent the relationships between biases and frames. For example, create an object property called "hasFrame" to indicate that a bias has a specific frame associated with it.
+
+Link Biases to Frames: For each bias you want to link to a frame, go to the "Individuals" tab and create an instance of the bias class (e.g., "StatusQuoBiasInstance").
+
+Assert Object Property Relationships: Once you have an instance of the bias, use object property assertions to link the bias instance to the corresponding frame classes. For example, to link "StatusQuoBiasInstance" to "Frame1," create the following object property assertion:
+
+"StatusQuoBiasInstance" hasFrame "Frame1"
+
+Reasoning and Validation: Optionally, use a reasoner in Protégé to perform inference and validate the ontology. The reasoner will infer the relationships between biases and frames based on the asserted object property assertions.
+
+By following these steps, you can practically import the frames from FrameNet into your ontology in Protégé and link your custom classes (representing biases) to those frames. This approach allows you to enrich your ontology with external knowledge from FrameNet and create meaningful relationships between your domain-specific concepts and the frames defined in FrameNet.

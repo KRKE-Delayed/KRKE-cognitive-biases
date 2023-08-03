@@ -1,5 +1,7 @@
 # Social Comparison Bias
 
+*## CLUSTER: To avoid mistakes, we aim to preserve autonomy and group status and avoid irreversible decisions*
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -28,27 +30,25 @@ This bias is particularly prevalent in today's interconnected world, where socia
 
 **Give me 10 example scenarios of "Social comparison bias"**
 
-Certainly! Here are ten example scenarios that illustrate the Social Comparison Bias:
+1. **Academic Achievement:** Alice, a student, feels `demotivated` and `discouraged` after `comparing` her grades to those of her classmates. Despite achieving good grades, she constantly compares herself to the `top-performing` students, leading her to doubt her academic `abilities`.
 
-1. **Academic Achievement**: Alice, a student, feels `demotivated` and `discouraged` after `comparing` her grades to those of her classmates. Despite achieving good grades, she constantly compares herself to the `top-performing` students, leading her to doubt her academic `abilities`.
+2. **Career Advancement:** Bob, a young professional, constantly `compares` his career progress to that of his colleagues. When he sees his `peers` receiving promotions or recognition, he feels dissatisfied with his own career growth, even if he is doing well in his job.
 
-2. **Career Advancement**: Bob, a young professional, constantly `compares` his career progress to that of his colleagues. When he sees his `peers` receiving promotions or recognition, he feels dissatisfied with his own career growth, even if he is doing well in his job.
+3. **Social Media Influence:** Clara spends hours scrolling through social media, `comparing` her life to carefully curated posts of her friends. She often `feels inadequate` and envious of the seemingly perfect lives displayed by others on social media.
 
-3. **Social Media Influence**: Clara spends hours scrolling through social media, `comparing` her life to carefully curated posts of her friends. She often `feels inadequate` and envious of the seemingly perfect lives displayed by others on social media.
+4. **Physical Appearance:** Daniel `compares` his body image to fitness influencers and models, leading him to develop a negative `self-image` and unrealistic body standards.
 
-4. **Physical Appearance**: Daniel `compares` his body image to fitness influencers and models, leading him to develop a negative `self-image` and unrealistic body standards.
+5. **Material Possessions:** Emily becomes discontent with her belongings after `comparing` them to the luxurious possessions of her neighbors. She feels a constant need to acquire more to `match` their lifestyle.
 
-5. **Material Possessions**: Emily becomes discontent with her belongings after `comparing` them to the luxurious possessions of her neighbors. She feels a constant need to acquire more to `match` their lifestyle.
+6. **Personal Achievements:** Greg, an artist, feels `demoralized` when he `compares` his artistic skills to those of renowned artists. He struggles with feelings of inadequacy despite his own unique talents.
 
-6. **Personal Achievements**: Greg, an artist, feels `demoralized` when he `compares` his artistic skills to those of renowned artists. He struggles with feelings of inadequacy despite his own unique talents.
+7. **Relationship Status:** Hannah feels pressure to find a partner after `comparing` herself to her friends who are in committed relationships. She fears being judged and views her single status `negatively`.
 
-7. **Relationship Status**: Hannah feels pressure to find a partner after `comparing` herself to her friends who are in committed relationships. She fears being judged and views her single status `negatively`.
+8. **Parenting Skills:** Ian, a new parent, becomes `anxious` when `comparing` his parenting approach to other parents. He worries that he is not doing as well as they are, despite the uniqueness of each child and parenting journey.
 
-8. **Parenting Skills**: Ian, a new parent, becomes `anxious` when `comparing` his parenting approach to other parents. He worries that he is not doing as well as they are, despite the uniqueness of each child and parenting journey.
+9. **Financial Success:** Jack `feels unsatisfied` with his financial situation after `comparing` his income and possessions to those of wealthier friends. He neglects his own financial achievements and progress.
 
-9. **Financial Success**: Jack `feels unsatisfied` with his financial situation after `comparing` his income and possessions to those of wealthier friends. He neglects his own financial achievements and progress.
-
-10. **Athletic Abilities**: Katie, an amateur athlete, becomes `disheartened` when she `compares` her sports `performance` to that of professional athletes. She `underestimates` her own progress and dedication.
+10. **Athletic Abilities:** Katie, an amateur athlete, becomes `disheartened` when she `compares` her sports `performance` to that of professional athletes. She `underestimates` her own progress and dedication.
 
 These scenarios demonstrate how the Social Comparison Bias can manifest in various aspects of life and how it can influence individuals' perceptions, emotions, and behaviors. It is important to be aware of this bias and its effects, as it can impact mental well-being and lead to unnecessary stress and dissatisfaction.
 
@@ -68,6 +68,7 @@ As an artist sharing my work on social media, I often find myself `comparing` my
 * CQ2: What are the common emotions and reactions triggered by social comparison situations?
 * CQ3: In what ways does social comparison influence individuals' self-esteem and self-worth?
 * CQ4: How do people cope with feelings of inadequacy or dissatisfaction arising from social comparison?
+
 ---
 
 ***2.4 - Let's now ask about modeling this bias for an ontology***
@@ -92,6 +93,7 @@ As an artist sharing my work on social media, I often find myself `comparing` my
 4. **influencesSelfEsteem:** Indicates that social comparison can influence an individual's self-esteem.
 5. **leadsToDecision:** Relates social comparison to the decisions or actions it may lead individuals to take.
 6. **employsCopingStrategy:** Relates an individual to coping strategies they use in response to social comparison.
+
 ---
 
 ***2.5 - Let's ask for some example of usage of the ontology***
