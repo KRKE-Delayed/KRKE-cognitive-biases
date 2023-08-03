@@ -3,7 +3,7 @@
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
- the moral credential effect, is a bias that occurs when a person's track record as a good egalitarian establishes in them an unconscious ethical certification, endorsement, or license that increases the likelihood of less egalitarian decisions later. This effect occurs even when the audience or moral peer group is unaware of the affected person's previously established moral credential. For example, individuals who had the opportunity to recruit a woman or Black person in one setting were more likely to say later, in a different setting, that a job would be better suited for a man or a white person.[5] Similar effects also appear to occur when a person observes another person from a group they identify with making an egalitarian decision.
+The Moral credential effect, is a bias that occurs when a person's track record as a good egalitarian establishes in them an unconscious ethical certification, endorsement, or license that increases the likelihood of less egalitarian decisions later. This effect occurs even when the audience or moral peer group is unaware of the affected person's previously established moral credential. For example, individuals who had the opportunity to recruit a woman or Black person in one setting were more likely to say later, in a different setting, that a job would be better suited for a man or a white person. Similar effects also appear to occur when a person observes another person from a group they identify with making an egalitarian decision.
 [Wikipedia Link](https://en.wikipedia.org/wiki/Self-licensing#:~:text=A%20large%20subset%20of%20this,of%20less%20egalitarian%20decisions%20later.)
 
 **Reasearch paper:**
