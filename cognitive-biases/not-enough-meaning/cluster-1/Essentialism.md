@@ -1,5 +1,7 @@
 # Essentialism bias
 
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -168,3 +170,23 @@ isInherent: false
 isAttributedToGroup: NonNativeSpeakers
 
 In these examples, the ontology's classes and properties help represent and organize the concepts of essentialism bias, specific biases, groups, and traits. The properties establish meaningful relationships between instances, allowing us to model real-world situations where essentialism bias can occur and its implications on various groups and traits.
+
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- identity**
+**- generalize**
+**- stereotype**
+**- gruop**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+1. **Gender Roles**: `Assuming` that all women are naturally `inclined` towards caregiving and homemaking, while all men are naturally inclined towards leadership and assertiveness.
+
+By doing these two steps, we selected the following **frames**:
+
+**- Categorization**
+**- Aggregate**

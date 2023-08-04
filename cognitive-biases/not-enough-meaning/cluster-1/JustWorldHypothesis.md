@@ -1,5 +1,7 @@
 # Just-world hypothesis bias
 
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**

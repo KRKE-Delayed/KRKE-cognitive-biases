@@ -1,5 +1,7 @@
 # Fuctional Fixedness bias
 
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -47,7 +49,7 @@ Certainly, here are ten example scenarios illustrating functional fixedness bias
 
 10. **Plastic Bottle as Plant Watering Device**: People might overlook using a plastic bottle with holes in the cap as a DIY watering device for potted plants, due to their fixed perception of plastic bottles as only beverage containers.
 
-In each of these scenarios, functional fixedness bias limits individuals from seeing alternative, creative uses for familiar objects, hindering their ability to solve problems in `innovative` ways.
+In each of these scenarios, functional fixedness bias limits individuals from seeing alternative, creative uses for familiar objects, hindering their ability to solve problems in innovative ways.
 
 ---
 
@@ -141,3 +143,25 @@ Explanation:
 In this scenario, Maria explores how cultural norms influence functional fixedness. The property "Cultural Influence" under the class "Cultural Influence" allows Maria to examine how the tribe's distinct cultural perspectives and practices affect their perception of object functions. This highlights the role of culture in shaping functional fixedness and the potential for different societies to exhibit varying levels of this cognitive bias.
 
 These examples illustrate how the classes and properties within the ontology can be applied to diverse situations, showcasing the impact of functional fixedness on problem-solving, the use of strategies to overcome it, and its interaction with cultural influences.
+
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- fixed**
+**- habitual**
+**- potential**
+**- perception**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+4. **Jar as a Container**: Someone might struggle to see a glass jar as a potential makeshift drinking glass or container for non-food items, due to their fixed `perception` of it being solely a storage container.
+
+By doing these two steps, we selected the following **frames**:
+
+**- Possibility**
+**- CommunicateCategorization**
+**- PerceptionExperience**
+**- Custom**

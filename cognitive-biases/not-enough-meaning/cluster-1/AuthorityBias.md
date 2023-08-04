@@ -1,5 +1,7 @@
 # Authority bias
 
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -97,15 +99,16 @@ This user story illustrates how an individual's awareness of the authority bias 
 
 **Properties:**
 
-1. **perceivedAuthority:** Relates information to the perceived authority or expertise of the source presenting it.
-2. **credibilityAssessment:** Connects individuals to their process of evaluating the credibility of a source before accepting information.
-3. **unquestionedAcceptance:**  Indicates that an individual accepts information without critical evaluation due to the influence of the authority bias.
-4. **evidenceEvaluation:** Represents the act of critically assessing the evidence and reasoning behind information, irrespective of the source's authority.
-5. **expertiseRecognition:** Relates an individual to their ability to recognize genuine expertise and credentials in a particular field.
-6. **criticalThinking:** Illustrates the skill of questioning and analyzing information, even if it comes from an authoritative source.
-7. **independentVerification:** Depicts the practice of seeking additional sources or evidence to corroborate information before accepting it.
-8. **alternativeViewpointConsideration:** Connects an individual to their willingness to explore and evaluate information from sources with diverse perspectives.
-9. **contextualAnalysis:** Describes the process of considering the context and potential biases of a source before accepting its information as accurate.
+1. **hasAuthorityBias:** Indicates that a DecisionMaker is influenced by the authority bias.
+2. **perceivedAuthority:** Relates information to the perceived authority or expertise of the source presenting it.
+3. **credibilityAssessment:** Connects individuals to their process of evaluating the credibility of a source before accepting information.
+4. **unquestionedAcceptance:**  Indicates that an individual accepts information without critical evaluation due to the influence of the authority bias.
+5. **evidenceEvaluation:** Represents the act of critically assessing the evidence and reasoning behind information, irrespective of the source's authority.
+6. **expertiseRecognition:** Relates an individual to their ability to recognize genuine expertise and credentials in a particular field.
+7. **criticalThinking:** Illustrates the skill of questioning and analyzing information, even if it comes from an authoritative source.
+8. **independentVerification:** Depicts the practice of seeking additional sources or evidence to corroborate information before accepting it.
+9. **alternativeViewpointConsideration:** Connects an individual to their willingness to explore and evaluate information from sources with diverse perspectives.
+10. **contextualAnalysis:** Describes the process of considering the context and potential biases of a source before accepting its information as accurate.
 
 This ontology structure outlines specific classes and properties that characterize various aspects of the "Authority Bias," from the recognition of expertise and credibility assessment to the practice of independent verification and critical thinking. It provides a structured framework for analyzing and understanding the complexities of this cognitive bias and its implications.
 
@@ -148,3 +151,25 @@ diversityOfPerspectives
 Scenario: An individual is part of a team tasked with making a business decision. The team leader, a well-respected authority in the company, presents a particular course of action. However, the individual recognizes the potential for authority bias and encourages the team to consider alternative viewpoints. They engage in critical discussions, seek input from team members with diverse perspectives, and independently research the proposed approach. By mitigating the influence of the authority bias, the team arrives at a well-rounded decision.
 
 These examples demonstrate how the classes and properties from the ontology can be applied in different contexts to enhance critical thinking, promote media literacy, and overcome the effects of the "Authority Bias" in decision-making and information evaluation. The ontology provides a structured framework for understanding and addressing this cognitive bias.
+
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- credibility**
+**- authority**
+**- trust**
+**- verification**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+2. **Educational Beliefs:** Students in a class blindly accept a teacher's explanation of a complex topic as accurate without questioning it, `assuming` that the teacher's expertise makes them infallible.
+
+By doing these two steps, we selected the following **frames**:
+
+**- Correctness**
+**- Expertise**
+**- Trust**
+**- Statement**

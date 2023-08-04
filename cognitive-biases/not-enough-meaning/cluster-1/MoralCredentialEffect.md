@@ -1,5 +1,7 @@
 # Moral Credential Effect bias
 
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -7,8 +9,7 @@ The Moral credential effect, is a bias that occurs when a person's track record 
 [Wikipedia Link](https://en.wikipedia.org/wiki/Self-licensing#:~:text=A%20large%20subset%20of%20this,of%20less%20egalitarian%20decisions%20later.)
 
 **Reasearch paper:**
-[Kouchaki, M. (2011). "Vicarious moral licensing: The influence of others' past moral actions on moral behavior". Journal of Personality and Social Psychology. 101 (4): 702–715.]
-(https://psycnet.apa.org/doiLanding?doi=10.1037%2Fa0024552)
+[Kouchaki, M. (2011). "Vicarious moral licensing: The influence of others' past moral actions on moral behavior". Journal of Personality and Social Psychology. 101 (4): 702–715.](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fa0024552)
 
 ---
 
@@ -76,6 +77,7 @@ As Alex reflected on this `internal conflict`, they came to understand the compl
 * CQ2: How can organizations or institutions hold individuals accountable for their actions, discouraging the use of moral credentialing to excuse biased or contradictory behaviors?
 * CQ3: What are the potential long-term consequences of repeatedly succumbing to the moral credential effect, both for individuals and for society at large? 
 * CQ4: How might individuals actively work toward personal growth and consistency in their moral and ethical behaviors
+
 ---
 
 ***2.4 - Let's now ask about modeling this bias for an ontology***

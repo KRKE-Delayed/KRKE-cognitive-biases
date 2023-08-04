@@ -32,13 +32,13 @@ Individuals exhibiting system justification bias may downplay or dismiss evidenc
 
 1. **Gender Wage Gap:** Despite evidence of a gender wage gap in a company, some employees may `justify` the pay disparity by attributing it to perceived differences in skills or experience between genders, rather than acknowledging potential biases in the hiring and promotion processes.
 
-2. **Racial Discrimination:** In a society with a history of racial discrimination, individuals may `justify` the existing racial disparities by believing that certain racial groups are naturally inferior or that historical events are not relevant to the present situation.
+2. **Racial Discrimination:** In a society with a history of racial discrimination, individuals may `justify` the existing racial `disparities` by believing that certain racial groups are naturally inferior or that historical events are not relevant to the present situation.
 
 3. **Income Inequality:** Some individuals may rationalize income `inequality` as a result of personal choices and merit, ignoring the influence of systemic barriers and lack of `equal` opportunities for economic advancement.
 
 4. **Political Party Loyalty:** Individuals may staunchly `support` and defend the policies of their preferred political party, even in the face of evidence showing negative consequences, due to their loyalty and identification with the party.
 
-5. **Corporate Accountability:** Despite evidence of unethical practices by a company, some stakeholders may `justify` the company's actions, believing that it is essential for the company's success and the overall economy.
+5. **Corporate Accountability:** Despite evidence of `unethical` practices by a company, some stakeholders may `justify` the company's actions, believing that it is essential for the company's success and the overall economy.
 
 6. **Criminal Justice System:** People may defend the actions of the criminal justice system, even when confronted with evidence of racial biases in arrests, sentencing, and incarceration rates, to maintain faith in the system's fairness and legitimacy.
 
@@ -46,7 +46,7 @@ Individuals exhibiting system justification bias may downplay or dismiss evidenc
 
 8. **Educational Opportunities:** In a society with unequal access to quality education, individuals may `justify` the disparities in educational opportunities by suggesting that certain groups are less capable or motivated to succeed academically.
 
-9. **Healthcare Disparities:** Despite evidence of healthcare disparities affecting marginalized communities, some individuals may `justify` the `unequal` access to healthcare by attributing it to individual responsibility and lifestyle choices.
+9. **Healthcare Disparities:** Despite evidence of healthcare `disparities` affecting marginalized communities, some individuals may `justify` the `unequal` access to healthcare by attributing it to individual responsibility and lifestyle choices.
 
 10. **Environmental Policies:** People may `support` environmentally harmful policies and practices to maintain economic growth and job opportunities, `downplaying` the long-term consequences of such decisions on the environment and future generations.
 
@@ -136,3 +136,23 @@ Properties: hasSystemJustificationBias true (for Education Department), occursIn
 Description: The Education Department is tasked with assessing the effectiveness of the current education system and potential reforms to enhance learning outcomes. The department exhibits the system justification bias, often favoring the continuation of traditional education models, even if alternative approaches could yield better results. The ontology can represent the Education Department as a DecisionMaker with the system justification bias (hasSystemJustificationBias true). It can also capture the specific context of decision-making, such as curriculum evaluation or teacher training (Context class). Various influences, such as educational norms, political pressures, or historical perceptions of schooling (Influence class), may contribute to the department's bias (contributesToBias). These influences may lead decision-makers to adhere to established educational practices without fully considering alternative strategies. The ontology can also model the potential consequences (Consequence class) of such decisions influenced by the system justification bias, such as missed opportunities for educational innovation and improvements in student learning outcomes (leadsToConsequence).
 
 These examples demonstrate how the ontology can be applied to different scenarios, capturing decision-making processes influenced by the system justification bias and the factors contributing to its perpetuation, as well as potential consequences arising from such decisions. The generic classes and properties allow for flexible representation and analysis of the bias in diverse contexts.
+
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- defend**
+**- justify**
+**- rationalize**
+**- inequality**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+9. **Healthcare Disparities:** Despite evidence of healthcare `disparities` affecting marginalized communities, some individuals may `justify` the `unequal` access to healthcare by attributing it to individual responsibility and lifestyle choices.
+
+By doing these two steps, we selected the following **frames**:
+
+**- Cogitation**
+**- Justifying**

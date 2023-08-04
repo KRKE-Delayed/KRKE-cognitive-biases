@@ -1,5 +1,7 @@
 # Decoy Effect
 
+*## CLUSTER: To avoid mistakes, we aim to preserve autonomy and group status and avoid irreversible decisions*
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -132,3 +134,24 @@ Properties: hasDecoyEffect true (for Alex), influencesPreference (relates Subscr
 Description: Alex is considering different subscription plans for an online service, each with varying prices and features. When a new, higher-priced plan with additional benefits is introduced, it influences Alex's preference among the original options. The ontology can represent Alex as an Individual influenced by the DecoyEffect (hasDecoyEffect true). It can also capture the available subscription plans as a group (Subscription Plans class) and how the presence of the decoy option impacts Alex's inclination towards specific plans (influencesPreference).
 
 These examples demonstrate how the classes and properties related to the Decoy Effect can be applied in various scenarios to represent individuals, influencers, preferences, and contextual influences on decision-making.
+
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- costumer**
+**- option**
+**- influence**
+**- third**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+1. **Coffee Shop Menu:** A coffee shop `offers` two coffee sizes, "Regular" and "Large." When a `third` size, "Extra Large," is added to the menu with a higher price than the "Large" size but only a slightly larger volume, `customers` are more likely to `choose` the "Large" size, `perceiving` it as a better value `compared` to the overpriced "Extra Large."
+
+By doing these two steps, we selected the following **frames**:
+
+**- Choosing**
+**- Possibilities**
+**- SubjectiveInfluence**

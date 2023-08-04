@@ -1,13 +1,8 @@
-# Project documentation
+# Group attribution error
 
-In this documentation, we will outline all the phases that we will go through during the project of modeling two biases. The main goal is to create an ontology for semantic web technologies following the pattern-based ontology design method called 'eXtreme Design'.
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
 
-# We fill in characteristics from stereotypes, generalities, and prior histories
-
-## Group attribution error
-
-### 1. Context and Literature State of the Art
-To understand the context and to ensure that our ontology will be aligned with current understading and research in the field we provide a Wikipedia definition of the bias and a link to research papers about the topic.
+## 1. Context and Literature State of the Art
 
 **Wikipedia:**
 The group attribution error refers to people's tendency to believe either
@@ -18,10 +13,11 @@ The group attribution error refers to people's tendency to believe either
 **Reasearch paper:**
 [Allison, Scott T; Messick, David M (1985). "The group attribution error". Journal of Experimental Social Psychology. 21 (6): 563–579.](https://www.sciencedirect.com/science/article/abs/pii/0022103185900253?via%3Dihub)
 
-### 2. Large Language Models (LLMs)
-Powerful natural language processing models like ChatGPT-3.5 have the ability to generate human-like text. LLMs can assist in ontology development by providing suggestions, genereting ontological elements and aiding in the extraction of relevant information from textual sources.
+---
 
-***Let's ask ChatGPT for a generic definition, just to get an idea of the domain.***
+## 2. Large Language Models (LLMs)
+
+***2.1 - Let's ask ChatGPT for a generic definition, just to get an idea of the domain.***
 
 **Give me a definition of "Group attribution error"**
 
@@ -33,7 +29,9 @@ In the context of group attribution error, people tend to `overemphasize` the po
 
 Recognizing and understanding group attribution error can be essential in promoting `empathy`, reducing prejudice, and fostering better intergroup relations. It requires individuals to be more aware of their biases and to approach intergroup interactions with a more balanced and open-minded perspective.
 
-***Let's ask to give us some examples of possible scenarios to better understand the context***
+---
+
+***2.2 - Let's ask to give us some examples of possible scenarios to better understand the context***
 
 **Give me 10 example scenarios of "Group attribution error"**
 
@@ -61,11 +59,13 @@ Certainly! Here are ten example scenarios of group attribution error:
 
 These scenarios illustrate how group attribution error can occur across various contexts and can lead to harmful assumptions and prejudices about different social groups. Overcoming this bias requires awareness, empathy, and a willingness to recognize and appreciate the diversity and individuality present in all groups.
 
-***Let's ask for some user story and competency questions***
+---
+
+***2.3 - Let's ask for some user story and competency questions***
 
 **Consider the scenario "Cultural Misunderstanding" and give me a small user story from it**
 
-User Story: Bridging Cultural Misunderstanding
+**User Story: Bridging Cultural Misunderstanding**
 
 As an international student, I arrived in a foreign country to pursue my higher education. Being from a Middle Eastern background, I carried with me the customs and traditions that were deeply ingrained in my `upbringing`. However, I quickly realized that my new environment was quite different from what I was accustomed to.
 
@@ -77,46 +77,43 @@ This demonstrates how cultural understanding and `empathy` can break down `barri
 
 To overcoming group attribution error is possible through genuine `communication` and `open-mindedness`, ultimately creating a more `inclusive` and harmonious environment.
 
-*We can now derive CQs from the user story*
-
-Following the XD procedure, we now need to analyze CQs in terms of classes and properties restrictions in order to be able to answer our questions. The goal is to use the CQs to divide a complex situation into already existing frames.
+***We can now derive CQs from the user story***
 
 * CQ1: What are the awareness and prospects that allow to change preconceived notions in a social environment?
 * CQ2: How stereotypical beliefs affect relational ties?
 * CQ3: What beliefs create barriers between people from different group or contexts ?
 
-***Let's now ask about modeling this bias for an ontology***
+---
+
+***2.4 - Let's now ask about modeling this bias for an ontology***
 
 **If you should make an ontology of the "Group attribution error", what classes and properties would you create?**
 
-*Classes:*
-1. CognitiveBias: Represents various types of biases, including the status quo bias. This class serves as a superclass for specific types of biases, such as GenderBias, ConfirmationBias, or AvailabilityBias.
-2. GroupAttributionErrorBias: Represents the specific type of bias known as the GroupAttributionErrorBias
-3. Group: Represents a social, cultural, demographic, or any other type of group.
-4. Context: Describes the specific situations, contexts, or scenarios in which the GroupAttributionErrorBias is observed or relevant.
-5. SocialGroup: Represents a group of individuals who share common social or cultural characteristics.
-6. Behavior: Describes the actions, responses, or decision-making influenced by the GroupAttributionErrorBias.
-7. Impact: Represents the effects or consequences of the GroupAttributionErrorBias on individuals, groups, or situations.
-8. MitigationStrategy: Describes the strategies or approaches suggested to mitigate the negative effects of the GroupAttributionErrorBias.
-9. RecognitionStrategy: Represents the methods or approaches used by individuals to recognize and identify the GroupAttributionErrorBias.
-10. Stereotype: Represents a generalization or belief about a group that may or may not be accurate.
-11. Prejudice: Represents a biased attitude or judgment towards a group or its members.
+**Classes:**
 
-*Properties:*
-1. hasTrait: Relates a person to a specific trait, capturing individual attributes.
-2. belongsToGroup: Relates a person to a group, defining ingroup-outgroup distinctions.
-3. influencesBehavior: Represents the impact of the bias on behavior, decision-making, or perceptions.
-4. hasImpact: Represents the impact of the bias observed or experienced by the Observer.
-5. relatesToInGroup: Indicates the connection of the bias to the In-Group of the Observer.
-6. occursInContext: Indicates the specific context or situation in which the GroupAttributionErrorBias was observed or relevant.
-7. holdsStereotype: Relates a group to a stereotype, specifying beliefs attributed to the group.
-8. exhibitsPrejudice: Relates a person to a prejudice, representing biased attitudes towards a group.
+1. **CognitiveBias:** Represents various types of biases, including the status quo bias. This class serves as a superclass for specific types of biases, such as GenderBias, ConfirmationBias, or AvailabilityBias.
+2. **GroupAttributionErrorBias:** Represents the specific type of bias known as the GroupAttributionErrorBias
+3. **Group:** Represents a social, cultural, demographic, or any other type of group.
+4. **Context:** Describes the specific situations, contexts, or scenarios in which the GroupAttributionErrorBias is observed or relevant.
+5. **SocialGroup:** Represents a group of individuals who share common social or cultural characteristics.
+6. **Behavior:** Describes the actions, responses, or decision-making influenced by the GroupAttributionErrorBias.
+7. **Impact:** Represents the effects or consequences of the GroupAttributionErrorBias on individuals, groups, or situations.
+8. **MitigationStrategy:** Describes the strategies or approaches suggested to mitigate the negative effects of the GroupAttributionErrorBias.
+9. **RecognitionStrategy:** Represents the methods or approaches used by individuals to recognize and identify the GroupAttributionErrorBias.
+10. **Stereotype:** Represents a generalization or belief about a group that may or may not be accurate.
+11. **Prejudice:** Represents a biased attitude or judgment towards a group or its members.
 
-**Let's ask for some example of usage of the ontology**
+**Properties:**
 
+1. **hasTrait:** Relates a person to a specific trait, capturing individual attributes.
+2. **belongsToGroup:** Relates a person to a group, defining ingroup-outgroup distinctions.
+3. **influencesBehavior:** Represents the impact of the bias on behavior, decision-making, or perceptions.
+4. **hasImpact:** Represents the impact of the bias observed or experienced by the Observer.
+5. **relatesToInGroup:** Indicates the connection of the bias to the In-Group of the Observer.
+6. **occursInContext:** Indicates the specific context or situation in which the GroupAttributionErrorBias was observed or relevant.
+7. **holdsStereotype:** Relates a group to a stereotype, specifying beliefs attributed to the group.
+8. **exhibitsPrejudice:** Relates a person to a prejudice, representing biased attitudes towards a group.
 
-### 3. Ontology Design Patterns
+---
 
-### 4. Words as frame semantic triggers
-
-### 5. Ontoly visualization with Protégé
+***2.5 - Let's ask for some example of usage of the ontology***

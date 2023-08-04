@@ -1,5 +1,7 @@
 # Reactance
 
+*## CLUSTER: To avoid mistakes, we aim to preserve autonomy and group status and avoid irreversible decisions*
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
@@ -147,3 +149,25 @@ Properties:
 - ReactanceBias leadsToOutcome Reduced Sales Revenue
 
 Description: A customer (Individual) visits a retail store and is exposed to an aggressive sales pitch (Sales Pitch), leading to the experience of reactance (ReactanceBias). In response to this sales tactic, the customer chooses to refuse the purchase (Refusal to Purchase). As a consequence of this negative experience, the customer may decide to avoid returning to the store, potentially leading to reduced sales revenue for the retail store (Reduced Sales Revenue). The context for this scenario is within the retail store setting (Retail Store), where the reactance bias can manifest in response to pushy sales tactics.
+
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- react**
+**- autonomy**
+**- constrains**
+**- resist**
+**- control**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+1. **Teenage Rebellion:** A teenager's parents impose strict rules and curfews on them, leading the teen to feel their freedom is being `restricted`. In response to this perceived `control`, the teenager may engage in `rebellious` behavior, staying out later than allowed or engaging in activities explicitly prohibited by their parents.
+
+By doing these two steps, we selected the following **frames**:
+
+**- Cogitation**
+**- Prohibiting**
+**- Response**

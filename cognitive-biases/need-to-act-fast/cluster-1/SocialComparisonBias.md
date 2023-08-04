@@ -125,3 +125,24 @@ Properties: hasSocialComparisonBias true (for Sarah), occursInContext (relates S
 Description: Sarah is a young professional who often compares her career choices to those of influential figures she follows on social media. This constant social comparison affects her decision-making and causes moments of uncertainty about her career path. The ontology can represent Sarah as an Individual with the SocialComparisonBias (hasSocialComparisonBias true). It can also capture the context of comparison as "Career Influencers" (Context class) that occurs in Sarah's social media experiences (occursInContext).
 
 In these examples, the ontology's classes and properties are utilized to represent individuals' engagement in social comparison and the contexts in which the comparisons occur. The use of relationships between entities and classes helps to identify how the Social Comparison Bias influences emotions and decision-making processes in different domains of life.
+
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- compare**
+**- peer**
+**- demoralized**
+**- self-esteem**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+1. **Academic Achievement:** Alice, a student, feels `demotivated` and `discouraged` after `comparing` her grades to those of her classmates. Despite achieving good grades, she constantly compares herself to the `top-performing` students, leading her to doubt her academic `abilities`.
+
+By doing these two steps, we selected the following **frames**:
+
+**- EvaluativeComparison**
+**- Cogitation**
+**- People**

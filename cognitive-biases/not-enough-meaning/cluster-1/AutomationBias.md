@@ -1,14 +1,14 @@
 # Automation bias
 
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
-Automation bias is the propensity for humans to favor `suggestions` from automated `decision-making` systems and to ignore `contradictory` information made without automation, even if it is correct. Automation bias stems from the social psychology literature that found a bias in `human-human interaction` that showed that people assign more positive `evaluations` to `decisions` made by humans than to a neutral object. The same type of positivity bias has been found for `human-automation` interaction, where the `automated` decisions are rated more positively than neutral. This has become a growing problem for decision making as intensive care units, nuclear power plants, and aircraft cockpits have increasingly integrated `computerized` system monitors and decision aids to mostly factor out possible human error. Errors of automation bias tend to occur when decision-making is dependent on `computers` or other automated aids and the human is in an observatory role but able to make decisions. Examples of automation bias range from urgent matters like flying a plane on automatic pilot to such mundane matters as the use of spell-checking programs.
-[Wikipedia Link](https://en.wikipedia.org/wiki/Automation_bias)
+Automation bias is the propensity for humans to favor suggestions from automated decision-making systems and to ignore contradictory information made without automation, even if it is correct. Automation bias stems from the social psychology literature that found a bias in human-human interaction that showed that people assign more positive evaluations to decisions made by humans than to a neutral object. The same type of positivity bias has been found for human-automation interaction, where the automated decisions are rated more positively than neutral. This has become a growing problem for decision making as intensive care units, nuclear power plants, and aircraft cockpits have increasingly integrated computerized system monitors and decision aids to mostly factor out possible human error. Errors of automation bias tend to occur when decision-making is dependent on computers or other automated aids and the human is in an observatory role but able to make decisions. Examples of automation bias range from urgent matters like flying a plane on automatic pilot to such mundane matters as the use of spell-checking programs. [Wikipedia Link](https://en.wikipedia.org/wiki/Automation_bias)
 
 **Reasearch paper:**
-[Cummings, Mary (2004). "Automation Bias in Intelligent Time Critical Decision Support Systems" (PDF). AIAA 1st Intelligent Systems Technical Conference.]
-(https://arc.aiaa.org/doi/10.2514/6.2004-6313)
+[Cummings, Mary (2004). "Automation Bias in Intelligent Time Critical Decision Support Systems" (PDF). AIAA 1st Intelligent Systems Technical Conference.](https://arc.aiaa.org/doi/10.2514/6.2004-6313)
 
 ---
 
@@ -96,15 +96,16 @@ This user story demonstrates how awareness of automation bias prompted a securit
 
 **Properties:**
 
-1. **automatedSystemTrust:** Relates an individual to their level of trust or reliance on an automated system's output or recommendations.
-2. **humanJudgmentBalance:** Connects individuals to their ability to balance the benefits of automation with the importance of human judgment in decision-making.
-3. **criticalEvaluation:** Represents the process of critically assessing automated outputs before accepting or acting upon them.
-4. **errorRecognition:**  Illustrates an individual's capacity to recognize errors or inconsistencies in automated outputs and their willingness to question the system's accuracy.
-5. **overrelianceAwareness:** Relates an individual to their awareness of the potential for overreliance on automation and its consequences.
-6. **cognitiveBiasesInteraction:** Connects the automation bias to the interaction with other cognitive biases, emphasizing the need to consider multiple biases in decision-making.
-7. **automationEthics:** Focuses on the ethical considerations related to automation bias, including the responsibility of designers and developers to minimize bias in automated systems.
-8. **technologicalAdvancement:** Reflects the impact of technological advancements on the prevalence and implications of automation bias.
-9. **decisionSupportSystems:** Represents the role of decision support systems that aim to provide guidance without displacing human judgment entirely.
+1. **hasAutomationBias:** Indicates that a DecisionMaker is influenced by the automation bias.
+2. **automatedSystemTrust:** Relates an individual to their level of trust or reliance on an automated system's output or recommendations.
+3. **humanJudgmentBalance:** Connects individuals to their ability to balance the benefits of automation with the importance of human judgment in decision-making.
+4. **criticalEvaluation:** Represents the process of critically assessing automated outputs before accepting or acting upon them.
+5. **errorRecognition:**  Illustrates an individual's capacity to recognize errors or inconsistencies in automated outputs and their willingness to question the system's accuracy.
+6. **overrelianceAwareness:** Relates an individual to their awareness of the potential for overreliance on automation and its consequences.
+7. **cognitiveBiasesInteraction:** Connects the automation bias to the interaction with other cognitive biases, emphasizing the need to consider multiple biases in decision-making.
+8. **automationEthics:** Focuses on the ethical considerations related to automation bias, including the responsibility of designers and developers to minimize bias in automated systems.
+9. **technologicalAdvancement:** Reflects the impact of technological advancements on the prevalence and implications of automation bias.
+10. **decisionSupportSystems:** Represents the role of decision support systems that aim to provide guidance without displacing human judgment entirely.
 
 
 This ontology structure outlines specific classes and properties that characterize various aspects of the "Automation Bias," from trust in automated systems to critical evaluation, ethical considerations, and the role of education. It provides a structured framework for analyzing and understanding the complexities of this cognitive bias and its implications.
@@ -148,6 +149,24 @@ Scenario: Doctors are using AI-powered diagnostic tools to aid in medical diagno
 
 These examples demonstrate how the classes and properties from the ontology can be applied in various contexts, from mitigating bias in autonomous vehicles to addressing ethical concerns in hiring systems and fostering effective collaboration between humans and automated systems in medical diagnostics. The ontology provides a structured framework for understanding and addressing the complexities of the "Automation Bias" and its implications.
 
+## 3. Words as Frame Semantic Triggers
 
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
 
+In QUOKKA, we extracted concepts from the following lexical units:
 
+**- technology**
+**- judgment**
+**- reliance**
+**- programming**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+7. **Manufacturing Quality Control:** Factory workers trust automated quality control systems to detect defects in products. A flawed item passes inspection due to an oversight in the system's `programming`.
+
+By doing these two steps, we selected the following **frames**:
+
+**- Gizmo**
+**- Certainty**
+**- Trust**
+**- Reliance**

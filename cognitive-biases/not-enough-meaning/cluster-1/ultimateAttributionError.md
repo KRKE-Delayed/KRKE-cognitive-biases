@@ -1,7 +1,8 @@
-# UltimateAttributionErrorBias
+# Ultimate Attribution Error Bias
+
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
 
 ## 1. Context and Literature State of the Art
-To understand the context and to ensure that our ontology will be aligned with current understading and research in the field we provide a Wikipedia definition of the bias and a link to research papers about the topic.
 
 **Wikipedia:**
 The ultimate attribution error is a type of attribution error which describes how attributions of outgroup behavior are more negative than ingroup behavior. As a cognitive bias, the error results in negative outgroup behavior being more likely to be attributed to factors internal and specific to the actor, such as personality, and the attribution of negative ingroup behavior to external factors such as luck or circumstance. The bias reinforces negative stereotypes and prejudice about the outgroup and favouritism of the ingroup through positive stereotypes. The theory also extends to the bias that positive acts performed by ingroup members are more likely a result of their personality.
@@ -10,8 +11,9 @@ The ultimate attribution error is a type of attribution error which describes ho
 **Reasearch paper:**
 [Stangor, Charles; Jhangiani, Rajiv; Tarry, Hammond (2022). Principles of Social Psychology (1st international H5P ed.)](https://opentextbc.ca/socialpsychology/chapter/ingroup-favoritism-and-prejudice/)
 
+---
+
 ## 2. Large Language Models (LLMs)
-Powerful natural language processing models like ChatGPT-3.5 have the ability to generate human-like text. LLMs can assist in ontology development by providing suggestions, genereting ontological elements and aiding in the extraction of relevant information from textual sources.
 
 ***2.1 - Let's ask ChatGPT for a generic definition, just to get an idea of the domain.***
 
@@ -22,6 +24,8 @@ The Ultimate Attribution Error, also known as Ultimate Attribution Fallacy, is a
 In other words, when someone from our own group does something negative, we are more likely to attribute it to `external circumstances` that influenced their behavior. However, when someone from a different group does something negative, we are more inclined to attribute it to their personality, character, or inherent `traits`.
 
 This bias can contribute to `stereotypes`, `prejudice`, and `discrimination`, as it can perpetuate negative `perceptions` and generalizations about out-groups while fostering a more forgiving view of the actions of our own group. The Ultimate Attribution Error can have significant social and intergroup consequences, affecting how individuals `perceive` and `interact` with members of different social, cultural, or ethnic `backgrounds`.
+
+---
 
 ***2.2 - Let's ask to give us some examples of possible scenarios to better understand the context***
 
@@ -51,6 +55,8 @@ Certainly, here are 10 examples of scenarios that illustrate the ultimate attrib
 
 These scenarios demonstrate how the ultimate attribution error can lead individuals to assign different causes to the actions and outcomes of their own group compared to other groups, often reflecting positively on their in-group and negatively on out-groups.
 
+---
+
 ***2.3 - Let's ask for some user story and competency questions***
 
 **Consider the scenario "Interpersonal Relationships" and give me a small user story from it**
@@ -71,11 +77,11 @@ Integration with social media platforms to share progress and insights with frie
 
 ***We can now derive CQs from the user story***
 
-Following the XD procedure, we now need to analyze CQs in terms of classes and properties restrictions in order to be able to answer our questions. The goal is to use the CQs to divide a complex situation into already existing frames.
-
 * CQ1: What are the factors through which it is possible to identify this cognitive bias?
 * CQ2: What are the behaviors that can solve these prejudices?
 * CQ3: What social contexts are fertile ground for finding these behaviors?
+
+---
 
 ***2.4 - Let's now ask about modeling this bias for an ontology***
 
@@ -145,9 +151,3 @@ Attribution Factors: The researchers identify that in Culture A, students emphas
 Positive and Negative Behavior: In Culture A, students congratulate each other for good grades, attributing them to hard work (positive behavior exhibited by in-group). However, when students from Culture B struggle, they might be met with comments suggesting they didn't try hard enough (negative behavior attributed to out-group).
 
 These examples demonstrate how the ontology's classes and properties can be used to analyze and explain instances of the Ultimate Attribution Error in different contexts, such as sports commentary, workplace evaluations, and cross-cultural comparisons of academic achievements.
-
-### 3. Ontology Design Patterns
-
-### 4. Words as frame semantic triggers
-
-### 5. Ontoly visualization with Protégé

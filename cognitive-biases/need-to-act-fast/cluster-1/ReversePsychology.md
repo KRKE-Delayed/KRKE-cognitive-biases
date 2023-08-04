@@ -122,3 +122,26 @@ Properties: employsReversePsychology (relates Teacher to ReversePsychology), tar
 Description: A teacher wants to inspire creativity and artistic expression in their students during an art class. Using reverse psychology, the teacher says, "Creating something truly unique and imaginative is quite challenging." The ReversePsychology ontology represents the teacher (Individual) employing the reverse psychology technique (employsReversePsychology) targeting the students (targetsIndividual). The desired motivation (aimsToEvoke) is to encourage the students to prove their creative abilities, leading to more imaginative artwork. The context (occursInContext) is the art class.
 
 These examples demonstrate how the "Reverse Psychology" ontology can be applied to different scenarios involving individuals using the reverse psychology technique to influence others' behavior or decision-making in various contexts.
+
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- technique**
+**- influence**
+**- rebellion**
+**- instead**
+**- prove**
+**- react**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+9. **Encouraging Creativity**: A teacher wants to inspire students to think creatively. `instead` of instructing them `directly`, the teacher suggests that creative thinking is difficult and beyond their abilities. The reverse psychology `encourages` students to `challenge` themselves and come up with innovative ideas.
+
+By doing these two steps, we selected the following **frames**:
+
+**- SubjectiveInfluence**
+**- Cogitation**
+**- Response**

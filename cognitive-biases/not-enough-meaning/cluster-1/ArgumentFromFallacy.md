@@ -1,14 +1,14 @@
 # Argument from fallacy bias
 
+## CLUSTER: We fill in characteristics from stereotypes, generalities, and prior histories
+
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
-Argument from fallacy is the formal fallacy of analyzing an argument and inferring that, since it contains a fallacy, its conclusion must be false. It is also called argument to logic (argumentum ad logicam), the fallacy fallacy, the fallacist's fallacy, and the bad reasons fallacy.
-[Wikipedia Link](https://en.wikipedia.org/wiki/Argument_from_fallacy#:~:text=Argument%20from%20fallacy%20is%20the,and%20the%20bad%20reasons%20fallacy.)
+Argument from fallacy is the formal fallacy of analyzing an argument and inferring that, since it contains a fallacy, its conclusion must be false. It is also called argument to logic (argumentum ad logicam), the fallacy fallacy, the fallacist's fallacy, and the bad reasons fallacy. [Wikipedia Link](https://en.wikipedia.org/wiki/Argument_from_fallacy#:~:text=Argument%20from%20fallacy%20is%20the,and%20the%20bad%20reasons%20fallacy.)
 
 **Reasearch paper:**
-[K. S. Pope (2003). "Common Logical Fallacies in Psychology: 26 Types & Examples". Fallacies & Pitfalls in Psychology.]
-(https://kspope.com/fallacies/fallacies.php)
+[K. S. Pope (2003). "Common Logical Fallacies in Psychology: 26 Types & Examples". Fallacies & Pitfalls in Psychology.](https://kspope.com/fallacies/fallacies.php)
 
 ---
 
@@ -93,7 +93,7 @@ By using this user story, we can see how an individual confronted the "Argument 
 
 **Properties:**
 
-1. **containsFallacy:** Relates an argument to a specific fallacy present within it.
+1. **hasFallacy:** Relates an argument to a specific fallacy present within it.
 2. **fallacyType:** Describes the type of fallacy identified within the argument, such as ad hominem, appeal to ignorance, or hasty generalization.
 3. **unjustifiedRejection:** Connects a conclusion to the act of rejecting it without proper evaluation of its merits due to the presence of a fallacy.
 4. **overlooksEvidence:** Indicates that the fallacy-focused rejection ignores relevant evidence or supporting arguments for the conclusion.
@@ -141,3 +141,23 @@ Scenario: A debating club establishes ethical guidelines for its members to prom
 
 These examples demonstrate how the classes and properties from the ontology can be applied in different contexts to educate individuals, enhance critical thinking skills, and promote ethical and informed discussions when dealing with instances of the "Argument from Fallacy" bias. The ontology provides a structured framework for understanding and addressing this logical fallacy.
 
+## 3. Words as Frame Semantic Triggers
+
+To further align the biases with existing semantic frames in Framester, we leverage powerful knowledge extraction tools like QUOKKA's "Concepts Extractor" and FRED.
+
+In QUOKKA, we extracted concepts from the following lexical units:
+
+**- fallacy**
+**- false**
+**- reject**
+**- flawed**
+
+We cross our results with the ones obtained in FRED by putting the following scenario:
+
+1. **Climate Change Skepticism:** A person argues that climate change is not a significant concern because they found a spelling mistake in a scientific paper discussing its effects. They claim that since the paper contains an error, its `conclusions` about climate change must be `false`.
+
+By doing these two steps, we selected the following **frames**:
+
+**- Correctness**
+**- PointOfDispute**
+**- Judgment**
