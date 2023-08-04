@@ -1,13 +1,13 @@
-# Fuctional Fixedness bias
+# Stereotyping bias
 
 ## 1. Context and Literature State of the Art
 
 **Wikipedia:**
-Functional fixedness is a cognitive bias that limits a person to use an object only in the way it is traditionally used. The concept of functional fixedness originated in Gestalt psychology, a movement in psychology that emphasizes holistic processing. Karl Duncker defined functional fixedness as being a mental block against using an object in a new way that is required to solve a problem. This "block" limits the ability of an individual to use components given to them to complete a task, as they cannot move past the original purpose of those components.
-[Wikipedia Link](https://en.wikipedia.org/wiki/Functional_fixedness)
+Stereotyping is a generalized belief about a particular category of people. It is an `expectation` that people might have about every person of a particular group. The type of expectation can vary; it can be, for example, an expectation about the group's personality, preferences, appearance or ability. Stereotypes are sometimes `overgeneralized`, `inaccurate`, and resistant to new information, but can sometimes be accurate.
+[Wikipedia Link](https://en.wikipedia.org/wiki/Stereotype)
 
 **Reasearch paper:**
-[Duncker, K. (1945). "On problem solving". Psychological Monographs, 58:5 (Whole No. 270).]
+[Myers, David G. (2013). Social psychology. Twenge, Jean M., 1971- (11th ed.). New York, NY: McGraw-Hill.]
 
 ---
 
@@ -15,85 +15,87 @@ Functional fixedness is a cognitive bias that limits a person to use an object o
 
 ***2.1 - Let's ask ChatGPT for a generic definition, just to get an idea of the domain.***
 
-**Give me a definition of "Functional fixedness"**
+**Give me a definition of "Stereotyping"**
 
-Functional fixedness bias is a cognitive bias that refers to the `tendency` of individuals to `perceive` objects or concepts as having a `fixed`, specific function or purpose, `limiting` their ability to see and `consider` `alternative` uses or functions. This bias can `hinder` creative `problem-solving` and innovative thinking, as people may become trapped in conventional or established ways of thinking about an object, hindering their ability to see its potential for new or unconventional purposes. Overcoming functional fixedness bias is crucial for fostering creativity and finding novel solutions to problems.
+Stereotyping bias refers to a cognitive bias in which individuals make `generalizations` or `assumptions` about a group of people based on certain `characteristics`, `attributes`, or `traits` that are believed to be `associated` with that group. This bias can lead to the `oversimplification` and often `inaccurate` `perception` of individuals within the group, ignoring their `unique` qualities and treating them as if they all `conform` to the same `preconceived` notions. Stereotyping bias can contribute to unfair `judgments`, `discrimination`, and the perpetuation of social `inequalities`, as it fails to consider the `diversity` and complexity present within any group.
 
 ---
 
 ***2.2 - Let's ask to give us some examples of possible scenarios to better understand the context***
 
-**Give me 10 example scenarios of "Functional fixedness"**
+**Give me 10 example scenarios of "Stereotyping"**
 
-Certainly, here are ten example scenarios illustrating functional fixedness bias:
+Certainly, here are ten example scenarios that illustrate instances of stereotyping bias:
 
-1. **Candle and Matches Problem**: When trying to attach a candle to a wall and light it, individuals may struggle to `consider` using the matchbox as a makeshift candle holder due to functional `fixedness`, instead of only using the candlestick.
+1. **Gender Roles:** Assuming that women are not as capable in technical fields as men, leading to the `underrepresentation` of women in STEM professions.
 
-2. **Belt as a Tool**: When a person's car is stuck in the snow, they might `overlook` using their belt as a makeshift tow strap due to viewing it solely as an accessory.
+2. **Racial Profiling:** Law enforcement disproportionately stopping and questioning individuals from certain `racial` or `ethnic` `backgrounds` based on `stereotypes` about criminal behavior.
 
-3. **Paperclip Uses**: People might primarily `associate` a paperclip with holding papers together and overlook its `potential` use as a makeshift lock pick or smartphone stand.
+3. **Age Discrimination:** Believing that older adults are technologically inept and unable to adapt to new devices or software, leading to `exclusion` from digital platforms.
 
-4. **Jar as a Container**: Someone might struggle to see a glass jar as a potential makeshift drinking glass or container for non-food items, due to their fixed `perception` of it being solely a storage container.
+4. **Nationality Stereotypes:** Assuming that individuals from a specific country are all exceptionally good at math, `neglecting` the fact that mathematical abilities vary among individuals.
 
-5. **Book as a Monitor Stand**: People might not think to use a thick book as a makeshift stand to elevate their computer monitor, as they see books only as reading materials.
+5. **Body Image Stereotypes:** Associating thinness with beauty and attractiveness, leading to negative body image and unrealistic beauty `standards`.
 
-6. **Spoon as a Doorstop**: When a door needs propping open, individuals might overlook using a spoon as a makeshift doorstop due to their `habitual` association of a spoon with eating.
+6. **Occupational Stereotypes:** Assuming that nurses are always female and doctors are always male, disregarding the `diversity` of gender representation in both professions.
 
-7. **Bucket as a Chair**: When chairs are in short supply, individuals might not consider using an empty bucket as a makeshift seat due to their `preconceived` notion of a bucket's use.
+7. **Religious Stereotyping:** Assuming that individuals from a particular religion hold specific `political` views or `cultural` practices, `oversimplifying` their beliefs and `values`.
 
-8. **Clothes Hanger as Headphone Holder**: People may not think of using a clothes hanger to hang and organize their headphones, `perceiving` hangers solely as tools for clothing.
+8. **LGBTQ+ Stereotypes:** Assuming that all gay men are fashionable and interested in makeup, neglecting the wide range of interests and `personalities` within the LGBTQ+ community.
 
-9. **CD/DVD Spindle as Bagel Holder**: Someone might struggle to see the potential of using a CD or DVD spindle as a holder for bagels or other round food items, `viewing` it only as a storage container for discs.
+9. **Disability Stereotypes:** Believing that individuals with disabilities are inherently dependent and incapable of achieving certain goals, limiting their `opportunities` for personal growth.
 
-10. **Plastic Bottle as Plant Watering Device**: People might overlook using a plastic bottle with holes in the cap as a DIY watering device for potted plants, due to their fixed perception of plastic bottles as only beverage containers.
+10. **Economic Stereotypes:** Assuming that individuals from lower socioeconomic backgrounds are less intelligent or hardworking than those from higher socioeconomic backgrounds, perpetuating social class inequalities.
 
-In each of these scenarios, functional fixedness bias limits individuals from seeing alternative, creative uses for familiar objects, hindering their ability to solve problems in `innovative` ways.
+In each of these scenarios, stereotyping bias results in generalizations and assumptions about individuals based on their membership in a particular group, often leading to unfair treatment, missed opportunities, and reinforcing harmful societal norms.
 
 ---
 
 ***2.3 - Let's ask for some user story and competency questions***
 
-**Consider the scenario "Candle and Matches Problem" and give me a small user story from it**
+**Consider the scenario "Religious Stereotyping" and give me a small user story from it**
 
-**User Story: The Bright Idea**
+**User Story: Overcoming Religious Stereotyping**
 
-As the winter storm raged outside, Sarah found herself in a power outage. With darkness enveloping her home, she knew she needed to find a way to light up the room. Remembering a box of candles and matches in her kitchen drawer, she eagerly retrieved them. However, as she attempted to fix the candle on the table, frustration crept in. She struggled to keep the candle upright and secure.
-
-Sarah had a moment of `inspiration`. She remembered a trick she had once seen on a survival show. With a `determined` glint in her eye, she fetched the box of matches and held it horizontally against the wall. Carefully, she placed the candle onto the box, allowing it to rest securely. Now, she just needed a way to light the candle.
-
-Rummaging through her kitchen tools, Sarah found a metal fork. With a grin, she struck a match and used the flaming stick to light the candle. The room was bathed in a warm, flickering glow, providing both comfort and much-needed illumination.
-
-Reflecting on her experience, Sarah realized how functional fixedness had initially clouded her problem-solving. She had narrowly focused on the candlestick, `disregarding` the `potential` of the matchbox as a clever makeshift candle holder. Her `resourcefulness` and the `ability` to `think outside` the box had transformed a simple matchbox into a vital tool during a blackout. Sarah felt a renewed sense of empowerment, knowing that creativity and `adaptability` could turn everyday objects into unexpected heroes.
+In a community dialogue, I confronted the issue of religious stereotyping. When a participant made a sweeping statement about a religious group's political `beliefs`, I shared how my friend, who followed that religion, had diverse `views`. This sparked a discussion on the danger of assuming uniformity within any group. By sharing personal stories, we challenged biases and committed to fostering a more open and respectful community that values `individual` experiences over `generalizations`. This experience highlighted the impact of confronting religious stereotypes through dialogue and empathy.
 
 ***We can now derive CQs from the user story***
 
-* CQ1: What cognitive processes contribute to the development of functional fixedness bias?
-* CQ2: How does functional fixedness bias impact creativity and inventive thinking in problem-solving contexts?
-* CQ3: What strategies or techniques can individuals employ to overcome functional fixedness bias and encourage more innovative thinking?
+* CQ1: What role does empathy play in breaking down stereotypical beliefs, and how can individuals actively engage in conversations and experiences that challenge and counteract these biases?
+* CQ2: How can education and awareness campaigns effectively address and mitigate the impact of stereotyping biases, particularly in schools, workplaces, and public spaces, to promote inclusivity and diversity?
+* CQ3: What are the potential consequences of relying on stereotypes when making judgments or decisions about individuals, and how can awareness of this bias lead to more fair and equitable outcomes?
 
 ---
 
 ***2.4 - Let's now ask about modeling this bias for an ontology***
 
-**If you should make an ontology of the "Functional fixedness", what classes and properties would you create?**
+**If you should make an ontology of the "Stereotyping", what classes and properties would you create?**
 
 **Classes:**
 
 1. **CognitiveBias:** Represents various types of biases, including the system justification bias. This class serves as a superclass for specific types of biases such as confirmation bias, availability bias, and more.
-2. **FunctionalFixedness:** Represents a cognitive bias observed in human thinking, characterized by the tendency to perceive objects, concepts, or elements as having fixed, predefined functions or purposes.
-3. **CognitiveProcesses:** Represents the class of cognitive processes involved in how individuals perceive objects and their functions. It's relate to how individuals form mental representations of objects and their intended purposes.
-4. **Problem-SolvingStrategies:** Represents the use of analogies to relate familiar situations to unfamiliar ones, potentially aiding in overcoming functional fixedness. It's about looking at a problem from a different perspective to reveal alternative solutions.
-5. **CognitiveFlexibility:** Represents an individual's capacity to adjust their cognitive processes and thinking patterns to different contexts, aiding in overcoming functional fixedness.
+2. **Stereotyping:** The overarching concept representing the cognitive bias where individuals make generalizations or assumptions about a group of people based on certain characteristics, attributes, or traits associated with that group.
+3. **StereotypeThreat:** Focuses specifically on the concept of stereotype threat, where individuals feel pressure to conform to negative stereotypes about their group, leading to anxiety and underperformance.
+4. **MediaRepresentation:** Explores how media representation of different groups contributes to the formation and reinforcement of stereotypes, and the potential impact on public perception.
+5. **IntergroupContact:** Addresses the role of direct interactions between individuals from different groups in challenging and reducing stereotypical beliefs.
+6. **CognitiveDissonance:** Investigates the psychological discomfort that individuals may experience when their attitudes or behaviors conflict with stereotypical beliefs.
+7. **CulturalCompetence:** Focuses on the development of cultural awareness, sensitivity, and effective communication skills to navigate and challenge stereotypes in diverse contexts.
 
 **Properties:**
 
-1. **AffectsProblemSolving:** Describes the influence of functional fixedness on the process of problem-solving, often leading to suboptimal or conventional solutions.
-2. **InvolvesPerception:** Represents the cognitive process through which an individual's perception of an object's primary function contributes to functional fixedness bias.
-3. **InhibitsCreativity:** Indicates how functional fixedness acts as a barrier to creative thinking and innovative idea generation.
-4. **RelatedToObjectFunction:** Links functional fixedness to an object's conventional or known functions, often leading to a narrow perspective on its potential utility.
-5. **LeadsToSuboptimalOutcome:** Highlights the negative consequences of failing to address functional fixedness, often resulting in limited or less effective problem-solving strategies.
+1. **targetGroup:** Relates stereotyping instances to the specific group of people that the bias is directed towards.
+2. **characteristicAttributes:** Represents the attributes, traits, or characteristics that are often associated with the target group in stereotypical thinking.
+3. **cognitiveMechanisms:** Illustrates the psychological processes and cognitive shortcuts that contribute to the formation and reinforcement of stereotypes.
+4. **mediaInfluence:** Addresses the role of media, including its portrayal of certain groups, in shaping and perpetuating stereotypes.
+5. **intersectionalityConsiderations:** Relates to how intersecting factors such as race, gender, sexuality, and socioeconomic status complicate and influence the formation of stereotypes.
+6. **stereotypeThreat:** Represents the concept of stereotype threat, where individuals may internalize and perform in accordance with negative stereotypes about their group.
+7. **counterStereotyping:** Focuses on efforts to challenge and counteract stereotypes through education, awareness, and intergroup contact.
+8. **culturalContext:** Illustrates how cultural norms, historical contexts, and societal influences contribute to the development and persistence of stereotypes.
+9. **prejudiceAndDiscrimination:** Connects stereotypes to broader concepts of prejudice and discrimination, exploring how stereotypes contribute to biased attitudes and unequal treatment.
 
-These classes and properties will provide a solid foundation for modeling the system justification bias in various scenarios and contexts. The ontology can be expanded further with specific instances and relationships, enabling a comprehensive understanding of how the bias operates and influences decision-making processes.
+
+This ontology structure outlines specific classes and properties that characterize various aspects of "Stereotyping," from its cognitive mechanisms and media influences to its ethical implications and potential interventions. It provides a structured framework for analyzing and understanding the complexities of this cognitive bias and its implications in various domains of human interaction.
+
 
 ---
 
@@ -101,43 +103,34 @@ These classes and properties will provide a solid foundation for modeling the sy
 
 **Can you give me three examples of usage of this classes and properties?**
 
-*Example 1: Candle and Matches Problem*
+*Example 1: Media Representation and Stereotypes*
 
-Scenario:
-Lisa is preparing for a cozy dinner at home during a power outage. She wants to create a warm ambiance using candles but realizes she doesn't have a candle holder.
+Class: Media Representation
 
-Usage of Classes and Properties:
+Properties:
 
-Class: Functional Fixedness
-HasExampleScenario: "CandleAndMatchesProblem"
-Explanation:
-In this scenario, Lisa encounters functional fixedness when she fails to recognize the matchbox's potential as a makeshift candle holder. The property "HasExampleScenario" links this situation to the "CandleAndMatchesProblem" instance, illustrating how her fixed perception of a matchbox only as a container for matches restricts her creative problem-solving.
+impactOnStereotypes
+culturalContext
+Scenario: A research study examines the portrayal of a specific ethnic group in mainstream media over the past decade. By analyzing television shows, movies, and news coverage, researchers identify consistent stereotypes associated with this group, such as criminality and poverty. The media's portrayal contributes to the persistence of these stereotypes, shaping public perceptions and attitudes. The study considers the cultural context and historical factors that influence the media's representation of this group.
 
-*Example 2: Creative Office Solutions*
+*Example 2: Implicit Bias and Cognitive Mechanisms*
 
-Scenario:
-An office manager, Alex, is tasked with rearranging the workspace to accommodate more employees. The office is short on chairs, and Alex wants to find creative solutions.
+Class: Implicit Bias
 
-Usage of Classes and Properties:
+Properties:
 
-Class: Problem-Solving Strategies
-Analogical Thinking
-Reframing
-Class: Cognitive Flexibility
-Adaptability
-Explanation:
-In this scenario, Alex employs problem-solving strategies such as analogical thinking and reframing to overcome functional fixedness. The properties "Analogical Thinking" and "Reframing" under the class "Problem-Solving Strategies" highlight Alex's use of these techniques to see office items beyond their traditional functions. Additionally, the class "Cognitive Flexibility" and the property "Adaptability" emphasize Alex's ability to adapt his thinking, mitigating functional fixedness and promoting innovative solutions.
+unconsciousAssociations
+impactOnDecisions
+Scenario: In a hiring process, a manager unconsciously associates women with caregiving roles and men with leadership positions. As a result, the manager may unintentionally favor male candidates for leadership roles, perpetuating gender-based stereotypes. This implicit bias influences the manager's decision-making, leading to unequal opportunities for candidates based on their gender. The scenario highlights the cognitive mechanisms of automatic associations and their impact on real-world decisions.
 
-*Example 3: Cultural Influence on Tool Usage*
+*Example 3: Stereotype Threat and Educational Interventions*
 
-Scenario:
-Maria, a cultural anthropologist, is studying a remote tribe's daily routines. She notices that tribe members use objects in unique ways that differ from Western practices.
+Class: Stereotype Threat
 
-Usage of Classes and Properties:
+Properties:
 
-Class: Cultural Influence
-Cultural Influence
-Explanation:
-In this scenario, Maria explores how cultural norms influence functional fixedness. The property "Cultural Influence" under the class "Cultural Influence" allows Maria to examine how the tribe's distinct cultural perspectives and practices affect their perception of object functions. This highlights the role of culture in shaping functional fixedness and the potential for different societies to exhibit varying levels of this cognitive bias.
+anxietyAndUnderperformance
+counterStereotyping
+Scenario: In an academic setting, students from underrepresented backgrounds experience stereotype threat related to their math abilities. They fear conforming to the stereotype that their group is not good at math, leading to increased anxiety and underperformance in math exams. The school implements educational interventions that create a supportive environment, emphasize growth mindset, and provide diverse role models in math-related fields. These interventions aim to mitigate stereotype threat, boost confidence, and improve academic outcomes.
 
-These examples illustrate how the classes and properties within the ontology can be applied to diverse situations, showcasing the impact of functional fixedness on problem-solving, the use of strategies to overcome it, and its interaction with cultural influences.
+These examples demonstrate how the classes and properties from the ontology can be applied in different contexts, from media representation influencing stereotypes and implicit bias affecting decision-making, to stereotype threat in education and the implementation of interventions to challenge and counteract stereotypical beliefs. The ontology provides a structured framework for analyzing and understanding the multifaceted nature of "Stereotyping" and its impact on various aspects of society.
