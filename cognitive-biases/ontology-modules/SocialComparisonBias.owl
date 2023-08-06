@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#"
+     xml:base="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:sequence="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"
+     xmlns:SocialComparisonBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias">
+        <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
+        <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
+        <terms:description xml:lang="en">Social comparison biias module of the Cognitive Bias Ontology.</terms:description>
+        <terms:hasVersion xml:lang="en">0.1</terms:hasVersion>
+        <terms:title xml:lang="en">Social Comparison Biias</terms:title>
+        <rdfs:comment xml:lang="en">Social comparison bias is the tendency to have feelings of dislike and competitiveness with someone seen as physically, socially, or mentally better than oneself.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
+        <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
+        <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem"/>
+        <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
+        <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#isEngagedIn">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
+        <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#affectedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:comment xml:lang="en">A relation between qualities or entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
+        <rdfs:comment xml:lang="en">When an agent&apos;s decision is influenced by an external entity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
+        <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem">
+        <rdfs:comment xml:lang="en">Confidence in one&apos;s worth and abilities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Cogitation -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Cogitation">
+        <rdfs:comment xml:lang="en">The act of thinking about a subject.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/EvaluativeComparison -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/EvaluativeComparison">
+        <rdfs:comment xml:lang="en">An evaluation process set in a comparative framework.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/People -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
+        <rdfs:comment xml:lang="en">A group composed of individuals who are united by a common characteristic, interest, or purpose.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#comparing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#comparing">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
+        <sequence:follows rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#low_self-esteem"/>
+        <rdfs:comment xml:lang="en">To examine or look for the difference between two or more things.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#decision-maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#decision-maker">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#comparing"/>
+        <rdfs:comment xml:lang="en">Represents individuals or entities (Agent) who make decisions influenced by biases, including the status quo bias.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#low_self-esteem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#low_self-esteem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem"/>
+        <rdfs:comment xml:lang="en">Low confidence in one&apos;s worth and abilities.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#other_people -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#other_people">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:comment xml:lang="en">External group of individuals that is the object of the comparison.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#"
+     xml:base="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:affectedBy="https://w3id.org/affectedBy#"
+     xmlns:DecoyEffect="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect">
+        <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
+        <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
+        <terms:description xml:lang="en">Decoy effect module of the Cognitive Bias Ontology</terms:description>
+        <terms:hasVersion xml:lang="en">0.1</terms:hasVersion>
+        <terms:title xml:lang="en">Decoy Effect Ontology</terms:title>
+        <rdfs:comment xml:lang="en">In marketing, the decoy effect (or attraction effect or asymmetric dominance effect) is the phenomenon whereby consumers will tend to have a specific change in preference between two options when also presented with a third option that is asymmetrically dominated.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
+        <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#dependsOn">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <rdfs:comment xml:lang="en">Describe a dependency between to entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#hasQuality">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <rdfs:range rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">Connect a characteristic or feature to something.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#affectedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#Decoy"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
+        <rdfs:comment xml:lang="en">A relation between qualities or entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
+        <rdfs:comment xml:lang="en">When an agent&apos;s decision is influenced by an external entity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#PossibilitiesNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#PossibilitiesNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
+        <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#Decoy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#Decoy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <rdfs:comment xml:lang="en">A decoy, in marketing, is an option strategically used to influence the consumer&apos;s choice.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/affectedBy#Quality -->
+
+    <owl:Class rdf:about="https://w3id.org/affectedBy#Quality">
+        <rdfs:comment xml:lang="en">A characteristic or attribute that characterizes an object or entity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Choosing -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Choosing">
+        <rdfs:comment xml:lang="en">To decide what you want from two or more things or possibilities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Possibility -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Possibility">
+        <rdfs:comment xml:lang="en">A physical or mental object that represents a choice between two or more things.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/SubjectiveInfluence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/SubjectiveInfluence">
+        <rdfs:comment xml:lang="en">Represents a strategy used to guide or influence the decision-making process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#choosing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#choosing">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
+        <rdfs:comment xml:lang="en">Represent what an agent want from two or more things or possibilities.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#costumer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#costumer">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:comment xml:lang="en">The decison-maker.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_choices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_choices">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_features"/>
+        <PossibilitiesNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</PossibilitiesNumber>
+        <rdfs:comment xml:lang="en">The available possibilities.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_features -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_features">
+        <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
+        <rdfs:comment xml:lang="en">The characteristics of the choices.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#perceived_better_value_choice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#perceived_better_value_choice">
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#Decoy"/>
+            </owl:Class>
+        </rdf:type>
+        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_choices"/>
+        <rdfs:comment xml:lang="en">The object which benefits from the decoy&apos;s presence.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#product -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#product">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <rdfs:comment xml:lang="en">The object of the selling procedure.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

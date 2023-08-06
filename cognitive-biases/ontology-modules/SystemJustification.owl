@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#"
+     xml:base="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:affectedBy="https://w3id.org/affectedBy#"
+     xmlns:SystemJustification="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification">
+        <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
+        <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
+        <terms:description xml:lang="en">System Justification module of the Cognitive Bias Ontology.</terms:description>
+        <terms:hasVersion xml:lang="en">0.1</terms:hasVersion>
+        <terms:title xml:lang="en">System Justification Ontology</terms:title>
+        <rdfs:comment xml:lang="en">System justification bias is a cognitive bias that leads individuals to defend and rationalize the status quo or existing social, economic, and political systems, even if they may be unjust or unfair.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Justifying"/>
+        <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Justifying"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
+        <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Justifying"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
+        <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#Privilege"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Justifying"/>
+        <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#despiteOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#despiteOf">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Justifying"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/MoralityEvaluation"/>
+        <rdfs:comment xml:lang="en">Without taking any notice of or being influenced by.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#isEngagedIn">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Justifying"/>
+        <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#affectedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/MoralityEvaluation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#Privilege"/>
+        <rdfs:comment xml:lang="en">A relation between qualities or entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#Privilege"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:comment xml:lang="en">A relation between qualities and features of interest.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#Privilege"/>
+        <rdfs:comment xml:lang="en">When an agent&apos;s decision is influenced by an external entity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
+        <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#Privilege -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#Privilege">
+        <rdfs:comment xml:lang="en">An advantage that only one person or group of people has.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Cogitation -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Cogitation">
+        <rdfs:comment xml:lang="en">The act of thinking about a subject.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Justifying -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Justifying">
+        <rdfs:comment xml:lang="en">To show that something is reasonable, right, or true.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/MoralityEvaluation -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/MoralityEvaluation">
+        <rdfs:comment xml:lang="en">An evaluation with respect to the morality or rightness of his or her behavior.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#decision-maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#decision-maker">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#justification"/>
+        <rdfs:comment xml:lang="en">Represents individuals or entities (Agent) who make decisions influenced by biases, including the status quo bias.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#justification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#justification">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Justifying"/>
+        <despiteOf rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#moral"/>
+        <rdfs:comment xml:lang="en">A reason or explanation for something.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#moral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#moral">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/MoralityEvaluation"/>
+        <rdfs:comment xml:lang="en">Principles or standards concerning right and wrong conduct.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#privilege -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#privilege">
+        <rdf:type rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#Privilege"/>
+        <affectedBy:belongsTo rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SystemJustification#decision-maker"/>
+        <rdfs:comment xml:lang="en">An advantage that only one person or group of people has.</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
