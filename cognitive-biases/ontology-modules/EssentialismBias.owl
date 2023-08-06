@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#"
+     xml:base="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:description="http://www.ontologydesignpatterns.org/cp/owl/description.owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias">
+        <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
+        <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
+        <terms:description xml:lang="en">Essentialism bias module of the Cognitive Bias Ontology.</terms:description>
+        <terms:hasVersion xml:lang="en">0.1</terms:hasVersion>
+        <terms:title xml:lang="en">Essentialism Bias Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Essentialism bias refers to the cognitive tendency or belief that individuals or groups possess inherent, unchangeable, and fixed characteristics that define their nature or identity. This bias often oversimplifies and generalizes complex attributes, behaviors, or traits based on perceived fundamental qualities, ignoring the influence of context, environment, and individual variations.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/description.owl#defines -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#defines">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#Person"/>
+        <rdfs:comment xml:lang="en">To say what the meaning of something.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#isEngagedIn">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
+        <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#leadsTo">
+        <rdfs:comment xml:lang="en">If an action or event leads to something, it causes that thing to happen or exist.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
+        <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#Person">
+        <rdfs:comment xml:lang="en">A man, woman, or child.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Aggregate -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Aggregate">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/affectedBy#influencedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">To combine into a single group or total.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Categorization -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Categorization">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#leadsTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Aggregate"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">The process of putting people or things into categories.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#another_person -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#another_person">
+        <rdf:type rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#decion-maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#decion-maker">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#stereotype"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#stereotype -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#stereotype">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
+        <leadsTo rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#wrong_assumption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#wrong_assumption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#wrong_assumption">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Aggregate"/>
+        <description:defines rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#another_person"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

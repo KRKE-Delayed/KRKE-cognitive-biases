@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#"
+     xml:base="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:affectedBy="https://w3id.org/affectedBy#"
+     xmlns:UltimateAttributionError="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError">
+        <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
+        <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
+        <terms:description xml:lang="en">Ultimate attribution error module of the Cognitive Bias Ontology.</terms:description>
+        <terms:hasVersion xml:lang="en">0.1</terms:hasVersion>
+        <terms:title xml:lang="en">Ultimate Attribution Error Ontology</terms:title>
+        <rdfs:comment xml:lang="en">The Ultimate Attribution Error, also known as Ultimate Attribution Fallacy, is a psychological concept that refers to a cognitive bias in which individuals tend to attribute the behavior of members of other groups (out-groups) to their inherent traits or characteristics, while attributing the behavior of members of their own group (in-group) to external factors or situational influences.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Differentiation"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SuccessOrFailure"/>
+        <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#isEngagedIn">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SuccessOrFailure"/>
+        <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
+        <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Differentiation -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Differentiation">
+        <rdfs:comment xml:lang="en">Being aware (or not being aware) of the difference between more phenomena, which may be expressed jointly or disjointly.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/PerceptionExperience -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Differentiation"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/SuccessOrFailure"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/SuccessOrFailure -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/SuccessOrFailure">
+        <rdfs:comment xml:lang="en">The outcome or result of a particular endeavor, which can be either positive (success) or negative (failure).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#decision-maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#decision-maker">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#ultimate_attribution_error"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#success_or_fail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#success_or_fail">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/SuccessOrFailure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#ultimate_attribution_error -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#ultimate_attribution_error">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
+        <affectedBy:influencedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#success_or_fail"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

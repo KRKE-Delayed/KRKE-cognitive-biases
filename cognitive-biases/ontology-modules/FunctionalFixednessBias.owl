@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#"
+     xml:base="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:affectedBy="https://w3id.org/affectedBy#"
+     xmlns:FunctionalFixednessBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias">
+        <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
+        <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
+        <terms:description xml:lang="en">Functional fixedness bias module of the Cognitive Bias Ontology.</terms:description>
+        <terms:hasVersion xml:lang="en">0.1</terms:hasVersion>
+        <terms:title xml:lang="en">Functional Fixedness Bias Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Functional fixedness is a cognitive bias that limits a person to use an object only in the way it is traditionally used. The concept of functional fixedness originated in Gestalt psychology, a movement in psychology that emphasizes holistic processing.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#Experience"/>
+        <rdfs:comment xml:lang="en">Used to describe information that is arranged by type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#hasExperience -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#hasExperience">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#Experience"/>
+        <rdfs:comment xml:lang="en">Represents an Agent&apos;s past encounters or knowledge in a particular domain.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#hasPossibilities -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#hasPossibilities">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Artifact"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <rdfs:comment xml:lang="en">Denotes the set of available options or choices that can be consider in a given situation.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#notConsidering -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#notConsidering">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <rdfs:comment xml:lang="en">Not taking in cosideration a possibility.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#affectedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#Experience"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Custom"/>
+        <rdfs:comment xml:lang="en">A relation between qualities or entities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
+        <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#Experience">
+        <rdfs:comment xml:lang="en">The process of getting knowledge or skill from doing, seeing, or feeling things.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Artifact -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Artifact">
+        <rdfs:comment xml:lang="en">An object that has been made by a person.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Custom -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Custom">
+        <rdfs:comment xml:lang="en">A way of behaving or a belief that has been established for a long time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Possibility -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Possibility">
+        <rdfs:comment xml:lang="en">Something that you can choose to do in a particular situation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#artifact -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#artifact">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Artifact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#custom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#custom">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Custom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#decision-maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#decision-maker">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <hasExperience rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#experience"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#Experience"/>
+        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#custom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#possibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#possibility">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
+        <hasPossibilities rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias#possibility"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

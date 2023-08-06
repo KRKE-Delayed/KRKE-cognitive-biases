@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#"
+     xml:base="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:affectedBy="https://w3id.org/affectedBy#"
+     xmlns:AuthorityBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias">
+        <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
+        <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
+        <terms:description xml:lang="en">Authority bias module of the Cognitive Bias Ontology.</terms:description>
+        <terms:hasVersion xml:lang="en">0.1</terms:hasVersion>
+        <terms:title xml:lang="en">Authority Bias Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Authority bias is the tendency to attribute greater accuracy to the opinion of an authority figure (unrelated to its content) and be more influenced by that opinion. An individual is more influenced by the opinion of this authority figure, believing their views to be more credible, and hence place greater emphasis on the authority figure&apos;s viewpoint and are more likely to obey them.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Expertise"/>
+        <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#hasEvidence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#hasEvidence">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Evidence"/>
+        <rdfs:comment xml:lang="en">Indicates the presence of evidence for a particular statement or claim.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#isEngagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#isEngagedIn">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
+        <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#affectedBy">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Expertise"/>
+        <rdfs:comment xml:lang="en">To believe that someone is good and honest or that something is safe and reliable.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/affectedBy#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
+        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Expertise"/>
+        <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
+        <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Evidence -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Evidence">
+        <rdfs:comment xml:lang="en">One or more reasons for believing that something is or is not true.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Expertise -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Expertise">
+        <rdfs:comment xml:lang="en">A high level of knowledge or skill.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/framester/data/framestercore/Trust -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Trust">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Trust"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#hasEvidence"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Evidence"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">To believe that someone is good and honest or that something is safe and reliable.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#decision-maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#decision-maker">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
+        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#trusting"/>
+        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#expert"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#expert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#expert">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Expertise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#trusting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#trusting">
+        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
