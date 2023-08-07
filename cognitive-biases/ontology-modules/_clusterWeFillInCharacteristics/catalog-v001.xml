@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/UltimateAttributionError.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Just-worldHypothesis" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/Just-worldHypothesis.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/Stereotyping.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/BandwagonEffect.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/PlaceboEffect.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/GroupAttributionError.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/MoralCredentialEffect" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/MoralCredentialEffect.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/AutomationBias.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/AuthorityBias.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/FunctionalFixednessBias" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/FunctionalFixednessBias.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias" uri="file:/Users/stefano_renzetti/Documents/KRKE-cognitive-biases/cognitive-biases/ontology-modules/EssentialismBias.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1691390803300" name="http://www.semanticweb.org/delayed/cognitive-bias-ontology/WeFillInCharacteristics" uri="WeFillInCharacteristics.owl"/>
+    </group>
+</catalog>

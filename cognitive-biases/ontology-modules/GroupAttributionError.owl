@@ -135,11 +135,6 @@
     <!-- https://w3id.org/framester/data/framestercore/People -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:complementOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:comment xml:lang="en">A group composed of individuals who are united by a common characteristic, interest, or purpose.</rdfs:comment>
     </owl:Class>
     
