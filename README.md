@@ -1,3 +1,6 @@
+## [See the complete documentation on GitBook](https://krke.gitbook.io/krke-final-project-documentation-1/)
+
+
 # 🧠 Modeling Cognitive Biases
 
 The aim of our project is to model two clusters of biases taken from the classification made by Buster Benson, posted at this [link on Medium.](https://betterhumans.pub/cognitive-bias-cheat-sheet-55a472476b18)
