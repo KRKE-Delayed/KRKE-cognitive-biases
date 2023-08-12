@@ -8,8 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:affectedBy="https://w3id.org/affectedBy#"
-     xmlns:AuthorityBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias">
+     xmlns:AuthorityBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#"
+     xmlns:AuthorityBias1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Authority bias module of the Cognitive Bias Ontology.</terms:description>
@@ -69,29 +70,32 @@
     <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows">
-        <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#TrustWithNoEvidence"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Expertise"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#hasEvidence -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#hasEvidence -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#hasEvidence">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#hasEvidence">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Evidence"/>
         <rdfs:comment xml:lang="en">Indicates the presence of evidence for a particular statement or claim.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEvidence</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#TrustWithNoEvidence"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+        <rdfs:label xml:lang="en">isEngagedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -102,6 +106,7 @@
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Expertise"/>
         <rdfs:comment xml:lang="en">To believe that someone is good and honest or that something is safe and reliable.</rdfs:comment>
+        <rdfs:label xml:lang="en">affectedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -111,7 +116,14 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Expertise"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#isEngagedIn"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="https://w3id.org/affectedBy#affectedBy"/>
+        </owl:propertyChainAxiom>
         <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+        <rdfs:label xml:lang="en">influencedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -131,6 +143,28 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#TrustWithNoEvidence -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#TrustWithNoEvidence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Trust"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#hasEvidence"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/framester/data/framestercore/Evidence"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
+        <rdfs:label xml:lang="en">A specific kind of Trust based on no Evidence.</rdfs:label>
     </owl:Class>
     
 
@@ -139,6 +173,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Evidence">
         <rdfs:comment xml:lang="en">One or more reasons for believing that something is or is not true.</rdfs:comment>
+        <rdfs:label xml:lang="en">Evidence</rdfs:label>
     </owl:Class>
     
 
@@ -147,6 +182,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Expertise">
         <rdfs:comment xml:lang="en">A high level of knowledge or skill.</rdfs:comment>
+        <rdfs:label xml:lang="en">Expertise</rdfs:label>
     </owl:Class>
     
 
@@ -154,22 +190,8 @@
     <!-- https://w3id.org/framester/data/framestercore/Trust -->
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Trust">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/Trust"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#hasEvidence"/>
-                                <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Evidence"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:comment xml:lang="en">To believe that someone is good and honest or that something is safe and reliable.</rdfs:comment>
+        <rdfs:label xml:lang="en">Trust</rdfs:label>
     </owl:Class>
     
 
@@ -185,28 +207,32 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#trusting"/>
-        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#expert"/>
+        <AuthorityBias1:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#trusting"/>
+        <affectedBy:affectedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#expert"/>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#expert -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#expert -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#expert">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#expert">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Expertise"/>
+        <rdfs:label xml:lang="en">expert</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#trusting -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#trusting -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AuthorityBias#trusting">
-        <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#trusting">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#TrustWithNoEvidence"/>
+        <affectedBy:influencedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AuthorityBias.owl#expert"/>
+        <rdfs:label xml:lang="en">trusting</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
