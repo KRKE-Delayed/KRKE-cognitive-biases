@@ -8,8 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:sequence="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"
-     xmlns:SocialComparisonBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias">
+     xmlns:SocialComparisonBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#"
+     xmlns:SocialComparisonBias1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Social comparison biias module of the Cognitive Bias Ontology.</terms:description>
@@ -72,6 +73,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
         <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPart</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -82,6 +84,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
         <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">isPartOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -90,8 +93,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#SelfEsteem"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -102,16 +106,18 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">precedes</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+        <rdfs:label xml:lang="en">isEngagedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -122,6 +128,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:comment xml:lang="en">A relation between qualities or entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">affectedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -129,9 +136,10 @@
     <!-- https://w3id.org/affectedBy#influencedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#SelfEsteem"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
         <rdfs:comment xml:lang="en">When an agent&apos;s decision is influenced by an external entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">influencedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -151,14 +159,16 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#SelfEsteem -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#SelfEsteem">
         <rdfs:comment xml:lang="en">Confidence in one&apos;s worth and abilities.</rdfs:comment>
+        <rdfs:label xml:lang="en">SelfEsteem</rdfs:label>
     </owl:Class>
     
 
@@ -167,6 +177,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Cogitation">
         <rdfs:comment xml:lang="en">The act of thinking about a subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cogitation</rdfs:label>
     </owl:Class>
     
 
@@ -175,6 +186,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/EvaluativeComparison">
         <rdfs:comment xml:lang="en">An evaluation process set in a comparative framework.</rdfs:comment>
+        <rdfs:label xml:lang="en">EvaluativeComparison</rdfs:label>
     </owl:Class>
     
 
@@ -183,6 +195,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
         <rdfs:comment xml:lang="en">A group composed of individuals who are united by a common characteristic, interest, or purpose.</rdfs:comment>
+        <rdfs:label xml:lang="en">People</rdfs:label>
     </owl:Class>
     
 
@@ -198,40 +211,44 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#comparing -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#comparing -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#comparing">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#comparing">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/EvaluativeComparison"/>
-        <sequence:follows rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#low_self-esteem"/>
+        <sequence:follows rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#low_self-esteem"/>
         <rdfs:comment xml:lang="en">To examine or look for the difference between two or more things.</rdfs:comment>
+        <rdfs:label xml:lang="en">comparing</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#comparing"/>
+        <SocialComparisonBias1:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#comparing"/>
         <rdfs:comment xml:lang="en">Represents individuals or entities (Agent) who make decisions influenced by biases, including the status quo bias.</rdfs:comment>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#low_self-esteem -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#low_self-esteem -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#low_self-esteem">
-        <rdf:type rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#SelfEsteem"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#low_self-esteem">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#SelfEsteem"/>
         <rdfs:comment xml:lang="en">Low confidence in one&apos;s worth and abilities.</rdfs:comment>
+        <rdfs:label xml:lang="en">low_self-esteem</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#other_people -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#other_people -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/SocialComparisonBias#other_people">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/SocialComparisonBias.owl#other_people">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:comment xml:lang="en">External group of individuals that is the object of the comparison.</rdfs:comment>
+        <rdfs:label xml:lang="en">other_people</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

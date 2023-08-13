@@ -11,8 +11,9 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:description="http://www.ontologydesignpatterns.org/cp/owl/description.owl#"
+     xmlns:EssentialismBias="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Essentialism bias module of the Cognitive Bias Ontology.</terms:description>
@@ -73,26 +74,29 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/description.owl#defines">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#Person"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#Person"/>
         <rdfs:comment xml:lang="en">To say what the meaning of something.</rdfs:comment>
+        <rdfs:label xml:lang="en">defines</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+        <rdfs:label xml:lang="en">isEngagedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#leadsTo -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#leadsTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#leadsTo">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#leadsTo">
         <rdfs:comment xml:lang="en">If an action or event leads to something, it causes that thing to happen or exist.</rdfs:comment>
+        <rdfs:label xml:lang="en">leadsTo</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -101,6 +105,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/affectedBy#influencedBy">
         <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+        <rdfs:label xml:lang="en">influencedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -120,14 +125,16 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#Person -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#Person">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#Person">
         <rdfs:comment xml:lang="en">A man, woman, or child.</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
 
@@ -142,6 +149,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="en">To combine into a single group or total.</rdfs:comment>
+        <rdfs:label xml:lang="en">Aggregate</rdfs:label>
     </owl:Class>
     
 
@@ -151,11 +159,12 @@
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Categorization">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#leadsTo"/>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#leadsTo"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/framester/data/framestercore/Aggregate"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:comment xml:lang="en">The process of putting people or things into categories.</rdfs:comment>
+        <rdfs:label xml:lang="en">Categorization</rdfs:label>
     </owl:Class>
     
 
@@ -171,37 +180,41 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#another_person -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#another_person -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#another_person">
-        <rdf:type rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#Person"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#another_person">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#Person"/>
+        <rdfs:label xml:lang="en">another_person</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#decion-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#decion-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#decion-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#decion-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#stereotype"/>
+        <EssentialismBias:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#stereotype"/>
+        <rdfs:label xml:lang="en">decion-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#stereotype -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#stereotype -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#stereotype">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#stereotype">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
-        <leadsTo rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#wrong_assumption"/>
+        <EssentialismBias:leadsTo rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#wrong_assumption"/>
+        <rdfs:label xml:lang="en">stereotype</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#wrong_assumption -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#wrong_assumption -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#wrong_assumption">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#wrong_assumption">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Aggregate"/>
-        <description:defines rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/EssentialismBias#another_person"/>
+        <description:defines rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/EssentialismBias.owl#another_person"/>
+        <rdfs:label xml:lang="en">wrong_assumption</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

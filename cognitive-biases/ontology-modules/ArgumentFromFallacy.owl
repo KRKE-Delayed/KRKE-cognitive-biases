@@ -8,8 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:affectedBy="https://w3id.org/affectedBy#"
-     xmlns:ArgumentFromFallacy="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy">
+     xmlns:ArgumentFromFallacy="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#"
+     xmlns:ArgumentFromFallacy1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Argument from fallacy module of the Cognitive Bias Ontology.</terms:description>
@@ -79,16 +80,18 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PointOfDispute"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Judgment"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+        <rdfs:label xml:lang="en">isEngagedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -99,6 +102,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Judgment"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Correctness"/>
         <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+        <rdfs:label xml:lang="en">influencedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -118,6 +122,7 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
@@ -126,6 +131,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Correctness">
         <rdfs:comment xml:lang="en">The state of being accurate or free from errors.</rdfs:comment>
+        <rdfs:label xml:lang="en">Correctness</rdfs:label>
     </owl:Class>
     
 
@@ -134,6 +140,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Judgment">
         <rdfs:comment xml:lang="en">A decision or opinion about someone or something that you form after thinking carefully.</rdfs:comment>
+        <rdfs:label xml:lang="en">Judgment</rdfs:label>
     </owl:Class>
     
 
@@ -142,6 +149,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/PointOfDispute">
         <rdfs:comment xml:lang="en">The answer to a question is under discussion in a group, which still has a difference of opinion among its members.</rdfs:comment>
+        <rdfs:label xml:lang="en">PointOfDispute</rdfs:label>
     </owl:Class>
     
 
@@ -157,9 +165,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#argument_from_fallacy -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#argument_from_fallacy -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#argument_from_fallacy">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#argument_from_fallacy">
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -168,24 +176,27 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
-        <affectedBy:influencedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#correctness"/>
+        <affectedBy:influencedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#correctness"/>
+        <rdfs:label xml:lang="en">argument_from_fallacy</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#correctness -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#correctness -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#correctness">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#correctness">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Correctness"/>
+        <rdfs:label xml:lang="en">correctness</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/ArgumentFromFallacy#argument_from_fallacy"/>
+        <ArgumentFromFallacy1:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/ArgumentFromFallacy.owl#argument_from_fallacy"/>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

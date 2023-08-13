@@ -7,8 +7,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:PlaceboEffect="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect">
+     xmlns:PlaceboEffect="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#"
+     xmlns:PlaceboEffect1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Placebo effect module of the Cognitive Bias Ontology.</terms:description>
@@ -71,26 +72,29 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/UndergoChange"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/MentalProperty"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#causesChange -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#causesChange -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#causesChange">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#causesChange">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:comment xml:lang="en">A property that indicates the cause of an entity&apos;s alteration or modification, leading to changes in its category membership or attribute values.</rdfs:comment>
+        <rdfs:label xml:lang="en">causesChange</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#usesMentalProperty -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#usesMentalProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#usesMentalProperty">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#usesMentalProperty">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/MentalProperty"/>
         <rdfs:comment xml:lang="en">A property that signifies an agent&apos;s engagement with a mental attribute, concept, or state as part of a cognitive process or decision-making.</rdfs:comment>
+        <rdfs:label xml:lang="en">usesMentalProperty</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -101,6 +105,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/UndergoChange"/>
         <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+        <rdfs:label xml:lang="en">influencedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -120,6 +125,7 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
@@ -128,6 +134,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/MentalProperty">
         <rdfs:comment xml:lang="en">Mental attribute or state associated with an entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">MentalProperty</rdfs:label>
     </owl:Class>
     
 
@@ -136,6 +143,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/UndergoChange">
         <rdfs:comment xml:lang="en">An entity changes, either in its category membership or in terms of the value of an attribute.</rdfs:comment>
+        <rdfs:label xml:lang="en">UndergoChange</rdfs:label>
     </owl:Class>
     
 
@@ -151,20 +159,22 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <causesChange rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#decision-maker"/>
-        <usesMentalProperty rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#mental_property"/>
+        <PlaceboEffect1:causesChange rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#decision-maker"/>
+        <PlaceboEffect1:usesMentalProperty rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#mental_property"/>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#mental_property -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#mental_property -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/PlaceboEffect#mental_property">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/PlaceboEffect.owl#mental_property">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/MentalProperty"/>
+        <rdfs:label xml:lang="en">mental_property</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

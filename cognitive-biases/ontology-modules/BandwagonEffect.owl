@@ -8,13 +8,14 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:affectedBy="https://w3id.org/affectedBy#"
-     xmlns:BandwagonEffect="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect">
+     xmlns:BandwagonEffect="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#"
+     xmlns:BandwagonEffect1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
+        <terms:description xml:lang="en">Bandwagon effect module of the Cognitive Bias Ontology.</terms:description>
         <terms:hasVersion xml:lang="en">0.1</terms:hasVersion>
-        <rdfs:comment xml:lang="en">Bandwagon Effect Ontology</rdfs:comment>
-        <rdfs:comment xml:lang="en">Bandwagon effect module of the Cognitive Bias Ontology.</rdfs:comment>
+        <terms:title xml:lang="en">Bandwagon Effect Ontology</terms:title>
         <rdfs:comment xml:lang="en">The bandwagon effect is the tendency for people to adopt certain behaviors, styles, or attitudes simply because others are doing so. More specifically, it is a cognitive bias by which public opinion or behaviours can alter due to particular actions and beliefs rallying amongst the public.</rdfs:comment>
     </owl:Ontology>
     
@@ -72,16 +73,18 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Popularity"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">precedes</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+        <rdfs:label xml:lang="en">isEngagedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -92,6 +95,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Popularity"/>
         <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+        <rdfs:label xml:lang="en">influencedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -111,6 +115,7 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
@@ -119,6 +124,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Popularity">
         <rdfs:comment xml:lang="en">Degree of social approval or acceptance, influencing an agent&apos;s choices or actions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Popularity</rdfs:label>
     </owl:Class>
     
 
@@ -127,6 +133,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/SubjectiveInfluence">
         <rdfs:comment xml:lang="en">An agent, situation or entity has an influence on another agent or entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">SubjectiveInfluence</rdfs:label>
     </owl:Class>
     
 
@@ -142,28 +149,31 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#bandwagon_effect -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#bandwagon_effect -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#bandwagon_effect">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#bandwagon_effect">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
-        <affectedBy:influencedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#popular_thing"/>
+        <affectedBy:influencedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#popular_thing"/>
+        <rdfs:label xml:lang="en">bandwagon_effect</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#bandwagon_effect"/>
+        <BandwagonEffect1:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#bandwagon_effect"/>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#popular_thing -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#popular_thing -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/BandwagonEffect#popular_thing">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/BandwagonEffect.owl#popular_thing">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Popularity"/>
+        <rdfs:label xml:lang="en">popular_thing</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

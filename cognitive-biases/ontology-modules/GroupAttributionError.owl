@@ -7,8 +7,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:GroupAttributionError="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError">
+     xmlns:GroupAttributionError="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#"
+     xmlns:GroupAttributionError1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Group attribution error module of the Cognitive Bias Ontology.</terms:description>
@@ -71,36 +72,40 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/TakingSides"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#hasTarget -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#hasTarget -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#hasTarget">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#hasTarget">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/TakingSides"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
         <rdfs:comment xml:lang="en">Specifies an object, individual, or group that is the target or recipient of an action, decision, or belief.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTarget</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/TakingSides"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+        <rdfs:label xml:lang="en">isEngagedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#isInvolvedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#isInvolvedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#isInvolvedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#isInvolvedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
         <rdfs:comment xml:lang="en">Indicates that an agent or individual participates in or engages in a specific activity, process, or situation.</rdfs:comment>
+        <rdfs:label xml:lang="en">isInvolvedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -120,6 +125,7 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
@@ -128,6 +134,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Categorization">
         <rdfs:comment xml:lang="en">The process of putting people or things into categories.</rdfs:comment>
+        <rdfs:label xml:lang="en">Categorization</rdfs:label>
     </owl:Class>
     
 
@@ -136,6 +143,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
         <rdfs:comment xml:lang="en">A group composed of individuals who are united by a common characteristic, interest, or purpose.</rdfs:comment>
+        <rdfs:label xml:lang="en">People</rdfs:label>
     </owl:Class>
     
 
@@ -144,6 +152,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/TakingSides">
         <rdfs:comment xml:lang="en">To support one person or opinion over another.</rdfs:comment>
+        <rdfs:label xml:lang="en">TakingSides</rdfs:label>
     </owl:Class>
     
 
@@ -159,36 +168,40 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#categorization -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#categorization -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#categorization">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#categorization">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
+        <rdfs:label xml:lang="en">categorization</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#taking_side"/>
+        <GroupAttributionError1:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#taking_side"/>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#people_from_other_group -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#people_from_other_group -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#people_from_other_group">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#people_from_other_group">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
+        <rdfs:label xml:lang="en">people_from_other_group</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#taking_side -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#taking_side -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#taking_side">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#taking_side">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/TakingSides"/>
-        <hasTarget rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/GroupAttributionError#people_from_other_group"/>
+        <GroupAttributionError1:hasTarget rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/GroupAttributionError.owl#people_from_other_group"/>
+        <rdfs:label xml:lang="en">taking_side</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

@@ -9,8 +9,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:sequence="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"
      xmlns:affectedBy="https://w3id.org/affectedBy#"
-     xmlns:StatusQuoBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias">
+     xmlns:StatusQuoBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#"
+     xmlns:StatusQuoBias1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Status quo bias module of the Cognitive Bias Ontology</terms:description>
@@ -73,6 +74,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
         <rdfs:comment xml:lang="en">A transitive relation expressing parthood between any entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">isPartOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -83,6 +85,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Cogitation"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -90,21 +93,23 @@
     <!-- http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes -->
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#Alternative"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#Alternative"/>
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Preserving"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">precedes</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#choosingAlternative -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#choosingAlternative -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#choosingAlternative">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#choosingAlternative">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:comment xml:lang="en">The act to decide what you want from two or more things or possibilities.</rdfs:comment>
+        <rdfs:label xml:lang="en">choosingAlternative</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -115,6 +120,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Custom"/>
         <rdfs:comment xml:lang="en">A relation between qualities or entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">affectedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -134,30 +140,34 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#Alternative -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#Alternative -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#Alternative">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#Alternative">
         <rdfs:comment xml:lang="en">A physical or mental object that represents a choice between two or more things.</rdfs:comment>
+        <rdfs:label xml:lang="en">Alternative</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#NewAlternative -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#NewAlternative -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#NewAlternative">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#Alternative"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#NewAlternative">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#Alternative"/>
+        <rdfs:label xml:lang="en">NewAlternative</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#StatusQuoAlternative -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#StatusQuoAlternative -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#StatusQuoAlternative">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#Alternative"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#StatusQuoAlternative">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#Alternative"/>
+        <rdfs:label xml:lang="en">StatusQuoAlternative</rdfs:label>
     </owl:Class>
     
 
@@ -166,6 +176,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Choosing">
         <rdfs:comment xml:lang="en">To decide what you want from two or more things or possibilities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Choosing</rdfs:label>
     </owl:Class>
     
 
@@ -174,6 +185,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Cogitation">
         <rdfs:comment xml:lang="en">The act of thinking about a subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cogitation</rdfs:label>
     </owl:Class>
     
 
@@ -182,6 +194,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Custom">
         <rdfs:comment xml:lang="en">A way of behaving or a belief that has been established for a long time.</rdfs:comment>
+        <rdfs:label xml:lang="en">Custom</rdfs:label>
     </owl:Class>
     
 
@@ -190,6 +203,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Preserving">
         <rdfs:comment xml:lang="en">To keep something as it is, especially in order to prevent it from decaying or being damaged or destroyed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Preserving</rdfs:label>
     </owl:Class>
     
 
@@ -205,43 +219,47 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#decision_maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#decision_maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#decision_maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#decision_maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <choosingAlternative rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#status_quo_alternative"/>
-        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#stereotype"/>
+        <StatusQuoBias1:choosingAlternative rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#status_quo_alternative"/>
+        <affectedBy:affectedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#stereotype"/>
         <rdfs:comment xml:lang="en">Represents individuals or entities (Agent) who make decisions influenced by biases, including the status quo bias.</rdfs:comment>
+        <rdfs:label xml:lang="en">decision_maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#new_alternative -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#new_alternative -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#new_alternative">
-        <rdf:type rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#NewAlternative"/>
-        <sequence:follows rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#status_quo_alternative"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#new_alternative">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#NewAlternative"/>
+        <sequence:follows rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#status_quo_alternative"/>
         <rdfs:comment xml:lang="en">The alternative challenging the StatusQuoAlternative.</rdfs:comment>
+        <rdfs:label xml:lang="en">new_alternative</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#status_quo_alternative -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#status_quo_alternative -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#status_quo_alternative">
-        <rdf:type rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#StatusQuoAlternative"/>
-        <sequence:precedes rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#new_alternative"/>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#status_quo_alternative">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#StatusQuoAlternative"/>
+        <sequence:precedes rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#new_alternative"/>
         <rdfs:comment xml:lang="en">The alternative influenced by stereotype.</rdfs:comment>
+        <rdfs:label xml:lang="en">status_quo_alternative</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#stereotype -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#stereotype -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#stereotype">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#stereotype">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Custom"/>
-        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/StatusQuoBias#status_quo_alternative"/>
+        <affectedBy:affectedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/StatusQuoBias.owl#status_quo_alternative"/>
         <rdfs:comment xml:lang="en">The alternative relative to traditional norms or customs.</rdfs:comment>
+        <rdfs:label xml:lang="en">stereotype</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

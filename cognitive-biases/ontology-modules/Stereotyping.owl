@@ -8,8 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:Stereotyping="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#"
+     xmlns:Stereotyping1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#"
      xmlns:classification="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Stereotyping module of the Cognitive Bias Ontology.</terms:description>
@@ -93,9 +94,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Categorization"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
@@ -128,6 +129,7 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
@@ -136,6 +138,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Categorization">
         <rdfs:comment xml:lang="en">The process of putting people or things into categories.</rdfs:comment>
+        <rdfs:label xml:lang="en">Categorization</rdfs:label>
     </owl:Class>
     
 
@@ -144,6 +147,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Opinion">
         <rdfs:comment xml:lang="en">A thought or belief about something or someone.</rdfs:comment>
+        <rdfs:label xml:lang="en">Opinion</rdfs:label>
     </owl:Class>
     
 
@@ -152,6 +156,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/People">
         <rdfs:comment xml:lang="en">A group composed of individuals who are united by a common characteristic, interest, or purpose.</rdfs:comment>
+        <rdfs:label xml:lang="en">People</rdfs:label>
     </owl:Class>
     
 
@@ -167,27 +172,29 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#stereotype"/>
+        <Stereotyping1:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#stereotype"/>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#other_people -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#other_people -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#other_people">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#other_people">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/People"/>
-        <classification:isClassifiedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#stereotype"/>
+        <classification:isClassifiedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#stereotype"/>
+        <rdfs:label xml:lang="en">other_people</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#stereotype -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#stereotype -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/Stereotyping#stereotype">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/Stereotyping.owl#stereotype">
         <rdf:type>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -196,6 +203,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
+        <rdfs:label xml:lang="en">stereotype</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

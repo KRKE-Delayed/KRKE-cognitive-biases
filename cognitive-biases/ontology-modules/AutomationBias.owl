@@ -8,8 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:affectedBy="https://w3id.org/affectedBy#"
-     xmlns:AutomationBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias">
+     xmlns:AutomationBias="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#"
+     xmlns:AutomationBias1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Automation bias module of the Cognitive Bias Ontology.</terms:description>
@@ -72,26 +73,29 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Certainty"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#hasObject -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#hasObject -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#hasObject">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#hasObject">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Gizmo"/>
         <rdfs:comment xml:lang="en">Denotes the object associated with a particular entity or property.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasObject</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+        <rdfs:label xml:lang="en">isEngagedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -102,6 +106,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Certainty"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Gizmo"/>
         <rdfs:comment xml:lang="en">A relation between qualities or entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">affectedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -121,6 +126,7 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
@@ -129,6 +135,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Certainty">
         <rdfs:comment xml:lang="en">The state of being completely confident or having no doubt about something.</rdfs:comment>
+        <rdfs:label xml:lang="en">Certainty</rdfs:label>
     </owl:Class>
     
 
@@ -137,6 +144,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Gizmo">
         <rdfs:comment xml:lang="en">Any small device with a particular purpose.</rdfs:comment>
+        <rdfs:label xml:lang="en">Gizmo</rdfs:label>
     </owl:Class>
     
 
@@ -145,6 +153,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Trust">
         <rdfs:comment xml:lang="en">To believe that someone is good and honest or that something is safe and reliable.</rdfs:comment>
+        <rdfs:label xml:lang="en">Trust</rdfs:label>
     </owl:Class>
     
 
@@ -160,37 +169,41 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#certainty -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#certainty -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#certainty">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#certainty">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Certainty"/>
-        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#trust"/>
+        <affectedBy:affectedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#trust"/>
+        <rdfs:label xml:lang="en">certainty</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#trust"/>
+        <AutomationBias1:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#trust"/>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#gizmo -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#gizmo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#gizmo">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#gizmo">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Gizmo"/>
+        <rdfs:label xml:lang="en">gizmo</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#trust -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#trust -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#trust">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#trust">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Trust"/>
-        <hasObject rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/AutomationBias#gizmo"/>
+        <AutomationBias1:hasObject rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/AutomationBias.owl#gizmo"/>
+        <rdfs:label xml:lang="en">trust</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

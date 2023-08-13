@@ -8,8 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:affectedBy="https://w3id.org/affectedBy#"
-     xmlns:DecoyEffect="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect">
+     xmlns:DecoyEffect="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#"
+     xmlns:DecoyEffect1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Decoy effect module of the Cognitive Bias Ontology</terms:description>
@@ -72,26 +73,29 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#dependsOn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#dependsOn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#dependsOn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#dependsOn">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
         <rdfs:comment xml:lang="en">Describe a dependency between to entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">dependsOn</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#hasQuality -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#hasQuality -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#hasQuality">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#hasQuality">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
         <rdfs:range rdf:resource="https://w3id.org/affectedBy#Quality"/>
         <rdfs:comment xml:lang="en">Connect a characteristic or feature to something.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasQuality</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -103,12 +107,13 @@
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#Decoy"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#Decoy"/>
                     <rdf:Description rdf:about="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">A relation between qualities or entities.</rdfs:comment>
+        <rdfs:label xml:lang="en">affectedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -119,6 +124,7 @@
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SubjectiveInfluence"/>
         <rdfs:comment xml:lang="en">When an agent&apos;s decision is influenced by an external entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">influencedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -134,9 +140,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#PossibilitiesNumber -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#PossibilitiesNumber -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#PossibilitiesNumber">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#PossibilitiesNumber">
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -148,6 +154,8 @@
                 </owl:withRestrictions>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment xml:lang="en">Usually the &quot;decoy&quot; is used as a third choice.</rdfs:comment>
+        <rdfs:label xml:lang="en">PossibilitiesNumber</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -167,15 +175,17 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#Decoy -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#Decoy -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#Decoy">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#Decoy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
         <rdfs:comment xml:lang="en">A decoy, in marketing, is an option strategically used to influence the consumer&apos;s choice.</rdfs:comment>
+        <rdfs:label xml:lang="en">Decoy</rdfs:label>
     </owl:Class>
     
 
@@ -184,6 +194,7 @@
 
     <owl:Class rdf:about="https://w3id.org/affectedBy#Quality">
         <rdfs:comment xml:lang="en">A characteristic or attribute that characterizes an object or entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Quality</rdfs:label>
     </owl:Class>
     
 
@@ -192,6 +203,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Choosing">
         <rdfs:comment xml:lang="en">To decide what you want from two or more things or possibilities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Choosing</rdfs:label>
     </owl:Class>
     
 
@@ -200,6 +212,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Possibility">
         <rdfs:comment xml:lang="en">A physical or mental object that represents a choice between two or more things.</rdfs:comment>
+        <rdfs:label xml:lang="en">Possibility</rdfs:label>
     </owl:Class>
     
 
@@ -208,6 +221,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/SubjectiveInfluence">
         <rdfs:comment xml:lang="en">Represents a strategy used to guide or influence the decision-making process.</rdfs:comment>
+        <rdfs:label xml:lang="en">SubjectiveInfluence</rdfs:label>
     </owl:Class>
     
 
@@ -223,63 +237,69 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#choosing -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#choosing -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#choosing">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#choosing">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Choosing"/>
         <rdfs:comment xml:lang="en">Represent what an agent want from two or more things or possibilities.</rdfs:comment>
+        <rdfs:label xml:lang="en">choosing</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#costumer -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#costumer -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#costumer">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#costumer">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:comment xml:lang="en">The decison-maker.</rdfs:comment>
+        <rdfs:label xml:lang="en">costumer</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_choices -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#different_choices -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_choices">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#different_choices">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
-        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_features"/>
-        <PossibilitiesNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</PossibilitiesNumber>
+        <affectedBy:affectedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#different_features"/>
+        <DecoyEffect1:PossibilitiesNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</DecoyEffect1:PossibilitiesNumber>
         <rdfs:comment xml:lang="en">The available possibilities.</rdfs:comment>
+        <rdfs:label xml:lang="en">different_choices</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_features -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#different_features -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_features">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#different_features">
         <rdf:type rdf:resource="https://w3id.org/affectedBy#Quality"/>
         <rdfs:comment xml:lang="en">The characteristics of the choices.</rdfs:comment>
+        <rdfs:label xml:lang="en">different_features</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#perceived_better_value_choice -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#perceived_better_value_choice -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#perceived_better_value_choice">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#perceived_better_value_choice">
         <rdf:type>
             <owl:Class>
-                <owl:complementOf rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#Decoy"/>
+                <owl:complementOf rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#Decoy"/>
             </owl:Class>
         </rdf:type>
-        <affectedBy:affectedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#different_choices"/>
+        <affectedBy:affectedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#different_choices"/>
         <rdfs:comment xml:lang="en">The object which benefits from the decoy&apos;s presence.</rdfs:comment>
+        <rdfs:label xml:lang="en">perceived_better_value_choice</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#product -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#product -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/DecoyEffect#product">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/DecoyEffect.owl#product">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/Possibility"/>
         <rdfs:comment xml:lang="en">The object of the selling procedure.</rdfs:comment>
+        <rdfs:label xml:lang="en">product</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

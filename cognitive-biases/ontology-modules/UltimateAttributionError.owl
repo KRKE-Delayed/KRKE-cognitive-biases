@@ -8,8 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:affectedBy="https://w3id.org/affectedBy#"
-     xmlns:UltimateAttributionError="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError">
+     xmlns:UltimateAttributionError="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#"
+     xmlns:UltimateAttributionError1="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl">
         <terms:creator xml:lang="en">Mirna Regolo</terms:creator>
         <terms:creator xml:lang="en">Stefano Renzetti</terms:creator>
         <terms:description xml:lang="en">Ultimate attribution error module of the Cognitive Bias Ontology.</terms:description>
@@ -72,16 +73,18 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/Differentiation"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SuccessOrFailure"/>
         <rdfs:comment xml:lang="en">A relation between entities, expressing a &apos;sequence&apos; schema.</rdfs:comment>
+        <rdfs:label xml:lang="en">follows</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#isEngagedIn -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#isEngagedIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#isEngagedIn">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#isEngagedIn">
         <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         <rdfs:comment xml:lang="en">To take part in some action, mental or physical.</rdfs:comment>
+        <rdfs:label xml:lang="en">isEngagedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -92,6 +95,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
         <rdfs:range rdf:resource="https://w3id.org/framester/data/framestercore/SuccessOrFailure"/>
         <rdfs:comment xml:lang="en">When something or someone is influenced by an external entity or factor.</rdfs:comment>
+        <rdfs:label xml:lang="en">influencedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -111,6 +115,7 @@
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent">
         <rdfs:comment xml:lang="en">Any physical or social agent, including a person, a social group, or an organization.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
     </owl:Class>
     
 
@@ -119,6 +124,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/Differentiation">
         <rdfs:comment xml:lang="en">Being aware (or not being aware) of the difference between more phenomena, which may be expressed jointly or disjointly.</rdfs:comment>
+        <rdfs:label xml:lang="en">Differentiation</rdfs:label>
     </owl:Class>
     
 
@@ -135,6 +141,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:label xml:lang="en">PerceptionExperience</rdfs:label>
     </owl:Class>
     
 
@@ -143,6 +150,7 @@
 
     <owl:Class rdf:about="https://w3id.org/framester/data/framestercore/SuccessOrFailure">
         <rdfs:comment xml:lang="en">The outcome or result of a particular endeavor, which can be either positive (success) or negative (failure).</rdfs:comment>
+        <rdfs:label xml:lang="en">SuccessOrFailure</rdfs:label>
     </owl:Class>
     
 
@@ -158,28 +166,31 @@
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#decision-maker -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#decision-maker -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#decision-maker">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#decision-maker">
         <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent"/>
-        <isEngagedIn rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#ultimate_attribution_error"/>
+        <UltimateAttributionError1:isEngagedIn rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#ultimate_attribution_error"/>
+        <rdfs:label xml:lang="en">decision-maker</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#success_or_fail -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#success_or_fail -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#success_or_fail">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#success_or_fail">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/SuccessOrFailure"/>
+        <rdfs:label xml:lang="en">success_or_fail</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#ultimate_attribution_error -->
+    <!-- https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#ultimate_attribution_error -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#ultimate_attribution_error">
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#ultimate_attribution_error">
         <rdf:type rdf:resource="https://w3id.org/framester/data/framestercore/PerceptionExperience"/>
-        <affectedBy:influencedBy rdf:resource="http://www.semanticweb.org/delayed/cognitive-bias-ontology/UltimateAttributionError#success_or_fail"/>
+        <affectedBy:influencedBy rdf:resource="https://raw.githubusercontent.com/KRKE-Delayed/KRKE-cognitive-biases/main/cognitive-biases/ontology-modules/UltimateAttributionError.owl#success_or_fail"/>
+        <rdfs:label xml:lang="en">ultimate_attribution_error</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
